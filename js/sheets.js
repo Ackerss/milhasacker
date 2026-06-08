@@ -6,7 +6,7 @@
 const SheetsSync = {
   // URL do Web App do Google Apps Script
   // Configurar em: Dashboard → ⚙️ Configurações
-  apiUrl: localStorage.getItem('milhas_sheets_url') || '',
+  apiUrl: localStorage.getItem('milhas_sheets_url') || 'https://script.google.com/macros/s/AKfycbx8JsOvHr96TQqKJKpeXE-f2EIFJaBhMmvdJDHC_34Ibz6xR1YsttEKuD0tndU05v7hFA/exec',
 
   isConfigured() {
     return !!this.apiUrl;
