@@ -21,7 +21,7 @@ function renderDashboard() {
     }
   });
 
-  const plans = AppState.getPlans().filter(p => p.userId === userId && p.status === 'ativo');
+  const plans = AppState.getPlans().filter(p => userId === 'consolidado' ? p.status === 'ativo' : (p.userId === userId && p.status === 'ativo'));
   const monthlySpend = plans.reduce((sum, p) => sum + (parseFloat(p.monthlyValue) || 0), 0);
   const monthlyPoints = plans.reduce((sum, p) => sum + (parseInt(p.monthlyPoints) || 0), 0);
   
@@ -60,7 +60,7 @@ function renderDashboard() {
       <div class="chart-card">
         <div class="card-header">
           <div>
-            <div class="card-title">Distribuição por Programa</div>
+            <div class="card-title">Distribuição por Programas</div>
             <div class="card-subtitle">${user.icon} ${user.name}</div>
           </div>
         </div>
@@ -87,7 +87,7 @@ function renderDashboard() {
         <div class="card-header">
           <div>
             <div class="card-title">Movimentações Recentes</div>
-            <div class="card-subtitle">Últimas 10 movimentações de ${user.name}</div>
+            <div class="card-subtitle">Últimas 10 movimentações</div>
           </div>
         </div>
         ${renderRecentHistory(userId)}
@@ -106,9 +106,10 @@ function renderDashboard() {
               ${plans.map(p => {
                 const prog = getProgramById(p.programId);
                 const cpm = p.monthlyPoints > 0 ? (p.monthlyValue / p.monthlyPoints * 1000) : 0;
+                const userIcon = p.userId === 'jacson' ? '👤' : '👩';
                 return `<div class="plan-summary-item">
                   <span class="program-dot" style="background:${prog?.color || '#999'}"></span>
-                  <span class="fw-600">${p.name}</span>
+                  <span class="fw-600">${p.name} <small class="text-muted" style="font-size:0.7rem; font-weight:normal; margin-left:4px;">(${userIcon})</small></span>
                   <span class="text-muted" style="margin-left:auto">${formatCurrency(p.monthlyValue)}/mês</span>
                   <span class="badge badge-success">CPM ${formatCurrency(cpm)}</span>
                 </div>`;
@@ -143,18 +144,21 @@ function renderDashboard() {
 
 function renderRecentHistory(userId) {
   const history = AppState.getHistory()
-    .filter(h => h.userId === userId)
+    .filter(h => userId === 'consolidado' ? true : h.userId === userId)
     .slice(0, 10);
 
   if (history.length === 0) {
     return '<div class="empty-state"><div class="empty-state-icon">📝</div><div class="empty-state-text">Nenhuma movimentação registrada</div></div>';
   }
 
+  const isConsolidated = userId === 'consolidado';
+
   return `
     <div class="table-wrapper">
       <table>
         <thead>
           <tr>
+            ${isConsolidated ? '<th style="width: 60px;">Quem</th>' : ''}
             <th>Data</th>
             <th>Programa</th>
             <th>Tipo</th>
@@ -168,7 +172,9 @@ function renderRecentHistory(userId) {
             const prog = getProgramById(h.programId);
             const moveType = MOVEMENT_TYPES.find(m => m.id === h.type);
             const isPositive = ['compra', 'transferencia_entrada', 'bonus', 'clube', 'cartao'].includes(h.type);
+            const userIcon = h.userId === 'jacson' ? '👤' : '👩';
             return `<tr>
+              ${isConsolidated ? `<td data-label="Quem" style="font-size: 1.1rem; text-align: center;" title="${h.userId === 'jacson' ? 'Jacson' : 'Ana'}">${userIcon}</td>` : ''}
               <td data-label="Data">${formatDate(h.date)}</td>
               <td data-label="Programa"><span class="program-badge"><span class="program-dot" style="background:${prog?.color || '#999'}"></span>${prog?.name || h.programId}</span></td>
               <td data-label="Tipo"><span style="color:${moveType?.color || '#999'}">${moveType?.icon || ''} ${moveType?.label || h.type}</span></td>

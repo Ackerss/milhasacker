@@ -89,6 +89,9 @@ const AppState = {
 
   // Calcular saldo de uma pessoa em um programa
   getBalance(userId, programId) {
+    if (userId === 'consolidado') {
+      return this.getBalance('jacson', programId) + this.getBalance('ana', programId);
+    }
     const history = this.getHistory();
     let balance = 0;
     history.forEach(entry => {

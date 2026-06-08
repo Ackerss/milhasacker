@@ -16,7 +16,7 @@ function renderBalance() {
     totalMiles += balance;
     
     // Get last movement date
-    const lastMove = AppState.getHistory().find(h => h.userId === userId && h.programId === p.id);
+    const lastMove = AppState.getHistory().find(h => (userId === 'consolidado' ? true : h.userId === userId) && h.programId === p.id);
     
     return { program: p, balance, lastMove };
   });
@@ -26,7 +26,7 @@ function renderBalance() {
       <div class="stat-card">
         <div class="stat-card-icon blue">✈️</div>
         <div class="stat-card-value">${formatNumber(totalMiles)}</div>
-        <div class="stat-card-label">Total de Milhas/Pontos — ${user.name}</div>
+        <div class="stat-card-label">Total de Milhas/Pontos — ${user?.name || 'Geral'}</div>
       </div>
     </div>
 
@@ -75,6 +75,13 @@ function renderBalance() {
           <button class="modal-close" onclick="closeModal('modal-movement')">✕</button>
         </div>
         <div class="modal-body">
+          <div class="form-group" id="mov-user-group">
+            <label>Usuário</label>
+            <select id="mov-user">
+              <option value="jacson">👤 Jacson</option>
+              <option value="ana">👩 Ana</option>
+            </select>
+          </div>
           <div class="form-group">
             <label>Programa</label>
             <select id="mov-program">
@@ -201,12 +208,25 @@ function renderBalance() {
 
 function openMovementModal(programId) {
   openModal('modal-movement');
+  
+  const userGroup = document.getElementById('mov-user-group');
+  if (userGroup) {
+    if (AppState.activeUser === 'consolidado') {
+      userGroup.style.display = 'block';
+      document.getElementById('mov-user').value = 'jacson';
+    } else {
+      userGroup.style.display = 'none';
+      document.getElementById('mov-user').value = AppState.activeUser;
+    }
+  }
+
   if (programId) {
     document.getElementById('mov-program').value = programId;
   }
 }
 
 function saveMovement() {
+  const userIdInput = document.getElementById('mov-user')?.value || AppState.activeUser;
   const programId = document.getElementById('mov-program').value;
   const type = document.getElementById('mov-type').value;
   const quantity = parseInt(document.getElementById('mov-quantity').value);
@@ -225,7 +245,7 @@ function saveMovement() {
   }
 
   AppState.addHistory({
-    userId: AppState.activeUser,
+    userId: userIdInput,
     programId,
     type,
     quantity,
@@ -247,10 +267,12 @@ function saveMovement() {
 function showProgramHistory(programId) {
   const userId = AppState.activeUser;
   const prog = getProgramById(programId);
-  const history = AppState.getHistory().filter(h => h.userId === userId && h.programId === programId);
+  const history = AppState.getHistory().filter(h => (userId === 'consolidado' ? true : h.userId === userId) && h.programId === programId);
 
   const content = document.getElementById('program-history-content');
   if (!content) return;
+
+  const isConsolidated = userId === 'consolidado';
 
   if (history.length === 0) {
     content.innerHTML = `<div class="empty-state"><div class="empty-state-icon">📋</div><div class="empty-state-text">Nenhuma movimentação para ${prog?.name}</div></div>`;
@@ -264,6 +286,7 @@ function showProgramHistory(programId) {
         <table>
           <thead>
             <tr>
+              ${isConsolidated ? '<th style="width: 60px;">Quem</th>' : ''}
               <th>Data</th>
               <th>Tipo</th>
               <th>Quantidade</th>
@@ -276,7 +299,9 @@ function showProgramHistory(programId) {
             ${history.map(h => {
               const moveType = MOVEMENT_TYPES.find(m => m.id === h.type);
               const isPositive = ['compra', 'transferencia_entrada', 'bonus', 'clube', 'cartao'].includes(h.type);
+              const userIcon = h.userId === 'jacson' ? '👤' : '👩';
               return `<tr>
+                ${isConsolidated ? `<td data-label="Quem" style="font-size: 1.1rem; text-align: center;" title="${h.userId === 'jacson' ? 'Jacson' : 'Ana'}">${userIcon}</td>` : ''}
                 <td data-label="Data">${formatDate(h.date)}</td>
                 <td data-label="Tipo"><span style="color:${moveType?.color || '#999'}">${moveType?.icon || ''} ${moveType?.label || h.type}</span></td>
                 <td data-label="Quantidade" class="${isPositive ? 'text-success' : 'text-danger'} fw-600">${isPositive ? '+' : '-'}${formatNumber(h.quantity)}</td>

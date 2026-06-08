@@ -321,7 +321,8 @@ const MOVEMENT_TYPES = [
 // Pessoas
 const USERS_LIST = [
   { id: 'jacson', name: 'Jacson', icon: '👤' },
-  { id: 'ana', name: 'Ana', icon: '👩' }
+  { id: 'ana', name: 'Ana', icon: '👩' },
+  { id: 'consolidado', name: 'Consolidado', icon: '👥' }
 ];
 
 // ============= Helpers =============

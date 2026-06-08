@@ -9,7 +9,7 @@ function renderPlans() {
 
   const userId = AppState.activeUser;
   const user = USERS_LIST.find(u => u.id === userId);
-  const plans = AppState.getPlans().filter(p => p.userId === userId);
+  const plans = AppState.getPlans().filter(p => userId === 'consolidado' ? true : p.userId === userId);
   const activePlans = plans.filter(p => p.status === 'ativo');
   const inactivePlans = plans.filter(p => p.status !== 'ativo');
 
@@ -22,7 +22,7 @@ function renderPlans() {
       <div class="stat-card">
         <div class="stat-card-icon blue">📋</div>
         <div class="stat-card-value">${activePlans.length}</div>
-        <div class="stat-card-label">Planos Ativos — ${user.name}</div>
+        <div class="stat-card-label">Planos Ativos — ${user?.name || 'Geral'}</div>
       </div>
       <div class="stat-card">
         <div class="stat-card-icon orange">💳</div>
@@ -42,7 +42,7 @@ function renderPlans() {
     </div>
 
     <div class="flex justify-between items-center mb-lg">
-      <h3 style="font-size:1rem; font-weight:600;">Planos de ${user.name}</h3>
+      <h3 style="font-size:1rem; font-weight:600;">${userId === 'consolidado' ? 'Planos Consolidados' : `Planos de ${user?.name}`}</h3>
       <button class="btn btn-primary btn-sm" onclick="openPlanModal()">
         ➕ Novo Plano
       </button>
@@ -56,7 +56,7 @@ function renderPlans() {
       <div class="card mb-xl">
         <div class="empty-state">
           <div class="empty-state-icon">📋</div>
-          <div class="empty-state-text">Nenhum plano ativo para ${user.name}</div>
+          <div class="empty-state-text">Nenhum plano ativo para ${user?.name || 'Geral'}</div>
           <button class="btn btn-primary" onclick="openPlanModal()">➕ Adicionar Plano</button>
         </div>
       </div>
@@ -77,6 +77,13 @@ function renderPlans() {
           <button class="modal-close" onclick="closeModal('modal-plan')">✕</button>
         </div>
         <div class="modal-body">
+          <div class="form-group" id="plan-user-group">
+            <label>Usuário</label>
+            <select id="plan-user">
+              <option value="jacson">👤 Jacson</option>
+              <option value="ana">👩 Ana</option>
+            </select>
+          </div>
           <div class="form-group">
             <label>Nome do Plano</label>
             <input type="text" id="plan-name" placeholder="Ex: Clube Livelo Essencial">
@@ -125,6 +132,8 @@ function renderPlanItem(plan) {
   const prog = getProgramById(plan.programId);
   const cpm = plan.monthlyPoints > 0 ? (plan.monthlyValue / plan.monthlyPoints * 1000) : 0;
   const isActive = plan.status === 'ativo';
+  const userIcon = plan.userId === 'jacson' ? '👤' : '👩';
+  const userName = plan.userId === 'jacson' ? 'Jacson' : 'Ana';
 
   return `
     <div class="plan-item">
@@ -137,6 +146,7 @@ function renderPlanItem(plan) {
           </span>
         </h3>
         <div class="plan-meta">
+          <span class="plan-meta-item">${userIcon} ${userName}</span>
           <span class="plan-meta-item">${prog?.icon} ${prog?.name}</span>
           <span class="plan-meta-item">📅 ${formatDate(plan.startDate)} ${plan.endDate ? `→ ${formatDate(plan.endDate)}` : '→ Indefinido'}</span>
           <span class="plan-meta-item">🎯 ${formatNumber(plan.monthlyPoints)} pts/mês</span>
@@ -154,9 +164,21 @@ function renderPlanItem(plan) {
 
 function openPlanModal() {
   openModal('modal-plan');
+  
+  const userGroup = document.getElementById('plan-user-group');
+  if (userGroup) {
+    if (AppState.activeUser === 'consolidado') {
+      userGroup.style.display = 'block';
+      document.getElementById('plan-user').value = 'jacson';
+    } else {
+      userGroup.style.display = 'none';
+      document.getElementById('plan-user').value = AppState.activeUser;
+    }
+  }
 }
 
 function savePlan() {
+  const userIdInput = document.getElementById('plan-user')?.value || AppState.activeUser;
   const name = document.getElementById('plan-name').value.trim();
   const programId = document.getElementById('plan-program').value;
   const monthlyValue = parseFloat(document.getElementById('plan-value').value);
@@ -175,7 +197,7 @@ function savePlan() {
   }
 
   AppState.addPlan({
-    userId: AppState.activeUser,
+    userId: userIdInput,
     name,
     programId,
     monthlyValue,
