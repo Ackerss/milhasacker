@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Milhas Acker — Sistema completo de controle e gestão de milhas aéreas. Calendário de promoções, tabela de preços, simulador de compra e controle de saldo.">
+  <title>Milhas Acker — Controle de Milhas</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+
+  <style>
+    /* Extra styles for components */
+    .toast-container {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 2000;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .toast {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      font-size: 0.875rem;
+      font-weight: 500;
+      transform: translateX(120%);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .toast.show {
+      transform: translateX(0);
+    }
+    .toast-success { border-left: 3px solid var(--success); }
+    .toast-error { border-left: 3px solid var(--danger); }
+    .toast-info { border-left: 3px solid var(--info); }
+
+    /* Calendar extras */
+    .calendar-legend {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .month-highlights-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .month-highlight-item {
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      display: flex;
+      align-items: flex-start;
+    }
+    .month-tip {
+      background: var(--primary-bg);
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.8125rem;
+      line-height: 1.6;
+    }
+
+    /* Strategies */
+    .strategies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: var(--space-md);
+    }
+    .strategy-card {
+      background: var(--bg);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: var(--space-lg);
+    }
+    .strategy-name {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      margin-bottom: var(--space-sm);
+    }
+    .strategy-cpm { margin-bottom: var(--space-sm); }
+    .strategy-desc {
+      font-size: 0.8125rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin-bottom: var(--space-sm);
+    }
+    .strategy-diff {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* Price guide */
+    .price-guide {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+    .guide-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      font-size: 0.875rem;
+    }
+    .guide-item .badge { min-width: 90px; justify-content: center; }
+
+    /* Plans summary (dashboard) */
+    .plans-summary {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .plan-summary-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+      font-size: 0.8125rem;
+    }
+    .plan-summary-total {
+      padding: 12px;
+      background: var(--primary-bg);
+      border-radius: var(--radius-sm);
+      font-size: 0.875rem;
+      text-align: center;
+    }
+
+    /* Dashboard tips */
+    .dashboard-tips {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .tip-item {
+      padding: 10px 14px;
+      background: var(--warning-bg);
+      border-radius: var(--radius-sm);
+      font-size: 0.8125rem;
+      line-height: 1.5;
+    }
+
+    /* Price input */
+    .price-input {
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: 'Inter', sans-serif;
+      transition: border-color var(--transition-fast);
+    }
+    .price-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.12);
+    }
+
+    @media (max-width: 768px) {
+      .calendar-legend { display: none; }
+      .strategies-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Sidebar Overlay (Mobile) -->
+    <div class="sidebar-overlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">✈️</div>
+        <div>
+          <div class="sidebar-title">Milhas Acker</div>
+          <div class="sidebar-subtitle">Controle de Milhas</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">Visão Geral</div>
+        <div class="nav-item active" data-view="dashboard">
+          <span class="nav-item-icon">📊</span>
+          <span class="nav-item-label">Dashboard</span>
+        </div>
+
+        <div class="nav-section-label">Referência</div>
+        <div class="nav-item" data-view="calendar">
+          <span class="nav-item-icon">📅</span>
+          <span class="nav-item-label">Calendário</span>
+        </div>
+        <div class="nav-item" data-view="prices">
+          <span class="nav-item-icon">💰</span>
+          <span class="nav-item-label">Tabela de Preços</span>
+        </div>
+        <div class="nav-item" data-view="simulator">
+          <span class="nav-item-icon">🔢</span>
+          <span class="nav-item-label">Simulador</span>
+        </div>
+
+        <div class="nav-section-label">Meu Controle</div>
+        <div class="nav-item" data-view="balance">
+          <span class="nav-item-icon">✈️</span>
+          <span class="nav-item-label">Controle de Saldo</span>
+        </div>
+        <div class="nav-item" data-view="plans">
+          <span class="nav-item-icon">📋</span>
+          <span class="nav-item-label">Planos Ativos</span>
+        </div>
+        <div class="nav-item" data-view="alerts">
+          <span class="nav-item-icon">🔔</span>
+          <span class="nav-item-label">Alertas</span>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-toggle">
+          <button class="user-toggle-btn active" data-user="jacson">👤 Jacson</button>
+          <button class="user-toggle-btn" data-user="ana">👩 Ana</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="main-header">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <button class="mobile-menu-btn">☰</button>
+          <h1 class="header-title">
+            <span class="header-title-icon">📊</span>
+            <span class="header-title-text">Dashboard</span>
+          </h1>
+        </div>
+        <div class="header-actions">
+          <span id="header-user-name" style="font-size:0.875rem; font-weight:600; color:var(--text-secondary);">👤 Jacson</span>
+        </div>
+      </header>
+
+      <!-- Page Content -->
+      <div class="page-content">
+        <!-- Dashboard -->
+        <section class="view-section active" id="view-dashboard">
+          <div id="dashboard-content"></div>
+        </section>
+
+        <!-- Calendário -->
+        <section class="view-section" id="view-calendar">
+          <div id="calendar-content"></div>
+        </section>
+
+        <!-- Tabela de Preços -->
+        <section class="view-section" id="view-prices">
+          <div id="prices-content"></div>
+        </section>
+
+        <!-- Simulador -->
+        <section class="view-section" id="view-simulator">
+          <div id="simulator-content"></div>
+        </section>
+
+        <!-- Controle de Saldo -->
+        <section class="view-section" id="view-balance">
+          <div id="balance-content"></div>
+        </section>
+
+        <!-- Planos Ativos -->
+        <section class="view-section" id="view-plans">
+          <div id="plans-content"></div>
+        </section>
+
+        <!-- Alertas -->
+        <section class="view-section" id="view-alerts">
+          <div id="alerts-content"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts (order matters) -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/prices.js"></script>
+  <script src="js/balance.js"></script>
+  <script src="js/plans.js"></script>
+  <script src="js/simulator.js"></script>
+  <script src="js/alerts.js"></script>
+  <script src="js/sheets.js"></script>
+</body>
+</html>
