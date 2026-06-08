@@ -1,7 +1,84 @@
 /* ============================================
    MILHAS ACKER — Módulo: Alertas
-   Promoções ativas com countdown e classificação de atratividade
+   Promoções ativas com countdown, classificação de atratividade e estimativa de CPM
    ============================================ */
+
+// Função auxiliar para obter o preço atual de um programa (usando manual ou auto)
+function getProgramCurrentPrice(programId) {
+  const currentPrices = AppState.getCurrentPrices();
+  const cp = currentPrices[programId];
+  const manualPrice = cp ? cp.price : null;
+  const autoPrices = (typeof LIVE_OFFERS_METADATA !== 'undefined' && LIVE_OFFERS_METADATA.currentMarketPrices) || {};
+  const autoPrice = autoPrices[programId] || getProgramById(programId)?.goodPrice || 35.00;
+  return manualPrice !== null ? manualPrice : autoPrice;
+}
+
+// Extrai custo do milheiro do texto usando regexes
+function extractCPMFromText(text) {
+  if (!text) return null;
+  // Limpa entidades HTML comuns que podem quebrar a regex
+  const cleanText = text.replace(/&#8211;/g, '-').replace(/&ndash;/g, '-');
+  
+  const regexes = [
+    /milheiro\s+(?:a\s+partir\s+de|por|a)?\s*r\$\s*(\d+[,.]\d{2})/i,
+    /cpm\s*(?:de)?\s*r\$\s*(\d+[,.]\d{2})/i,
+    /custo\s+de\s*r\$\s*(\d+[,.]\d{2})\s+por\s+mil/i,
+    /r\$\s*(\d+[,.]\d{2})\s+(?:o|por)\s+milheiro/i
+  ];
+  
+  for (let reg of regexes) {
+    const match = cleanText.match(reg);
+    if (match) {
+      return match[1].replace(',', '.');
+    }
+  }
+  return null;
+}
+
+// Calcula ou extrai o CPM estimado da oferta
+function calculateAlertCPM(alert) {
+  // 1. CPM informado manualmente
+  if (alert.cpm) {
+    return {
+      value: parseFloat(alert.cpm),
+      type: 'manual',
+      explanation: 'Preço informado manualmente'
+    };
+  }
+
+  // 2. Extração via texto do título ou descrição
+  const text = ((alert.title || "") + " " + (alert.description || "")).toLowerCase();
+  const extracted = extractCPMFromText(text);
+  if (extracted) {
+    return {
+      value: parseFloat(extracted),
+      type: 'extracted',
+      explanation: 'Custo por milheiro extraído do texto da oferta'
+    };
+  }
+
+  // 3. Estimativa de transferências bonificadas Livelo / Esfera
+  const hasLivelo = text.includes("livelo");
+  const hasEsfera = text.includes("esfera");
+  if (hasLivelo || hasEsfera) {
+    const originProgram = hasLivelo ? 'livelo' : 'esfera';
+    const bonusMatch = text.match(/(\d+)\s*%/); // Captura o primeiro bônus em % encontrado
+    if (bonusMatch) {
+      const bonusPercent = parseFloat(bonusMatch[1]);
+      if (bonusPercent > 0 && bonusPercent <= 400) {
+        const originPrice = getProgramCurrentPrice(originProgram);
+        const finalCPM = originPrice / (1 + (bonusPercent / 100));
+        return {
+          value: parseFloat(finalCPM.toFixed(2)),
+          type: 'calculated',
+          explanation: `Estimativa via transferência bonificada. Custo de origem (${hasLivelo ? 'Livelo' : 'Esfera'}): R$ ${originPrice.toFixed(2)} / Fator bônus: ${1 + (bonusPercent / 100)} (+${bonusPercent}% bônus)`
+        };
+      }
+    }
+  }
+
+  return null;
+}
 
 // Função heurística para determinar a atratividade/rating de um alerta
 function getAlertRating(alert) {
@@ -169,6 +246,10 @@ function renderAlerts() {
             </select>
           </div>
           <div class="form-group">
+            <label>Custo por Milheiro (CPM) Estimado (R$ - opcional)</label>
+            <input type="number" id="alert-cpm" placeholder="Ex: 17.50" step="0.10" min="0">
+          </div>
+          <div class="form-group">
             <label>Programa (opcional)</label>
             <select id="alert-program">
               <option value="">Todos / Geral</option>
@@ -204,6 +285,44 @@ function renderAlertListItem(alert, isExpired = false) {
     `<span class="alert-countdown-value text-primary" style="background:var(--primary-bg); padding:2px 8px; border-radius:12px;">⏰ ${alert._daysLeft} dias restantes</span>`
   ) : '';
 
+  // Processamento e visualização de CPM
+  const cpmInfo = calculateAlertCPM(alert);
+  let cpmDisplay = '';
+  if (cpmInfo) {
+    let cpmClass = 'cpm-style-neutral';
+    
+    // Comparar o CPM da promoção com os preços do programa associado para avaliar se é bom
+    const compProg = prog || (alert.title.toLowerCase().includes("smiles") ? getProgramById("smiles") :
+                             alert.title.toLowerCase().includes("latam") ? getProgramById("latam") :
+                             alert.title.toLowerCase().includes("azul") ? getProgramById("azul") : null);
+    
+    if (compProg) {
+      if (cpmInfo.value <= compProg.bestPrice) {
+        cpmClass = 'cpm-style-excellent';
+      } else if (cpmInfo.value <= compProg.goodPrice) {
+        cpmClass = 'cpm-style-good';
+      } else if (cpmInfo.value >= compProg.regularPrice) {
+        cpmClass = 'cpm-style-bad';
+      }
+    } else {
+      // Regras heurísticas gerais de mercado
+      if (cpmInfo.value <= 14.0) {
+        cpmClass = 'cpm-style-excellent';
+      } else if (cpmInfo.value <= 17.5) {
+        cpmClass = 'cpm-style-good';
+      } else if (cpmInfo.value >= 30.0) {
+        cpmClass = 'cpm-style-bad';
+      }
+    }
+
+    cpmDisplay = `
+      <div class="alert-cpm-badge ${cpmClass}" title="${cpmInfo.explanation}">
+        <span class="cpm-label">CPM Final</span>
+        <span class="cpm-value">R$ ${cpmInfo.value.toFixed(2).replace('.', ',')}</span>
+      </div>
+    `;
+  }
+
   return `
     <div class="alert-list-item rating-${rating} ${isExpired ? 'expired' : ''}">
       <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start; min-width: 130px; flex-shrink: 0;">
@@ -231,6 +350,8 @@ function renderAlertListItem(alert, isExpired = false) {
         </div>
       </div>
 
+      ${cpmDisplay}
+
       <div class="alert-list-actions">
         ${!isAuto ? `
           <button class="btn btn-danger btn-icon" onclick="deleteAlert('${alert.id}')" title="Remover" style="width:28px; height:28px; font-size:0.875rem;">✕</button>
@@ -250,6 +371,8 @@ function saveAlert() {
   const title = document.getElementById('alert-title').value.trim();
   const description = document.getElementById('alert-desc').value.trim();
   const rating = document.getElementById('alert-rating').value;
+  const cpmValue = document.getElementById('alert-cpm').value;
+  const cpm = cpmValue ? parseFloat(cpmValue) : null;
   const programId = document.getElementById('alert-program').value;
   const startDate = document.getElementById('alert-start').value;
   const endDate = document.getElementById('alert-end').value;
@@ -263,6 +386,7 @@ function saveAlert() {
     title,
     description,
     rating,
+    cpm,
     programId,
     startDate,
     endDate,
@@ -277,6 +401,7 @@ function saveAlert() {
   document.getElementById('alert-title').value = '';
   document.getElementById('alert-desc').value = '';
   document.getElementById('alert-rating').value = 'neutral';
+  document.getElementById('alert-cpm').value = '';
   document.getElementById('alert-program').value = '';
   document.getElementById('alert-end').value = '';
 }
