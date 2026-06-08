@@ -83,14 +83,14 @@ function renderCalendar() {
           <tbody>
             ${PROGRAMS.map(p => `
               <tr>
-                <td>
+                <td data-label="Programa">
                   <span class="program-badge">
                     <span class="program-dot" style="background:${p.color}"></span>
                     ${p.icon} ${p.name}
                   </span>
                 </td>
-                <td class="fw-600">${p.anniversary || '—'}</td>
-                <td class="text-muted" style="max-width:300px">${p.source}</td>
+                <td data-label="Aniversário" class="fw-600">${p.anniversary || '—'}</td>
+                <td data-label="O que esperar" class="text-muted" style="max-width:300px">${p.source}</td>
               </tr>
             `).join('')}
           </tbody>

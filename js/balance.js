@@ -198,12 +198,12 @@ function showProgramHistory(programId) {
               const moveType = MOVEMENT_TYPES.find(m => m.id === h.type);
               const isPositive = ['compra', 'transferencia_entrada', 'bonus', 'clube', 'cartao'].includes(h.type);
               return `<tr>
-                <td>${formatDate(h.date)}</td>
-                <td><span style="color:${moveType?.color || '#999'}">${moveType?.icon || ''} ${moveType?.label || h.type}</span></td>
-                <td class="${isPositive ? 'text-success' : 'text-danger'} fw-600">${isPositive ? '+' : '-'}${formatNumber(h.quantity)}</td>
-                <td>${h.cpm > 0 ? formatCurrency(h.cpm) : '—'}</td>
-                <td class="text-muted">${h.note || '—'}</td>
-                <td>
+                <td data-label="Data">${formatDate(h.date)}</td>
+                <td data-label="Tipo"><span style="color:${moveType?.color || '#999'}">${moveType?.icon || ''} ${moveType?.label || h.type}</span></td>
+                <td data-label="Quantidade" class="${isPositive ? 'text-success' : 'text-danger'} fw-600">${isPositive ? '+' : '-'}${formatNumber(h.quantity)}</td>
+                <td data-label="CPM">${h.cpm > 0 ? formatCurrency(h.cpm) : '—'}</td>
+                <td data-label="Obs.">${h.note || '—'}</td>
+                <td data-label="Ações">
                   <button class="btn btn-danger btn-sm" onclick="deleteMovement('${h.id}', '${programId}')" title="Excluir">🗑️</button>
                 </td>
               </tr>`;

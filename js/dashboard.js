@@ -169,12 +169,12 @@ function renderRecentHistory(userId) {
             const moveType = MOVEMENT_TYPES.find(m => m.id === h.type);
             const isPositive = ['compra', 'transferencia_entrada', 'bonus', 'clube', 'cartao'].includes(h.type);
             return `<tr>
-              <td>${formatDate(h.date)}</td>
-              <td><span class="program-badge"><span class="program-dot" style="background:${prog?.color || '#999'}"></span>${prog?.name || h.programId}</span></td>
-              <td><span style="color:${moveType?.color || '#999'}">${moveType?.icon || ''} ${moveType?.label || h.type}</span></td>
-              <td class="${isPositive ? 'text-success' : 'text-danger'} fw-600">${isPositive ? '+' : '-'}${formatNumber(h.quantity)}</td>
-              <td>${h.cpm > 0 ? formatCurrency(h.cpm) : '—'}</td>
-              <td class="text-muted">${h.note || '—'}</td>
+              <td data-label="Data">${formatDate(h.date)}</td>
+              <td data-label="Programa"><span class="program-badge"><span class="program-dot" style="background:${prog?.color || '#999'}"></span>${prog?.name || h.programId}</span></td>
+              <td data-label="Tipo"><span style="color:${moveType?.color || '#999'}">${moveType?.icon || ''} ${moveType?.label || h.type}</span></td>
+              <td data-label="Quantidade" class="${isPositive ? 'text-success' : 'text-danger'} fw-600">${isPositive ? '+' : '-'}${formatNumber(h.quantity)}</td>
+              <td data-label="CPM">${h.cpm > 0 ? formatCurrency(h.cpm) : '—'}</td>
+              <td data-label="Observação" class="text-muted">${h.note || '—'}</td>
             </tr>`;
           }).join('')}
         </tbody>

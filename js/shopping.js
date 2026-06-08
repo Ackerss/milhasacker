@@ -205,11 +205,11 @@ function renderShopping() {
           <tbody>
             ${SHOPPING_PARTNERS.map(p => `
               <tr>
-                <td style="font-weight:600;"><span style="font-size:1.25rem; margin-right:8px;">${p.logo}</span>${p.name}</td>
-                <td class="text-muted">${p.regularPoints}</td>
-                <td class="text-success fw-600">${p.bestPoints}</td>
-                <td><span class="badge badge-primary">${p.bestPointsProgram}</span></td>
-                <td class="text-muted" style="font-size:0.8125rem; max-width:300px; white-space:normal; line-height:1.4;">${p.notes}</td>
+                <td data-label="Parceiro" style="font-weight:600;"><span style="font-size:1.25rem; margin-right:8px;">${p.logo}</span>${p.name}</td>
+                <td data-label="Acúmulo Padrão" class="text-muted">${p.regularPoints}</td>
+                <td data-label="Melhor Histórico" class="text-success fw-600">${p.bestPoints}</td>
+                <td data-label="Programa do Recorde"><span class="badge badge-primary">${p.bestPointsProgram}</span></td>
+                <td data-label="Nota / Estratégia" class="text-muted" style="font-size:0.8125rem; max-width:300px; white-space:normal; line-height:1.4;">${p.notes}</td>
               </tr>
             `).join('')}
           </tbody>

@@ -159,7 +159,8 @@ input:focus, select:focus, textarea:focus {
   left: 0;
   bottom: 0;
   z-index: 100;
-  transition: transform var(--transition-slow);
+  transition: width var(--transition-slow), box-shadow var(--transition-slow), transform var(--transition-slow);
+  overflow: hidden;
 }
 
 .sidebar-header {
@@ -168,6 +169,7 @@ input:focus, select:focus, textarea:focus {
   display: flex;
   align-items: center;
   gap: var(--space-md);
+  transition: padding var(--transition-slow);
 }
 
 .sidebar-logo {
@@ -200,6 +202,7 @@ input:focus, select:focus, textarea:focus {
   flex: 1;
   padding: var(--space-md);
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .nav-section-label {
@@ -209,6 +212,7 @@ input:focus, select:focus, textarea:focus {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   padding: var(--space-md) var(--space-md) var(--space-sm);
+  transition: all var(--transition-slow);
 }
 
 .nav-item {
@@ -221,7 +225,7 @@ input:focus, select:focus, textarea:focus {
   font-size: 0.9375rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: padding var(--transition-slow), background var(--transition-fast), color var(--transition-fast);
   margin-bottom: 2px;
   user-select: none;
   position: relative;
@@ -261,6 +265,7 @@ input:focus, select:focus, textarea:focus {
 .sidebar-footer {
   padding: var(--space-md) var(--space-lg);
   border-top: 1px solid var(--border-light);
+  transition: padding var(--transition-slow);
 }
 
 .user-toggle {
@@ -269,6 +274,7 @@ input:focus, select:focus, textarea:focus {
   border-radius: var(--radius-full);
   padding: 3px;
   gap: 3px;
+  transition: all var(--transition-slow);
 }
 
 .user-toggle-btn {
@@ -297,6 +303,115 @@ input:focus, select:focus, textarea:focus {
   flex: 1;
   margin-left: var(--sidebar-width);
   min-height: 100vh;
+  transition: margin-left var(--transition-slow);
+}
+
+/* --- Desktop Collapsible Sidebar Overrides --- */
+@media (min-width: 769px) {
+  .sidebar {
+    width: var(--sidebar-collapsed);
+  }
+  .sidebar:hover {
+    width: var(--sidebar-width);
+    box-shadow: var(--shadow-xl);
+  }
+  .main-content {
+    margin-left: var(--sidebar-collapsed);
+  }
+  
+  /* Text and details fading */
+  .sidebar-header > div:not(.sidebar-logo),
+  .nav-item-label,
+  .user-toggle-btn .user-name {
+    opacity: 0;
+    width: 0;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: opacity var(--transition-fast) ease, width var(--transition-slow) ease;
+    pointer-events: none;
+  }
+  
+  .sidebar:hover .sidebar-header > div:not(.sidebar-logo) {
+    opacity: 1;
+    width: 150px;
+    pointer-events: auto;
+    transition-delay: 80ms;
+  }
+  .sidebar:hover .nav-item-label {
+    opacity: 1;
+    width: 140px;
+    pointer-events: auto;
+    transition-delay: 80ms;
+  }
+  .sidebar:hover .user-toggle-btn .user-name {
+    opacity: 1;
+    width: 60px;
+    pointer-events: auto;
+    transition-delay: 80ms;
+  }
+
+  /* Padding adjustments to center items when collapsed */
+  .sidebar-header {
+    padding: var(--space-md) 15px;
+  }
+  .sidebar:hover .sidebar-header {
+    padding: var(--space-lg);
+  }
+
+  .nav-item {
+    padding: 11px 23px; /* Centers 24px icon in 70px content space */
+  }
+  .sidebar:hover .nav-item {
+    padding: 11px var(--space-md);
+  }
+
+  .sidebar-footer {
+    padding: var(--space-md) 12px;
+  }
+  .sidebar:hover .sidebar-footer {
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  /* User toggle vertical stacking when collapsed */
+  .user-toggle {
+    flex-direction: column;
+    align-items: center;
+    border-radius: var(--radius-md);
+    padding: 6px;
+    gap: 6px;
+  }
+  .sidebar:hover .user-toggle {
+    flex-direction: row;
+    border-radius: var(--radius-full);
+    padding: 3px;
+    gap: 3px;
+  }
+  .user-toggle-btn {
+    width: 100%;
+    padding: 8px 0;
+  }
+  .sidebar:hover .user-toggle-btn {
+    padding: 8px 16px;
+  }
+
+  /* Section label transforms into a dividing line */
+  .nav-section-label {
+    height: 1px;
+    padding: 0;
+    margin: var(--space-md) var(--space-md) var(--space-sm);
+    background: var(--border-light);
+    overflow: hidden;
+    text-indent: -9999px;
+    white-space: nowrap;
+  }
+  .sidebar:hover .nav-section-label {
+    height: auto;
+    padding: var(--space-md) var(--space-md) var(--space-sm);
+    margin: 0;
+    background: transparent;
+    text-indent: 0;
+  }
 }
 
 .main-header {
@@ -1186,6 +1301,7 @@ tbody tr:last-child td {
 
 @media (max-width: 768px) {
   .sidebar {
+    width: var(--sidebar-width);
     transform: translateX(-100%);
   }
 
@@ -1207,6 +1323,50 @@ tbody tr:last-child td {
 
   .page-content {
     padding: var(--space-md);
+  }
+
+  /* Responsive tables converted to cards */
+  .table-wrapper table, 
+  .table-wrapper thead, 
+  .table-wrapper tbody, 
+  .table-wrapper th, 
+  .table-wrapper td, 
+  .table-wrapper tr {
+    display: block;
+  }
+
+  .table-wrapper thead {
+    display: none;
+  }
+
+  .table-wrapper tr {
+    margin-bottom: var(--space-md);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--surface);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .table-wrapper td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-light);
+    text-align: right;
+  }
+
+  .table-wrapper td:last-child {
+    border-bottom: none;
+  }
+
+  .table-wrapper td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-align: left;
+    font-size: 0.8125rem;
   }
 
   .calendar-grid {

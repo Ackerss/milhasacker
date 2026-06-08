@@ -22,7 +22,6 @@ function renderPrices() {
           <thead>
             <tr>
               <th>Programa</th>
-              <th>Tipo</th>
               <th style="text-align:center">🏆 Melhor Preço</th>
               <th style="text-align:center">👍 Preço Bom</th>
               <th style="text-align:center">📌 Regular</th>
@@ -39,17 +38,17 @@ function renderPrices() {
 
               return `
                 <tr>
-                  <td>
+                  <td data-label="Programa">
                     <span class="program-badge">
                       <span class="program-dot" style="background:${p.color}"></span>
                       ${p.icon} ${p.name}
+                      <span style="font-size: 0.65rem; color: var(--text-muted); margin-left: 6px;">(${p.type === 'aerea' ? '✈️ Aérea' : '🔄 Pontos'})</span>
                     </span>
                   </td>
-                  <td><span class="badge ${p.type === 'aerea' ? 'badge-primary' : 'badge-warning'}">${p.type === 'aerea' ? '✈️ Aérea' : '🔄 Pontos'}</span></td>
-                  <td style="text-align:center" class="text-success fw-700">${formatCurrency(p.bestPrice)}</td>
-                  <td style="text-align:center" class="fw-600">${formatCurrency(p.goodPrice)}</td>
-                  <td style="text-align:center" class="text-muted">${formatCurrency(p.regularPrice)}</td>
-                  <td style="text-align:center">
+                  <td data-label="🏆 Melhor Preço" style="text-align:center" class="text-success fw-700">${formatCurrency(p.bestPrice)}</td>
+                  <td data-label="👍 Preço Bom" style="text-align:center" class="fw-600">${formatCurrency(p.goodPrice)}</td>
+                  <td data-label="📌 Regular" style="text-align:center" class="text-muted">${formatCurrency(p.regularPrice)}</td>
+                  <td data-label="💲 Preço Atual" style="text-align:center">
                     <div class="price-input-wrapper">
                       <input type="number" 
                         class="price-input" 
@@ -62,12 +61,12 @@ function renderPrices() {
                         style="width:90px; text-align:center; padding:6px 8px; font-weight:600;">
                     </div>
                   </td>
-                  <td style="text-align:center">
+                  <td data-label="Status" style="text-align:center">
                     <div class="price-gauge">
                       <span class="badge ${status.class}">${status.label}</span>
                     </div>
                   </td>
-                  <td class="text-muted" style="font-size:0.8rem; max-width:220px;">${p.source}</td>
+                  <td data-label="Fonte/Estratégia" class="text-muted" style="font-size:0.8rem; max-width:220px;">${p.source}</td>
                 </tr>
               `;
             }).join('')}
