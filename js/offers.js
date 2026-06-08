@@ -4,8 +4,17 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-06-08T14:49:51.996Z",
-  status: "success"
+  lastUpdated: "2026-06-08T15:13:03.671Z",
+  status: "success",
+  currentMarketPrices: {
+  "latam": 23,
+  "smiles": 17.5,
+  "azul": 11.31,
+  "livelo": 35,
+  "esfera": 35,
+  "aadvantage": 130,
+  "tap": 44
+}
 };
 
 const LIVE_OFFERS = [

@@ -33,8 +33,15 @@ function renderPrices() {
           <tbody>
             ${PROGRAMS.map(p => {
               const cp = currentPrices[p.id];
-              const currentPrice = cp ? cp.price : null;
-              const status = currentPrice ? getPriceStatus(currentPrice, p) : { label: 'Inserir', class: 'badge-info', gauge: 0, gaugeClass: 'good' };
+              const manualPrice = cp ? cp.price : null;
+
+              // Fallback chain: Manual -> Auto from RSS -> Good Price (static reference)
+              const autoPrices = (typeof LIVE_OFFERS_METADATA !== 'undefined' && LIVE_OFFERS_METADATA.currentMarketPrices) || {};
+              const autoPrice = autoPrices[p.id] || p.goodPrice;
+              const currentPrice = manualPrice !== null ? manualPrice : autoPrice;
+              const isAuto = manualPrice === null;
+
+              const status = getPriceStatus(currentPrice, p);
 
               return `
                 <tr>
@@ -49,16 +56,17 @@ function renderPrices() {
                   <td data-label="👍 Preço Bom" style="text-align:center" class="fw-600">${formatCurrency(p.goodPrice)}</td>
                   <td data-label="📌 Regular" style="text-align:center" class="text-muted">${formatCurrency(p.regularPrice)}</td>
                   <td data-label="💲 Preço Atual" style="text-align:center">
-                    <div class="price-input-wrapper">
+                    <div class="price-input-wrapper" style="display:flex; flex-direction:column; align-items:center; gap:2px;">
                       <input type="number" 
                         class="price-input" 
                         id="price-${p.id}" 
                         placeholder="R$" 
-                        value="${currentPrice || ''}" 
+                        value="${manualPrice || ''}" 
                         onchange="updateCurrentPrice('${p.id}', this.value)"
                         step="0.50"
                         min="0"
-                        style="width:90px; text-align:center; padding:6px 8px; font-weight:600;">
+                        style="width:90px; text-align:center; padding:6px 8px; font-weight:600; ${isAuto ? 'color: var(--primary); border-color: var(--primary-lighter); background: var(--primary-bg);' : ''}">
+                      ${isAuto ? `<span style="font-size:0.625rem; color:var(--primary); font-weight:600;">🤖 Auto (R$ ${autoPrice.toFixed(2)})</span>` : `<span style="font-size:0.625rem; color:var(--text-muted); font-weight:600;">👤 Manual</span>`}
                     </div>
                   </td>
                   <td data-label="Status" style="text-align:center">
@@ -118,9 +126,14 @@ function renderPrices() {
 }
 
 function updateCurrentPrice(programId, value) {
-  if (value && !isNaN(value) && parseFloat(value) > 0) {
+  if (value === '' || value === null || isNaN(value) || parseFloat(value) <= 0) {
+    const prices = AppState.getCurrentPrices();
+    delete prices[programId];
+    localStorage.setItem(AppState.KEYS.CURRENT_PRICES, JSON.stringify(prices));
+    showToast(`Preço do ${getProgramById(programId)?.name} revertido para automático`);
+  } else {
     AppState.setCurrentPrice(programId, value);
-    showToast(`Preço atualizado para ${getProgramById(programId)?.name}`);
+    showToast(`Preço manual de ${getProgramById(programId)?.name} atualizado`);
   }
   // Re-render to update status badges
   renderPrices();
@@ -133,6 +146,7 @@ function renderPricesChart() {
   if (window._chartPrices) window._chartPrices.destroy();
 
   const currentPrices = AppState.getCurrentPrices();
+  const autoPrices = (typeof LIVE_OFFERS_METADATA !== 'undefined' && LIVE_OFFERS_METADATA.currentMarketPrices) || {};
 
   window._chartPrices = new Chart(ctx, {
     type: 'bar',
@@ -159,7 +173,12 @@ function renderPricesChart() {
         },
         {
           label: 'Preço Atual',
-          data: PROGRAMS.map(p => currentPrices[p.id]?.price || 0),
+          data: PROGRAMS.map(p => {
+            const cp = currentPrices[p.id];
+            const manualPrice = cp ? cp.price : null;
+            const autoPrice = autoPrices[p.id] || p.goodPrice;
+            return manualPrice !== null ? manualPrice : autoPrice;
+          }),
           backgroundColor: '#4361EE33',
           borderColor: '#4361EE',
           borderWidth: 2,

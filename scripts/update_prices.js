@@ -124,6 +124,96 @@ function parseExpiryDate(desc) {
   return null;
 }
 
+function extractPriceFromContent(title, desc, programId) {
+  const text = (title + ' ' + desc).toLowerCase();
+  
+  // Padrões comuns de citação de Custo por Milheiro (CPM)
+  const regexes = [
+    /milheiro\s+a\s+partir\s+de\s+r\$\s*(\d+(?:[.,]\d+)?)/i,
+    /r\$\s*(\d+(?:[.,]\d+)?)\s+o\s+milheiro/i,
+    /r\$\s*(\d+(?:[.,]\d+)?)\s+por\s+milheiro/i,
+    /milheiro\s+(?:por|a)\s+r\$\s*(\d+(?:[.,]\d+)?)/i,
+    /pontos\s+a\s+r\$\s*(\d+(?:[.,]\d+)?)/i,
+    /milhas\s+a\s+r\$\s*(\d+(?:[.,]\d+)?)/i,
+    /custo\s+de\s+r\$\s*(\d+(?:[.,]\d+)?)\s+por/i,
+    /milheiro\s+sai\s+a\s+r\$\s*(\d+(?:[.,]\d+)?)/i,
+    /cpm\s+(?:de\s+)?r\$\s*(\d+(?:[.,]\d+)?)/i,
+  ];
+
+  for (const regex of regexes) {
+    const match = text.match(regex);
+    if (match) {
+      const val = parseFloat(match[1].replace(',', '.'));
+      if (val > 0 && val < 200) {
+        return val;
+      }
+    }
+  }
+
+  // Desconto na compra de pontos Livelo/Esfera (base R$ 70)
+  if (programId === 'livelo' || programId === 'esfera') {
+    const discountRegex = /(\d+)%\s*(?:de\s*)?desconto\s+na\s+compra/i;
+    const matchDiscount = text.match(discountRegex);
+    if (matchDiscount) {
+      const discount = parseInt(matchDiscount[1]);
+      if (discount > 0 && discount < 100) {
+        return 70 * (1 - discount / 100);
+      }
+    }
+    
+    const offRegex = /(\d+)%\s*off/i;
+    const matchOff = text.match(offRegex);
+    if (matchOff) {
+      const discount = parseInt(matchOff[1]);
+      if (discount > 0 && discount < 100) {
+        return 70 * (1 - discount / 100);
+      }
+    }
+  }
+
+  return null;
+}
+
+function attributePriceToProgram(price, text) {
+  const programsFound = [];
+  if (text.includes('livelo')) programsFound.push('livelo');
+  if (text.includes('esfera')) programsFound.push('esfera');
+  if (text.includes('smiles')) programsFound.push('smiles');
+  if (text.includes('latam') || text.includes('multiplus')) programsFound.push('latam');
+  if (text.includes('tudoazul') || text.includes('azul fidelidade') || text.includes('clube azul') || text.includes(' azul ')) programsFound.push('azul');
+  if (text.includes('tap') || text.includes('miles&go')) programsFound.push('tap');
+  if (text.includes('aadvantage')) programsFound.push('aadvantage');
+
+  if (programsFound.length === 0) return null;
+  if (programsFound.length === 1) return programsFound[0];
+
+  // Heurísticas de faixa de preço se houver múltiplos programas citados
+  if (price <= 13.50) {
+    if (programsFound.includes('azul')) return 'azul';
+    if (programsFound.includes('smiles')) return 'smiles';
+  }
+  if (price > 13.50 && price <= 18.50) {
+    if (programsFound.includes('smiles')) return 'smiles';
+    if (programsFound.includes('azul')) return 'azul';
+    if (programsFound.includes('latam')) return 'latam';
+  }
+  if (price > 18.50 && price <= 24.50) {
+    if (programsFound.includes('latam')) return 'latam';
+    if (programsFound.includes('smiles')) return 'smiles';
+  }
+  if (price > 24.50 && price <= 38.00) {
+    if (programsFound.includes('livelo') && (text.includes('compra') || text.includes('livelo mais'))) return 'livelo';
+    if (programsFound.includes('esfera') && text.includes('compra')) return 'esfera';
+    if (programsFound.includes('livelo')) return 'livelo';
+    if (programsFound.includes('esfera')) return 'esfera';
+  }
+  if (price > 90.00) {
+    if (programsFound.includes('aadvantage')) return 'aadvantage';
+  }
+
+  return programsFound[0];
+}
+
 async function main() {
   try {
     console.log('Buscando feed RSS do Melhores Cartões...');
@@ -135,6 +225,20 @@ async function main() {
     const now = new Date();
     const activeOffers = [];
 
+    // Fallback de preços de mercado caso não encontre cotação nas notícias
+    const fallbackPrices = {
+      latam: 23.00,
+      smiles: 17.50,
+      azul: 13.00,
+      livelo: 35.00,
+      esfera: 35.00,
+      aadvantage: 130.00,
+      tap: 44.00
+    };
+
+    const currentMarketPrices = { ...fallbackPrices };
+
+    // Mapear primeiro as ofertas
     rawItems.forEach((item, idx) => {
       // Filtrar apenas posts dos últimos 5 dias
       const diffTime = Math.abs(now - item.pubDate);
@@ -168,10 +272,31 @@ async function main() {
             programId: programId,
             startDate: startDate,
             endDate: endDate,
-            image: item.image, // Puxa do objeto mapeado pelo parseFeed
+            image: item.image,
             active: true,
-            isAuto: true // Marca que é um alerta automatizado
+            isAuto: true
           });
+        }
+      }
+    });
+
+    // Processar cotações das promoções do feed em ordem cronológica (do mais antigo para o mais recente)
+    // para que promoções mais novas sobrescrevam as mais antigas
+    const sortedItems = [...rawItems].reverse();
+    sortedItems.forEach(item => {
+      const titleLower = item.title.toLowerCase();
+      const keywords = ['bônus', 'desconto', 'transferência', 'milhas', 'pontos', 'promoção', 'cpm', 'compra', 'assine', 'aniversário', 'compre', 'cupom', 'cashback'];
+      const isPromo = keywords.some(kw => titleLower.includes(kw));
+
+      if (isPromo) {
+        const programId = identifyProgram(item.title, item.description);
+        const parsedPrice = extractPriceFromContent(item.title, item.description, programId);
+        if (parsedPrice) {
+          const progId = attributePriceToProgram(parsedPrice, titleLower);
+          if (progId) {
+            currentMarketPrices[progId] = parsedPrice;
+            console.log(`Preço extraído automaticamente para ${progId}: R$ ${parsedPrice.toFixed(2)}`);
+          }
         }
       }
     });
@@ -186,7 +311,8 @@ async function main() {
 
 const LIVE_OFFERS_METADATA = {
   lastUpdated: "${now.toISOString()}",
-  status: "success"
+  status: "success",
+  currentMarketPrices: ${JSON.stringify(currentMarketPrices, null, 2)}
 };
 
 const LIVE_OFFERS = ${JSON.stringify(activeOffers, null, 2)};
