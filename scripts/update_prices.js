@@ -69,11 +69,27 @@ function parseFeed(xml) {
       description = descMatch ? descMatch[1] : '';
     }
 
+    // Tentar extrair a primeira imagem relevante (tag <img>) do itemContent
+    let image = '';
+    const imgMatches = itemContent.match(/<img[^>]+src="([^">]+)"/g) || [];
+    for (const imgTag of imgMatches) {
+      const srcMatch = imgTag.match(/src="([^">]+)"/i);
+      if (srcMatch) {
+        const src = srcMatch[1];
+        // Ignorar emojis do WordPress, avatares ou favicons
+        if (!src.includes('s.w.org') && !src.includes('wp-smiley') && !src.includes('cropped-favicon') && !src.includes('gravatar')) {
+          image = src;
+          break;
+        }
+      }
+    }
+
     items.push({
       title: cleanHTML(title),
       link: cleanHTML(link),
       pubDate: new Date(pubDateStr),
-      description: cleanHTML(description)
+      description: cleanHTML(description),
+      image: image
     });
   }
 
@@ -152,6 +168,7 @@ async function main() {
             programId: programId,
             startDate: startDate,
             endDate: endDate,
+            image: item.image, // Puxa do objeto mapeado pelo parseFeed
             active: true,
             isAuto: true // Marca que é um alerta automatizado
           });
@@ -161,12 +178,16 @@ async function main() {
 
     console.log(`Filtrados ${activeOffers.length} alertas/promoções ativas.`);
 
-    // Gerar conteúdo do arquivo offers.js
+    // Gerar conteúdo do arquivo offers.js com metadados para controle do frontend
     const outputContent = `/* ============================================
    MILHAS ACKER — Ofertas em Tempo Real (Auto)
    Atualizado automaticamente via GitHub Actions
-   Última atualização: ${now.toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' })}
    ============================================ */
+
+const LIVE_OFFERS_METADATA = {
+  lastUpdated: "${now.toISOString()}",
+  status: "success"
+};
 
 const LIVE_OFFERS = ${JSON.stringify(activeOffers, null, 2)};
 `;

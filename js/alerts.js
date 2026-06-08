@@ -34,6 +34,8 @@ function renderAlerts() {
   });
 
   container.innerHTML = `
+    ${renderScrapStatusHeader()}
+
     <div class="flex justify-between items-center mb-lg">
       <div>
         <h3 style="font-size:1rem; font-weight:600;">🔔 Alertas e Promoções</h3>
@@ -114,41 +116,49 @@ function renderAlertCard(alert, isExpired = false) {
   const isAuto = !!alert.isAuto;
 
   return `
-    <div class="alert-card ${urgencyClass} ${isAuto ? 'auto-alert' : ''}">
-      <div class="alert-card-header">
-        <div class="alert-card-title">
-          ${isAuto ? '<span class="badge badge-info" style="margin-right: 6px; font-size: 0.65rem; padding: 2px 6px;">Auto</span>' : ''}
-          ${alert.title}
-        </div>
-        ${!isAuto ? `
-          <button class="btn btn-danger btn-icon" onclick="deleteAlert('${alert.id}')" title="Remover" style="width:28px; height:28px; font-size:0.875rem;">✕</button>
-        ` : `
-          <span style="font-size: 1.1rem; filter: grayscale(0.5); cursor: help;" title="Alerta automático atualizado via portal Melhores Cartões">🤖</span>
-        `}
-      </div>
-      <div class="alert-card-body">${alert.description || ''}</div>
-      ${prog ? `
-        <div style="margin-bottom:var(--space-sm);">
-          <span class="program-badge">
-            <span class="program-dot" style="background:${prog.color}"></span>
-            ${prog.icon} ${prog.name}
-          </span>
+    <div class="alert-card ${urgencyClass} ${isAuto ? 'auto-alert' : ''}" style="padding: ${alert.image ? '0 0 var(--space-lg) 0' : 'var(--space-lg)'}; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
+      ${alert.image ? `
+        <div style="width: 100%; height: 160px; overflow: hidden; position: relative; border-bottom: 1px solid var(--border-light);">
+          <img src="${alert.image}" style="width: 100%; height: 100%; object-fit: cover;" alt="${alert.title}">
         </div>
       ` : ''}
-      <div style="display:flex; justify-content:space-between; align-items:center;">
-        <div style="font-size:0.75rem; color:var(--text-muted);">
-          ${alert.startDate ? formatDate(alert.startDate) : ''} ${alert.endDate ? `→ ${formatDate(alert.endDate)}` : ''}
+      
+      <div style="${alert.image ? 'padding: var(--space-md) var(--space-lg) 0 var(--space-lg); flex: 1; display: flex; flex-direction: column;' : 'display: flex; flex-direction: column; height: 100%; flex: 1;'}">
+        <div class="alert-card-header">
+          <div class="alert-card-title">
+            ${isAuto ? '<span class="badge badge-info" style="margin-right: 6px; font-size: 0.65rem; padding: 2px 6px;">Auto</span>' : ''}
+            ${alert.title}
+          </div>
+          ${!isAuto ? `
+            <button class="btn btn-danger btn-icon" onclick="deleteAlert('${alert.id}')" title="Remover" style="width:28px; height:28px; font-size:0.875rem;">✕</button>
+          ` : `
+            <span style="font-size: 1.1rem; filter: grayscale(0.5); cursor: help;" title="Alerta automático atualizado via portal Melhores Cartões">🤖</span>
+          `}
         </div>
-        ${!isExpired && alert._daysLeft !== null ? `
-          <div class="alert-countdown">
-            <span class="alert-countdown-value ${alert._daysLeft <= 3 ? 'text-danger' : alert._daysLeft <= 7 ? 'text-warning' : ''}">
-              ${alert._daysLeft === 0 ? '🔥 Último dia!' : 
-                alert._daysLeft === 1 ? '⚡ 1 dia restante' : 
-                `⏰ ${alert._daysLeft} dias restantes`}
+        <div class="alert-card-body" style="flex: 1;">${alert.description || ''}</div>
+        ${prog ? `
+          <div style="margin-bottom:var(--space-sm);">
+            <span class="program-badge">
+              <span class="program-dot" style="background:${prog.color}"></span>
+              ${prog.icon} ${prog.name}
             </span>
           </div>
         ` : ''}
-        ${isExpired ? '<span class="badge badge-danger">Expirado</span>' : ''}
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top: auto;">
+          <div style="font-size:0.75rem; color:var(--text-muted);">
+            ${alert.startDate ? formatDate(alert.startDate) : ''} ${alert.endDate ? `→ ${formatDate(alert.endDate)}` : ''}
+          </div>
+          ${!isExpired && alert._daysLeft !== null ? `
+            <div class="alert-countdown">
+              <span class="alert-countdown-value ${alert._daysLeft <= 3 ? 'text-danger' : alert._daysLeft <= 7 ? 'text-warning' : ''}">
+                ${alert._daysLeft === 0 ? '🔥 Último dia!' : 
+                  alert._daysLeft === 1 ? '⚡ 1 dia restante' : 
+                  `⏰ ${alert._daysLeft} dias restantes`}
+              </span>
+            </div>
+          ` : ''}
+          ${isExpired ? '<span class="badge badge-danger">Expirado</span>' : ''}
+        </div>
       </div>
     </div>
   `;

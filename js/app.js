@@ -327,6 +327,33 @@ function showToast(message, type = 'success') {
   }, 3000);
 }
 
+// ============= Status de Scraping de Ofertas =============
+function renderScrapStatusHeader() {
+  if (typeof LIVE_OFFERS_METADATA === 'undefined' || !LIVE_OFFERS_METADATA.lastUpdated) {
+    return `<div style="padding: 12px 16px; border-radius: var(--radius-md); margin-bottom: var(--space-lg); font-size: 0.8125rem; font-weight: 500; border-left: 4px solid var(--danger); background: var(--danger-bg); color: var(--danger);">
+      ⚠️ <strong>Erro de Conexão:</strong> Não foi possível carregar as ofertas em tempo real. Verifique a sua conexão ou se o arquivo js/offers.js está presente.
+    </div>`;
+  }
+
+  const lastUpdate = new Date(LIVE_OFFERS_METADATA.lastUpdated);
+  const now = new Date();
+  const diffHours = Math.abs(now - lastUpdate) / (1000 * 60 * 60);
+
+  // Se a última atualização foi há mais de 24 horas, avisa que está desatualizado
+  if (diffHours > 24) {
+    return `<div style="padding: 12px 16px; border-radius: var(--radius-md); margin-bottom: var(--space-lg); font-size: 0.8125rem; font-weight: 500; border-left: 4px solid var(--danger); background: var(--danger-bg); color: var(--danger); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+      <span>⚠️ <strong>Atenção:</strong> O rastreador automático de ofertas está sem sincronizar há mais de 24 horas. As promoções abaixo podem estar desatualizadas. Última atualização: ${lastUpdate.toLocaleString('pt-BR')}.</span>
+      <span class="badge badge-danger">Desatualizado</span>
+    </div>`;
+  }
+
+  // Exibe status verde e sutil de "Atualizado"
+  return `<div style="font-size: 0.75rem; color: var(--text-muted); display: flex; align-items: center; gap: 6px; margin-bottom: var(--space-md); font-weight: 500;">
+    <span style="display:inline-block; width:6px; height:6px; background:var(--success); border-radius:50%; box-shadow: 0 0 6px var(--success);"></span>
+    Ofertas automáticas rastreadas em tempo real. Última verificação: ${lastUpdate.toLocaleString('pt-BR')} (Melhores Cartões)
+  </div>`;
+}
+
 // ============= Init =============
 document.addEventListener('DOMContentLoaded', () => {
   AppState.seedIfEmpty();

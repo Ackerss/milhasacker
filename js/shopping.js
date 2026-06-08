@@ -66,6 +66,8 @@ function renderShopping() {
   });
 
   container.innerHTML = `
+    ${renderScrapStatusHeader()}
+
     <!-- Top Row: Calculadora & Info -->
     <div class="dashboard-grid mb-xl">
       <!-- Calculadora Compre e Pontue -->
