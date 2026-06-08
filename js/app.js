@@ -263,6 +263,7 @@ function refreshView(viewId) {
     case 'plans': renderPlans(); break;
     case 'simulator': renderSimulator(); break;
     case 'alerts': renderAlerts(); break;
+    case 'settings': renderSettings(); break;
   }
 }
 

@@ -1,0 +1,38 @@
+name: Atualizar Ofertas e Promoções de Milhas
+
+on:
+  schedule:
+    # Roda a cada 12 horas (às 00:00 e 12:00 UTC)
+    - cron: '0 */12 * * *'
+  workflow_dispatch: # Permite rodar manualmente pelo painel do GitHub
+
+permissions:
+  contents: write # Permite que a Action faça commits no repositório
+
+jobs:
+  update-offers:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Executar Script de Scraping
+        run: node scripts/update_prices.js
+
+      - name: Commitar e Fazer Push das Mudanças
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/offers.js
+          if git diff --staged --quiet; then
+            echo "Nenhuma nova oferta detectada. Sem alterações."
+          else
+            git commit -m "chore(auto): atualizar ofertas em tempo real [skip ci]"
+            git push origin main
+          fi

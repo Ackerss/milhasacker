@@ -7,7 +7,9 @@ function renderAlerts() {
   const container = document.getElementById('alerts-content');
   if (!container) return;
 
-  const alerts = AppState.getAlerts();
+  // Combinar alertas locais do localStorage com alertas automáticos em tempo real
+  const localAlerts = AppState.getAlerts();
+  const alerts = [...(typeof LIVE_OFFERS !== 'undefined' ? LIVE_OFFERS : []), ...localAlerts];
   const now = new Date();
 
   // Classify alerts
@@ -109,12 +111,20 @@ function renderAlertCard(alert, isExpired = false) {
   const prog = alert.programId ? getProgramById(alert.programId) : null;
   const urgencyClass = alert._daysLeft !== null && alert._daysLeft <= 3 ? 'urgent' : 
                        alert._daysLeft !== null && alert._daysLeft <= 7 ? 'ending-soon' : '';
+  const isAuto = !!alert.isAuto;
 
   return `
-    <div class="alert-card ${urgencyClass}">
+    <div class="alert-card ${urgencyClass} ${isAuto ? 'auto-alert' : ''}">
       <div class="alert-card-header">
-        <div class="alert-card-title">${alert.title}</div>
-        <button class="btn btn-danger btn-icon" onclick="deleteAlert('${alert.id}')" title="Remover" style="width:28px; height:28px; font-size:0.875rem;">✕</button>
+        <div class="alert-card-title">
+          ${isAuto ? '<span class="badge badge-info" style="margin-right: 6px; font-size: 0.65rem; padding: 2px 6px;">Auto</span>' : ''}
+          ${alert.title}
+        </div>
+        ${!isAuto ? `
+          <button class="btn btn-danger btn-icon" onclick="deleteAlert('${alert.id}')" title="Remover" style="width:28px; height:28px; font-size:0.875rem;">✕</button>
+        ` : `
+          <span style="font-size: 1.1rem; filter: grayscale(0.5); cursor: help;" title="Alerta automático atualizado via portal Melhores Cartões">🤖</span>
+        `}
       </div>
       <div class="alert-card-body">${alert.description || ''}</div>
       ${prog ? `
@@ -181,6 +191,10 @@ function saveAlert() {
 }
 
 function deleteAlert(id) {
+  if (typeof LIVE_OFFERS !== 'undefined' && LIVE_OFFERS.some(a => a.id === id)) {
+    showToast('Este alerta é automático e não pode ser removido localmente', 'error');
+    return;
+  }
   if (confirm('Remover este alerta?')) {
     AppState.removeAlert(id);
     showToast('Alerta removido');
