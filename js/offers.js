@@ -1,7 +1,7 @@
 /* ============================================
    MILHAS ACKER — Ofertas em Tempo Real (Auto)
    Atualizado automaticamente via GitHub Actions
-   Última atualização: 08/06/2026, 11:26:00
+   Última atualização: 08/06/2026, 11:34:42
    ============================================ */
 
 const LIVE_OFFERS = [

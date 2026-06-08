@@ -264,6 +264,7 @@ function refreshView(viewId) {
     case 'simulator': renderSimulator(); break;
     case 'alerts': renderAlerts(); break;
     case 'settings': renderSettings(); break;
+    case 'shopping': renderShopping(); break;
   }
 }
 

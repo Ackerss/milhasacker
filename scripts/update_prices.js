@@ -128,7 +128,7 @@ async function main() {
         const titleLower = item.title.toLowerCase();
         
         // Filtrar palavras chaves de interesse
-        const keywords = ['bônus', 'desconto', 'transferência', 'milhas', 'pontos', 'promoção', 'cpm', 'compra', 'assine', 'orange friday', 'black friday', 'aniversário'];
+        const keywords = ['bônus', 'desconto', 'transferência', 'milhas', 'pontos', 'promoção', 'cpm', 'compra', 'assine', 'orange friday', 'black friday', 'aniversário', 'compre', 'pontue', 'acumule', 'por real', 'parceiro', 'cupom', 'cashback'];
         const isPromo = keywords.some(kw => titleLower.includes(kw));
 
         if (isPromo) {
