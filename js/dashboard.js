@@ -212,6 +212,7 @@ function renderDistributionChart(data) {
       maintainAspectRatio: false,
       cutout: '65%',
       plugins: {
+        datalabels: { display: false },
         legend: {
           position: 'bottom',
           labels: {
@@ -246,6 +247,7 @@ function renderBarsChart(data) {
 
   window._chartBars = new Chart(ctx, {
     type: 'bar',
+    plugins: [ChartDataLabels],
     data: {
       labels: data.map(d => d.program.name),
       datasets: [{
@@ -262,6 +264,19 @@ function renderBarsChart(data) {
       maintainAspectRatio: false,
       plugins: {
         legend: { display: false },
+        datalabels: {
+          anchor: 'center',
+          align: 'center',
+          formatter: (value) => formatNumber(value),
+          font: {
+            family: 'Inter',
+            weight: 'bold',
+            size: 11
+          },
+          color: (context) => {
+            return data[context.dataIndex]?.program.color || '#1A1A2E';
+          }
+        },
         tooltip: {
           backgroundColor: '#1A1A2E',
           padding: 12,

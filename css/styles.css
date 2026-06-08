@@ -1448,3 +1448,33 @@ tbody tr:last-child td {
     margin-left: 0 !important;
   }
 }
+
+/* --- Table Scroll Helper --- */
+.table-wrapper-scroll {
+  overflow-x: auto;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .table-wrapper-scroll table {
+    display: table !important;
+  }
+  .table-wrapper-scroll thead {
+    display: table-header-group !important;
+  }
+  .table-wrapper-scroll tbody {
+    display: table-row-group !important;
+  }
+  .table-wrapper-scroll tr {
+    display: table-row !important;
+  }
+  .table-wrapper-scroll th,
+  .table-wrapper-scroll td {
+    display: table-cell !important;
+    padding: 8px !important;
+    text-align: left !important;
+    border-bottom: 1px solid var(--border-light) !important;
+  }
+  .table-wrapper-scroll td::before {
+    content: none !important;
+  }
+}

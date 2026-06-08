@@ -180,7 +180,7 @@ function renderBalance() {
               Revisamos o extrato colado. Verifique os lançamentos identificados abaixo, edite os campos se necessário e marque apenas os que deseja salvar.
             </p>
             
-            <div class="table-wrapper" style="margin-bottom: var(--space-md); overflow-x: auto;">
+            <div class="table-wrapper-scroll" style="margin-bottom: var(--space-md); overflow-x: auto;">
               <table style="width: 100%; border-collapse: collapse; font-size: 0.8125rem;">
                 <thead>
                   <tr style="border-bottom: 2px solid var(--border); text-align: left;">
