@@ -452,6 +452,67 @@ input:focus, select:focus, textarea:focus {
   gap: var(--space-md);
 }
 
+/* --- Header User Toggle --- */
+.header-user-toggle {
+  display: flex;
+  flex-direction: row !important;
+  background: var(--bg);
+  border-radius: var(--radius-md);
+  padding: 4px;
+  gap: 4px;
+  border: 1px solid var(--border-light);
+}
+
+.header-user-toggle .user-toggle-btn {
+  width: auto !important;
+  padding: 6px 14px !important;
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+.header-user-toggle .user-toggle-btn.active {
+  background: var(--surface) !important;
+  color: var(--primary) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.header-user-toggle .user-toggle-btn:hover:not(.active) {
+  color: var(--text);
+  background: var(--surface-hover);
+}
+
+/* --- Responsive User Toggles --- */
+@media (min-width: 769px) {
+  /* No PC, ocultamos o nome simples no header e o rodapé da sidebar */
+  #header-user-name {
+    display: none !important;
+  }
+  .sidebar-footer {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* No Celular, ocultamos o seletor completo do header */
+  .header-user-toggle {
+    display: none !important;
+  }
+  #header-user-name {
+    display: block !important;
+  }
+  .sidebar-footer {
+    display: block !important;
+  }
+}
+
 .page-content {
   padding: var(--space-xl);
   max-width: 1400px;

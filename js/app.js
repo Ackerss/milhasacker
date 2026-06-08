@@ -6,7 +6,7 @@
 // ============= Estado Global =============
 const AppState = {
   activeView: 'dashboard',
-  activeUser: 'jacson',
+  activeUser: 'consolidado',
   
   // localStorage keys
   KEYS: {
