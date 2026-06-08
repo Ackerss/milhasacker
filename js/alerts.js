@@ -1,7 +1,67 @@
 /* ============================================
    MILHAS ACKER — Módulo: Alertas
-   Promoções ativas com countdown
+   Promoções ativas com countdown e classificação de atratividade
    ============================================ */
+
+// Função heurística para determinar a atratividade/rating de um alerta
+function getAlertRating(alert) {
+  // Se o alerta tiver rating explícito (cadastrado pelo usuário), retorna ele
+  if (alert.rating) return alert.rating;
+  
+  // Caso contrário (alertas automáticos), estimar a partir do texto
+  const text = ((alert.title || "") + " " + (alert.description || "")).toLowerCase();
+  
+  // Regras para "Excelente / Imperdível 🔥" (hot)
+  if (
+    text.includes("120%") || 
+    text.includes("130%") || 
+    text.includes("340%") || 
+    text.includes("imperdível") || 
+    text.includes("r$ 11,31") || 
+    text.includes("melhor preço") ||
+    text.includes("compre e pontue: até 15 pontos") ||
+    text.includes("até 15 pontos por real")
+  ) {
+    return "hot";
+  }
+  
+  // Regras para "Vale a pena 👍" (good)
+  if (
+    text.includes("bônus") || 
+    text.includes("desconto") || 
+    text.includes("cashback") || 
+    text.includes("cupom") || 
+    text.includes("promoção") || 
+    text.includes("70%") ||
+    text.includes("80%") ||
+    text.includes("100%") ||
+    text.includes("compra bonificada") ||
+    text.includes("compre e pontue")
+  ) {
+    return "good";
+  }
+  
+  // Regras para "Pouco atrativo 👎" (bad)
+  if (
+    text.includes("pouco atrativo") ||
+    text.includes("não vale a pena") ||
+    text.includes("cuidado")
+  ) {
+    return "bad";
+  }
+  
+  // Padrão: Neutro ⚖️
+  return "neutral";
+}
+
+function renderAlertRatingLabel(rating) {
+  switch (rating) {
+    case 'hot': return '<span class="rating-badge hot">🔥 Excelente</span>';
+    case 'good': return '<span class="rating-badge good">👍 Vale a Pena</span>';
+    case 'bad': return '<span class="rating-badge bad">👎 Pouco Atrativo</span>';
+    default: return '<span class="rating-badge neutral">⚖️ Neutro</span>';
+  }
+}
 
 function renderAlerts() {
   const container = document.getElementById('alerts-content');
@@ -26,11 +86,26 @@ function renderAlerts() {
     }
   });
 
-  // Sort active by urgency (least days left first)
+  // Sort active by rating (highest first) and then by urgency (least days left first)
   active.sort((a, b) => {
-    if (a._daysLeft === null) return 1;
-    if (b._daysLeft === null) return -1;
-    return a._daysLeft - b._daysLeft;
+    const ratingA = getAlertRating(a);
+    const ratingB = getAlertRating(b);
+    
+    const weightMap = { 'hot': 4, 'good': 3, 'neutral': 2, 'bad': 1 };
+    const weightA = weightMap[ratingA] || 2;
+    const weightB = weightMap[ratingB] || 2;
+    
+    if (weightA !== weightB) {
+      return weightB - weightA; // Maior atratividade primeiro
+    }
+    
+    // Secondary sort: urgency (least days left first)
+    if (a._daysLeft === null && b._daysLeft !== null) return 1;
+    if (a._daysLeft !== null && b._daysLeft === null) return -1;
+    if (a._daysLeft !== null && b._daysLeft !== null) {
+      return a._daysLeft - b._daysLeft;
+    }
+    return 0;
   });
 
   container.innerHTML = `
@@ -39,7 +114,7 @@ function renderAlerts() {
     <div class="flex justify-between items-center mb-lg">
       <div>
         <h3 style="font-size:1rem; font-weight:600;">🔔 Alertas e Promoções</h3>
-        <p class="text-muted" style="font-size:0.8125rem;">${active.length} alerta(s) ativo(s)</p>
+        <p class="text-muted" style="font-size:0.8125rem;">${active.length} alerta(s) ativo(s) ordenados por prioridade</p>
       </div>
       <button class="btn btn-primary btn-sm" onclick="openAlertModal()">
         ➕ Novo Alerta
@@ -47,8 +122,8 @@ function renderAlerts() {
     </div>
 
     ${active.length > 0 ? `
-      <div class="alerts-grid mb-xl">
-        ${active.map(a => renderAlertCard(a)).join('')}
+      <div class="alert-list mb-xl">
+        ${active.map(a => renderAlertListItem(a)).join('')}
       </div>
     ` : `
       <div class="card mb-xl">
@@ -63,8 +138,8 @@ function renderAlerts() {
 
     ${expired.length > 0 ? `
       <h3 style="font-size:0.9rem; font-weight:600; color:var(--text-muted); margin-bottom:var(--space-md);">Alertas Expirados</h3>
-      <div class="alerts-grid" style="opacity:0.5;">
-        ${expired.map(a => renderAlertCard(a, true)).join('')}
+      <div class="alert-list" style="opacity:0.65;">
+        ${expired.map(a => renderAlertListItem(a, true)).join('')}
       </div>
     ` : ''}
 
@@ -83,6 +158,15 @@ function renderAlerts() {
           <div class="form-group">
             <label>Descrição</label>
             <textarea id="alert-desc" placeholder="Ex: Bônus de até 100% na transferência Livelo→Smiles" rows="3" style="width:100%; resize:vertical;"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Atratividade / Recomendação</label>
+            <select id="alert-rating">
+              <option value="neutral">⚖️ Neutro / Avaliar</option>
+              <option value="hot">🔥 Excelente / Vale muito a pena</option>
+              <option value="good">👍 Vale a pena</option>
+              <option value="bad">👎 Pouco atrativo</option>
+            </select>
           </div>
           <div class="form-group">
             <label>Programa (opcional)</label>
@@ -109,56 +193,50 @@ function renderAlerts() {
   `;
 }
 
-function renderAlertCard(alert, isExpired = false) {
+function renderAlertListItem(alert, isExpired = false) {
+  const rating = getAlertRating(alert);
   const prog = alert.programId ? getProgramById(alert.programId) : null;
-  const urgencyClass = alert._daysLeft !== null && alert._daysLeft <= 3 ? 'urgent' : 
-                       alert._daysLeft !== null && alert._daysLeft <= 7 ? 'ending-soon' : '';
   const isAuto = !!alert.isAuto;
+  
+  const daysLeftText = !isExpired && alert._daysLeft !== null ? (
+    alert._daysLeft === 0 ? '<span class="alert-countdown-value text-danger fw-600" style="background:#FEF2F2; padding:2px 8px; border-radius:12px;">🔥 Último dia!</span>' : 
+    alert._daysLeft === 1 ? '<span class="alert-countdown-value text-warning fw-600" style="background:#FFFBEB; padding:2px 8px; border-radius:12px;">⚡ 1 dia restante</span>' : 
+    `<span class="alert-countdown-value text-primary" style="background:var(--primary-bg); padding:2px 8px; border-radius:12px;">⏰ ${alert._daysLeft} dias restantes</span>`
+  ) : '';
 
   return `
-    <div class="alert-card ${urgencyClass} ${isAuto ? 'auto-alert' : ''}" style="padding: ${alert.image ? '0 0 var(--space-lg) 0' : 'var(--space-lg)'}; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
-      ${alert.image ? `
-        <div style="width: 100%; height: 160px; overflow: hidden; position: relative; border-bottom: 1px solid var(--border-light);">
-          <img src="${alert.image}" style="width: 100%; height: 100%; object-fit: cover;" alt="${alert.title}">
-        </div>
-      ` : ''}
-      
-      <div style="${alert.image ? 'padding: var(--space-md) var(--space-lg) 0 var(--space-lg); flex: 1; display: flex; flex-direction: column;' : 'display: flex; flex-direction: column; height: 100%; flex: 1;'}">
-        <div class="alert-card-header">
-          <div class="alert-card-title">
-            ${isAuto ? '<span class="badge badge-info" style="margin-right: 6px; font-size: 0.65rem; padding: 2px 6px;">Auto</span>' : ''}
-            ${alert.title}
-          </div>
-          ${!isAuto ? `
-            <button class="btn btn-danger btn-icon" onclick="deleteAlert('${alert.id}')" title="Remover" style="width:28px; height:28px; font-size:0.875rem;">✕</button>
-          ` : `
-            <span style="font-size: 1.1rem; filter: grayscale(0.5); cursor: help;" title="Alerta automático atualizado via portal Melhores Cartões">🤖</span>
-          `}
-        </div>
-        <div class="alert-card-body" style="flex: 1;">${alert.description || ''}</div>
+    <div class="alert-list-item rating-${rating} ${isExpired ? 'expired' : ''}">
+      <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start; min-width: 130px; flex-shrink: 0;">
+        ${renderAlertRatingLabel(rating)}
         ${prog ? `
-          <div style="margin-bottom:var(--space-sm);">
-            <span class="program-badge">
-              <span class="program-dot" style="background:${prog.color}"></span>
-              ${prog.icon} ${prog.name}
-            </span>
-          </div>
+          <span class="program-badge" style="margin-top: 2px;">
+            <span class="program-dot" style="background:${prog.color}"></span>
+            ${prog.icon} ${prog.name}
+          </span>
         ` : ''}
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-top: auto;">
-          <div style="font-size:0.75rem; color:var(--text-muted);">
-            ${alert.startDate ? formatDate(alert.startDate) : ''} ${alert.endDate ? `→ ${formatDate(alert.endDate)}` : ''}
+      </div>
+
+      <div class="alert-list-content">
+        <div class="alert-list-title-row">
+          ${isAuto ? '<span class="badge badge-info" style="font-size: 0.65rem; padding: 2px 6px; margin-right: 4px;">Auto</span>' : ''}
+          <span class="alert-list-title">${alert.title}</span>
+        </div>
+        <div class="alert-list-description">${alert.description || ''}</div>
+        <div class="alert-list-meta-row">
+          <div class="alert-list-meta-item">
+            📅 ${alert.startDate ? formatDate(alert.startDate) : ''} ${alert.endDate ? `→ ${formatDate(alert.endDate)}` : ''}
           </div>
-          ${!isExpired && alert._daysLeft !== null ? `
-            <div class="alert-countdown">
-              <span class="alert-countdown-value ${alert._daysLeft <= 3 ? 'text-danger' : alert._daysLeft <= 7 ? 'text-warning' : ''}">
-                ${alert._daysLeft === 0 ? '🔥 Último dia!' : 
-                  alert._daysLeft === 1 ? '⚡ 1 dia restante' : 
-                  `⏰ ${alert._daysLeft} dias restantes`}
-              </span>
-            </div>
-          ` : ''}
+          ${daysLeftText ? `<div class="alert-list-meta-item">${daysLeftText}</div>` : ''}
           ${isExpired ? '<span class="badge badge-danger">Expirado</span>' : ''}
         </div>
+      </div>
+
+      <div class="alert-list-actions">
+        ${!isAuto ? `
+          <button class="btn btn-danger btn-icon" onclick="deleteAlert('${alert.id}')" title="Remover" style="width:28px; height:28px; font-size:0.875rem;">✕</button>
+        ` : `
+          <span style="font-size: 1.1rem; filter: grayscale(0.5); cursor: help;" title="Alerta automático atualizado via portal Melhores Cartões/Melhores Destinos">🤖</span>
+        `}
       </div>
     </div>
   `;
@@ -171,6 +249,7 @@ function openAlertModal() {
 function saveAlert() {
   const title = document.getElementById('alert-title').value.trim();
   const description = document.getElementById('alert-desc').value.trim();
+  const rating = document.getElementById('alert-rating').value;
   const programId = document.getElementById('alert-program').value;
   const startDate = document.getElementById('alert-start').value;
   const endDate = document.getElementById('alert-end').value;
@@ -183,6 +262,7 @@ function saveAlert() {
   AppState.addAlert({
     title,
     description,
+    rating,
     programId,
     startDate,
     endDate,
@@ -196,6 +276,7 @@ function saveAlert() {
   // Clear form
   document.getElementById('alert-title').value = '';
   document.getElementById('alert-desc').value = '';
+  document.getElementById('alert-rating').value = 'neutral';
   document.getElementById('alert-program').value = '';
   document.getElementById('alert-end').value = '';
 }

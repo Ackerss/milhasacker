@@ -1222,6 +1222,157 @@ tbody tr:last-child td {
   border-radius: var(--radius-full);
 }
 
+/* --- Alert List (Modern Premium) --- */
+.alert-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.alert-list-item {
+  background: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  box-shadow: var(--shadow-xs);
+  transition: all var(--transition-base);
+  border-left: 4px solid var(--primary);
+  position: relative;
+}
+
+.alert-list-item:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Bordas baseadas na atratividade */
+.alert-list-item.rating-hot {
+  border-left-color: #EF4444; /* Vermelho Coral */
+  background: linear-gradient(90deg, rgba(239, 68, 68, 0.02) 0%, var(--surface) 100%);
+}
+
+.alert-list-item.rating-good {
+  border-left-color: #10B981; /* Verde Esmeralda */
+  background: linear-gradient(90deg, rgba(16, 185, 129, 0.02) 0%, var(--surface) 100%);
+}
+
+.alert-list-item.rating-neutral {
+  border-left-color: #94A3B8; /* Cinza Suave */
+}
+
+.alert-list-item.rating-bad {
+  border-left-color: #64748B; /* Cinza Escuro */
+  opacity: 0.85;
+}
+
+/* Badges de Atratividade */
+.rating-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.rating-badge.hot {
+  background: #FEF2F2;
+  color: #EF4444;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.rating-badge.good {
+  background: #ECFDF5;
+  color: #10B981;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.rating-badge.neutral {
+  background: #F8FAFC;
+  color: #64748B;
+  border: 1px solid rgba(100, 116, 139, 0.2);
+}
+
+.rating-badge.bad {
+  background: #F1F5F9;
+  color: #94A3B8;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+/* Elementos internos do item da lista */
+.alert-list-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.alert-list-title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.alert-list-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.alert-list-description {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.alert-list-meta-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: 2px;
+  flex-wrap: wrap;
+}
+
+.alert-list-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.alert-list-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+  .alert-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+    padding: var(--space-md);
+  }
+  .alert-list-actions {
+    width: 100%;
+    justify-content: flex-end;
+    border-top: 1px solid var(--border-light);
+    padding-top: var(--space-sm);
+    margin-top: var(--space-xs);
+  }
+}
+
+
 /* --- Dashboard Charts --- */
 .dashboard-grid {
   display: grid;
