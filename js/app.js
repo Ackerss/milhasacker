@@ -120,9 +120,20 @@ const AppState = {
     return total;
   },
 
-  // Seed dados de exemplo se primeira vez
+  // Seed dados de exemplo se primeira vez (agora inicia limpo por padrão)
   seedIfEmpty() {
     if (localStorage.getItem('milhas_seeded')) return;
+    // Por padrão de fábrica, inicia limpo
+    localStorage.setItem('milhas_seeded', 'true');
+  },
+
+  // Carregar dados fictícios para fins de demonstração
+  loadDemoData() {
+    // Limpar dados existentes primeiro
+    localStorage.removeItem(this.KEYS.HISTORY);
+    localStorage.removeItem(this.KEYS.PLANS);
+    localStorage.removeItem(this.KEYS.ALERTS);
+    localStorage.removeItem(this.KEYS.CURRENT_PRICES);
     
     // Adicionar alguns saldos exemplo
     const sampleHistory = [
@@ -152,6 +163,15 @@ const AppState = {
 
     sampleAlerts.forEach(alert => this.addAlert(alert));
 
+    localStorage.setItem('milhas_seeded', 'demo');
+  },
+
+  // Limpar todos os dados do sistema
+  clearAllData() {
+    localStorage.removeItem(this.KEYS.HISTORY);
+    localStorage.removeItem(this.KEYS.PLANS);
+    localStorage.removeItem(this.KEYS.ALERTS);
+    localStorage.removeItem(this.KEYS.CURRENT_PRICES);
     localStorage.setItem('milhas_seeded', 'true');
   }
 };

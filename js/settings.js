@@ -84,15 +84,26 @@ function renderSettings() {
     <div class="card" style="margin-top: var(--space-xl); border-color: var(--danger-bg);">
       <div class="card-header">
         <div>
-          <h3 class="card-title" style="color: var(--danger);">Ações de Emergência</h3>
-          <p class="card-subtitle">Restaurar estado padrão do sistema</p>
+          <h3 class="card-title" style="color: var(--danger);">Gerenciamento de Dados</h3>
+          <p class="card-subtitle">Limpar o sistema para uso real ou carregar demonstração</p>
         </div>
       </div>
-      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-md);">
-        <div>
-          <p style="font-size: 0.8125rem; line-height: 1.4;">Se você quiser apagar todos os dados inseridos e carregar as movimentações fictícias/iniciais de exemplo.</p>
+      <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border);">
+          <div style="flex: 1; min-width: 280px;">
+            <strong style="font-size: 0.875rem; color: var(--text-primary);">🗑️ Zerar Todos os Dados (Uso Real)</strong>
+            <p class="text-muted" style="font-size: 0.8125rem; line-height: 1.4; margin-top: 4px;">Apaga todas as movimentações, planos e alertas cadastrados neste navegador para que você possa iniciar a inserção dos seus dados reais do zero.</p>
+          </div>
+          <button id="btn-clear-all" class="btn btn-secondary btn-sm" style="color: var(--danger); border-color: var(--danger);">Zerar Todos os Dados</button>
         </div>
-        <button id="btn-reset-demo" class="btn btn-secondary btn-sm" style="color: var(--danger); border-color: var(--danger);">Resetar Dados de Demonstração</button>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-md);">
+          <div style="flex: 1; min-width: 280px;">
+            <strong style="font-size: 0.875rem; color: var(--text-primary);">📊 Carregar Dados de Demonstração</strong>
+            <p class="text-muted" style="font-size: 0.8125rem; line-height: 1.4; margin-top: 4px;">Apaga os dados atuais e carrega movimentações, planos e alertas fictícios para demonstrar o visual do dashboard e gráficos.</p>
+          </div>
+          <button id="btn-load-demo" class="btn btn-secondary btn-sm">Carregar Demonstração</button>
+        </div>
       </div>
     </div>
   `;
@@ -173,13 +184,23 @@ function renderSettings() {
     }
   });
 
-  document.getElementById('btn-reset-demo').addEventListener('click', () => {
-    if (confirm('Tem certeza de que deseja apagar todos os seus dados e recarregar os dados fictícios de demonstração? Isso não pode ser desfeito.')) {
-      localStorage.clear();
-      showToast('Dados limpos! Recarregando demonstração...', 'info');
+  document.getElementById('btn-clear-all').addEventListener('click', () => {
+    if (confirm('Tem certeza de que deseja APAGAR TODOS os seus saldos, planos e históricos locais para começar do zero com dados reais? Esta ação é irreversível.')) {
+      AppState.clearAllData();
+      showToast('Sistema redefinido com sucesso! Comece seus lançamentos reais.', 'success');
       setTimeout(() => {
         location.reload();
-      }, 1500);
+      }, 1200);
+    }
+  });
+
+  document.getElementById('btn-load-demo').addEventListener('click', () => {
+    if (confirm('Isso apagará todos os dados locais atuais e carregará os dados fictícios de demonstração. Deseja continuar?')) {
+      AppState.loadDemoData();
+      showToast('Dados de demonstração carregados com sucesso!', 'info');
+      setTimeout(() => {
+        location.reload();
+      }, 1200);
     }
   });
 }
