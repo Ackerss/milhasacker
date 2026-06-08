@@ -41,6 +41,16 @@ const AppState = {
     const history = this.getHistory().filter(h => h.id !== id);
     localStorage.setItem(this.KEYS.HISTORY, JSON.stringify(history));
   },
+  updateHistory(id, updatedFields) {
+    const history = this.getHistory();
+    const index = history.findIndex(h => h.id === id);
+    if (index !== -1) {
+      history[index] = { ...history[index], ...updatedFields, updatedAt: new Date().toISOString() };
+      localStorage.setItem(this.KEYS.HISTORY, JSON.stringify(history));
+      return history[index];
+    }
+    return null;
+  },
 
   getPlans() {
     return JSON.parse(localStorage.getItem(this.KEYS.PLANS) || '[]');
@@ -58,6 +68,16 @@ const AppState = {
   removePlan(id) {
     const plans = this.getPlans().filter(p => p.id !== id);
     this.savePlans(plans);
+  },
+  updatePlan(id, updatedFields) {
+    const plans = this.getPlans();
+    const index = plans.findIndex(p => p.id === id);
+    if (index !== -1) {
+      plans[index] = { ...plans[index], ...updatedFields };
+      this.savePlans(plans);
+      return plans[index];
+    }
+    return null;
   },
 
   getAlerts() {

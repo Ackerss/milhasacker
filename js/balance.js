@@ -3,6 +3,8 @@
    Cards de saldo + CRUD movimentações
    ============================================ */
 
+let editingMovementId = null;
+
 function renderBalance() {
   const container = document.getElementById('balance-content');
   if (!container) return;
@@ -209,6 +211,10 @@ function renderBalance() {
 function openMovementModal(programId) {
   openModal('modal-movement');
   
+  editingMovementId = null;
+  const titleEl = document.querySelector('#modal-movement .modal-title');
+  if (titleEl) titleEl.textContent = '➕ Nova Movimentação';
+  
   const userGroup = document.getElementById('mov-user-group');
   if (userGroup) {
     if (AppState.activeUser === 'consolidado') {
@@ -244,18 +250,32 @@ function saveMovement() {
     return;
   }
 
-  AppState.addHistory({
-    userId: userIdInput,
-    programId,
-    type,
-    quantity,
-    cpm,
-    date,
-    note
-  });
+  if (editingMovementId) {
+    AppState.updateHistory(editingMovementId, {
+      userId: userIdInput,
+      programId,
+      type,
+      quantity,
+      cpm,
+      date,
+      note
+    });
+    editingMovementId = null;
+    showToast('Movimentação atualizada com sucesso!');
+  } else {
+    AppState.addHistory({
+      userId: userIdInput,
+      programId,
+      type,
+      quantity,
+      cpm,
+      date,
+      note
+    });
+    showToast('Movimentação registrada com sucesso!');
+  }
 
   closeModal('modal-movement');
-  showToast('Movimentação registrada com sucesso!');
   renderBalance();
 
   // Clear form
@@ -307,8 +327,9 @@ function showProgramHistory(programId) {
                 <td data-label="Quantidade" class="${isPositive ? 'text-success' : 'text-danger'} fw-600">${isPositive ? '+' : '-'}${formatNumber(h.quantity)}</td>
                 <td data-label="CPM">${h.cpm > 0 ? formatCurrency(h.cpm) : '—'}</td>
                 <td data-label="Obs.">${h.note || '—'}</td>
-                <td data-label="Ações">
-                  <button class="btn btn-danger btn-sm" onclick="deleteMovement('${h.id}', '${programId}')" title="Excluir">🗑️</button>
+                <td data-label="Ações" style="white-space: nowrap;">
+                  <button class="btn btn-secondary btn-sm" onclick="editMovement('${h.id}', '${programId}')" title="Editar" style="padding: 4px 8px; margin-right: 4px;">✏️</button>
+                  <button class="btn btn-danger btn-sm" onclick="deleteMovement('${h.id}', '${programId}')" title="Excluir" style="padding: 4px 8px;">🗑️</button>
                 </td>
               </tr>`;
             }).join('')}
@@ -319,6 +340,32 @@ function showProgramHistory(programId) {
   }
 
   openModal('modal-program-history');
+}
+
+function editMovement(id, programId) {
+  closeModal('modal-program-history');
+  const historyEntry = AppState.getHistory().find(h => h.id === id);
+  if (!historyEntry) return;
+
+  editingMovementId = id;
+
+  openModal('modal-movement');
+
+  const titleEl = document.querySelector('#modal-movement .modal-title');
+  if (titleEl) titleEl.textContent = '📝 Editar Movimentação';
+
+  const userGroup = document.getElementById('mov-user-group');
+  if (userGroup) {
+    userGroup.style.display = 'block';
+    document.getElementById('mov-user').value = historyEntry.userId;
+  }
+  
+  document.getElementById('mov-program').value = historyEntry.programId;
+  document.getElementById('mov-type').value = historyEntry.type;
+  document.getElementById('mov-quantity').value = Math.abs(historyEntry.quantity);
+  document.getElementById('mov-cpm').value = historyEntry.cpm || '';
+  document.getElementById('mov-date').value = historyEntry.date;
+  document.getElementById('mov-note').value = historyEntry.note || '';
 }
 
 function deleteMovement(id, programId) {

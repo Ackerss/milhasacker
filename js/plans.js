@@ -3,6 +3,8 @@
    Controle de assinaturas/clubes de milhas
    ============================================ */
 
+let editingPlanId = null;
+
 function renderPlans() {
   const container = document.getElementById('plans-content');
   if (!container) return;
@@ -156,7 +158,10 @@ function renderPlanItem(plan) {
         <div class="plan-cost-value">${formatCurrency(plan.monthlyValue)}</div>
         <div class="plan-cost-label">por mês</div>
         <div class="plan-cpm">CPM: ${formatCurrency(cpm)}</div>
-        <button class="btn btn-danger btn-sm mt-md" onclick="deletePlan('${plan.id}')">🗑️ Remover</button>
+        <div style="display: flex; gap: 6px; margin-top: 8px; justify-content: flex-end;">
+          <button class="btn btn-secondary btn-sm" onclick="editPlan('${plan.id}')" style="padding: 4px 8px;" title="Editar">✏️</button>
+          <button class="btn btn-danger btn-sm" onclick="deletePlan('${plan.id}')" style="padding: 4px 8px;" title="Excluir">🗑️</button>
+        </div>
       </div>
     </div>
   `;
@@ -164,6 +169,10 @@ function renderPlanItem(plan) {
 
 function openPlanModal() {
   openModal('modal-plan');
+  
+  editingPlanId = null;
+  const titleEl = document.querySelector('#modal-plan .modal-title');
+  if (titleEl) titleEl.textContent = '📋 Novo Plano/Assinatura';
   
   const userGroup = document.getElementById('plan-user-group');
   if (userGroup) {
@@ -196,19 +205,34 @@ function savePlan() {
     return;
   }
 
-  AppState.addPlan({
-    userId: userIdInput,
-    name,
-    programId,
-    monthlyValue,
-    monthlyPoints: monthlyPoints || 0,
-    startDate,
-    endDate,
-    status
-  });
+  if (editingPlanId) {
+    AppState.updatePlan(editingPlanId, {
+      userId: userIdInput,
+      name,
+      programId,
+      monthlyValue,
+      monthlyPoints: monthlyPoints || 0,
+      startDate,
+      endDate,
+      status
+    });
+    editingPlanId = null;
+    showToast('Plano atualizado com sucesso!');
+  } else {
+    AppState.addPlan({
+      userId: userIdInput,
+      name,
+      programId,
+      monthlyValue,
+      monthlyPoints: monthlyPoints || 0,
+      startDate,
+      endDate,
+      status
+    });
+    showToast('Plano adicionado com sucesso!');
+  }
 
   closeModal('modal-plan');
-  showToast('Plano adicionado com sucesso!');
   renderPlans();
 
   // Clear form
@@ -216,6 +240,32 @@ function savePlan() {
   document.getElementById('plan-value').value = '';
   document.getElementById('plan-points').value = '';
   document.getElementById('plan-end').value = '';
+}
+
+function editPlan(id) {
+  const plan = AppState.getPlans().find(p => p.id === id);
+  if (!plan) return;
+
+  editingPlanId = id;
+
+  openModal('modal-plan');
+
+  const titleEl = document.querySelector('#modal-plan .modal-title');
+  if (titleEl) titleEl.textContent = '📝 Editar Plano/Assinatura';
+
+  const userGroup = document.getElementById('plan-user-group');
+  if (userGroup) {
+    userGroup.style.display = 'block';
+    document.getElementById('plan-user').value = plan.userId;
+  }
+
+  document.getElementById('plan-name').value = plan.name;
+  document.getElementById('plan-program').value = plan.programId;
+  document.getElementById('plan-value').value = plan.monthlyValue;
+  document.getElementById('plan-points').value = plan.monthlyPoints;
+  document.getElementById('plan-start').value = plan.startDate;
+  document.getElementById('plan-end').value = plan.endDate || '';
+  document.getElementById('plan-status').value = plan.status;
 }
 
 function deletePlan(id) {
