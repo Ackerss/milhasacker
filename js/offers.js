@@ -4,13 +4,13 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-06-16T19:26:07.974Z",
+  lastUpdated: "2026-06-16T22:04:30.419Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
   "smiles": 17.5,
   "azul": 13,
-  "livelo": 35,
+  "livelo": 19.4,
   "esfera": 35,
   "aadvantage": 130,
   "tap": 44
@@ -19,68 +19,90 @@ const LIVE_OFFERS_METADATA = {
 
 const LIVE_OFFERS = [
   {
-    "id": "auto_20260612_1",
-    "title": "Bradesco aumenta pontuação do Aeternum para compras no exterior &#8211; vale a pena?",
-    "description": "O Bradesco ajustou o regulamento de pontos dos cartões do banco e, com isso, aumentou a pontuação para compras no exterior com o cartão Aeternum. A partir do dia 03/08/26, esse tipo de transação ac... <a href=\"https://www.melhorescartoes.com.br/aumento-pontuacao-bradesco-aeternum-exterior.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260616_0",
+    "title": "Novo cupom Amazon! Aproveite R$ 100 OFF em compras a partir de R$ 999",
+    "description": "O cupom possui limite de ativações e pode esgotar a qualquer momento! O post Novo cupom Amazon! Aproveite R$ 100 OFF em compras a partir de R$ 999 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-100-off-16jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-06-12",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2023/10/bradesco-aeternum-vale-a-pena-melhores-cartoes-capa.jpeg",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260612_3",
-    "title": "Cupom Mercado Livre e Amazon: garanta até R$ 200 de desconto com 3 novos códigos",
-    "description": "Os cupons têm limite de uso e podem se esgotar a qualquer momento. O post Cupom Mercado Livre e Amazon: garanta até R$ 200 de desconto com 3 novos códigos apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-meli-17h-12jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-06-12",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/unnamed.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260612_4",
-    "title": "Chile! Voos da Turkish Airlines para Santiago a partir de R$ 433 ou 36 mil pontos Azul o trecho mais taxas",
-    "description": "Bom preço para o Chile em voos diretos da Turkish Airlines, com direito a bagagem despachada! Encontramos passagens aéreas para Santiago a partir de 36.000 pontos Azul ou R$ 433,44 o trecho + taxas... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-pontos-azul-chile-turkish-jun26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "azul",
-    "startDate": "2026-06-12",
+    "startDate": "2026-06-16",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260612_6",
-    "title": "Smiles tem promoção de passagens aéreas a partir de 5.800 milhas",
-    "description": "A Smiles está com uma nova promoção de passagens aéreas para viajar na baixa temporada, entre os meses de agosto e outubro. Encontramos voos da Gol a partir de 5.800 milhas + taxas aeroportuárias. ... <a href=\"https://www.melhoresdestinos.com.br/milhas/promo-passagens-gol-smiles-jun26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260616_1",
+    "title": "Muito bom! Ganhe até 20% de cashback na compra de créditos do Coco Bambu e Outback",
+    "description": "Boa oportunidade para economizar no Outback ou Coco Bambu! O PicPay está oferecendo até 20% de cashback na compra de créditos dos restaurantes. A oferta é válida para todos os clientes, por tempo l... <a href=\"https://www.melhorescartoes.com.br/cashback-coco-bambu-outback-jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-06-16",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/06/coco-bambu-outback-jun262.jpeg",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260616_2",
+    "title": "Assine o Clube Livelo e acumule 13.000 pontos no primeiro mês – milheiro por R$ 19,40!",
+    "description": "Mais uma oferta de aniversário da Livelo está no ar! Dessa vez, a oportunidade é para assinar o Clube Livelo anual e ganhar pontos extras no primeiro mês! No total, são 13.000 pontos no primeiro mê... <a href=\"https://www.melhorescartoes.com.br/clube-livelo-oferta-13k-primeiro-mes-jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "livelo",
+    "startDate": "2026-06-16",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/06/clube-livelo-13k-hora-jun26.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260616_3",
+    "title": "Até R$ 100 OFF! Ganhe 10% de desconto em compras a partir de R$ 300 com cupom Amazon",
+    "description": "O cupom possui limite de ativações e pode esgotar a qualquer momento! O post Até R$ 100 OFF! Ganhe 10% de desconto em compras a partir de R$ 300 com cupom Amazon apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-10-off-16jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-06-16",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260616_5",
+    "title": "Esfera oferece até 10 pontos por real em compras na Natura",
+    "description": "A Esfera está com uma oportunidade de acúmulo de até 10 pontos por real em compras na Natura! A pontuação turbinada vale para assinantes do Clube Esfera em todos os produtos da loja e vale até aman... <a href=\"https://www.melhorescartoes.com.br/esfera-natura-10-pontos-jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "esfera",
+    "startDate": "2026-06-16",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/06/esfera-natura-10-pontos-jun26.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260616_6",
+    "title": "BTG Pactual libera transferência de pontos para o TAP Miles&#038;Go com 20% de bônus no lançamento",
+    "description": "Novidade para os clientes dos cartões BTG Pactual! A corretora liberou a transferência de pontos do programa de fidelidade para o TAP Miles&#038;Go. E para comemorar o lançamento, está oferecendo 2... <a href=\"https://www.melhorescartoes.com.br/parceria-transferencia-cartoes-btg-tap-miles-go.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "tap",
+    "startDate": "2026-06-16",
+    "endDate": "2026-06-18",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/06/parceria-transferencia-cartoes-btg-tap-miles-go.jpeg",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260616_7",
+    "title": "Smiles oferece até 355% de bônus na compra de milhas",
+    "description": "A Smiles está oferecendo até 355% de bônus para os assinantes do Clube Smiles e/ou clientes Diamante comprarem milhas no programa. A oferta é válida até as 21h de amanhã (17/06). A bonificação vari... <a href=\"https://www.melhorescartoes.com.br/oferta-smiles-compra-milhas-355-bonus-jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "smiles",
-    "startDate": "2026-06-12",
+    "startDate": "2026-06-16",
     "endDate": null,
-    "image": "",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/06/smiles-355-bonus-compra-milhas-jun26.png",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260612_8",
-    "title": "Azul oferece até 15% de desconto em resgates de passagens internacionais",
-    "description": "A Azul está oferecendo até 15% de desconto em passagens aéreas internacionais emitidas com pontos em voos operados pela Azul. O post Azul oferece até 15% de desconto em resgates de passagens intern... <a href=\"https://www.melhoresdestinos.com.br/milhas/azul-15off-passagens-internacionais-jun26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "azul",
-    "startDate": "2026-06-12",
+    "id": "auto_20260616_8",
+    "title": "Itália com a Latam! Voos para Roma a partir de 64 mil milhas o trecho",
+    "description": "O Latam Pass está com passagens aéreas para Roma a partir de 64 mil milhas o trecho, mais taxas aeroportuárias, com opção de voo direto. Os voos saem do Aeroporto de Guarulhos, em São Paulo, e estã... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-latam-roma-jun26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
+    "startDate": "2026-06-16",
     "endDate": null,
     "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260612_9",
-    "title": "5 novos cupons! Ganhe até R$ 70 de desconto em compras na Shopee &#8211; vale no site todo!",
-    "description": "Cupons possuem limite de ativações O post 5 novos cupons! Ganhe até R$ 70 de desconto em compras na Shopee &#8211; vale no site todo! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-shopee-ate-70-off-12jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-06-12",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/06/cupom-shopee-ate-70-off-12jun26.jpeg",
     "active": true,
     "isAuto": true
   }
