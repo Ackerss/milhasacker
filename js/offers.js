@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-06-22T23:10:11.350Z",
+  lastUpdated: "2026-06-23T01:57:07.830Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -19,101 +19,90 @@ const LIVE_OFFERS_METADATA = {
 
 const LIVE_OFFERS = [
   {
-    "id": "auto_20260618_0",
-    "title": "AO VIVO: Qual é o melhor programa de milhas para cada destino?",
-    "description": "Assim como não existe uma companhia aérea que voe para todos os lugares do mundo, também não existe um programa de fidelidade que seja perfeito para todos os destinos. Cada emissão exige uma estrat... <a href=\"https://www.melhoresdestinos.com.br/melhor-programa-milhas-para-cada-destino-live.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260622_0",
+    "title": "Novo cupom! Ganhe até R$ 40 de desconto em compras a partir de R$ 79 no Mercado Livre",
+    "description": "Cupom é válido até o final do dia, mas tem limite de ativações O post Novo cupom! Ganhe até R$ 40 de desconto em compras a partir de R$ 79 no Mercado Livre apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-ate-40-desconto-22jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-06-18",
+    "startDate": "2026-06-22",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260618_1",
-    "title": "Shopping Smiles oferece até 9 milhas por real em compras no Extra",
-    "description": "O Shopping Smiles está com uma nova oferta de até 9 milhas por real em compras no Extra. A promoção vale até domingo, 21 de junho e conta com celulares, TV's e muito mais! Para aproveitar, basta ac... <a href=\"https://www.melhorescartoes.com.br/smiles-extra-9-milhas-jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
-    "startDate": "2026-06-18",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/06/smiles-extra-9-milhas-jun261.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260618_2",
-    "title": "Cupom Amazon oferece até R$ 100 OFF em compras a partir de R$ 400",
-    "description": "Cupom é válido até as 21h, mas tem limite de ativações O post Cupom Amazon oferece até R$ 100 OFF em compras a partir de R$ 400 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-ate-100-desconto-18jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260622_1",
+    "title": "Cupom Amazon: ganhe R$ 100 de desconto em compras a partir de R$ 999",
+    "description": "Cupom vale até as 21h ou enquanto durar o estoque O post Cupom Amazon: ganhe R$ 100 de desconto em compras a partir de R$ 999 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-100-desconto-22jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-06-18",
+    "startDate": "2026-06-22",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260618_3",
-    "title": "Cartão GOL Smiles: peça o seu com até 12.000 milhas bônus e anuidade grátis",
-    "description": "A Smiles está com uma nova promoção que oferece 12 meses de anuidade grátis no cartão GOL Smiles, além de até 12.000 milhas bônus para novas solicitações até o dia 31 de agosto. A oferta de anuidad... <a href=\"https://www.melhorescartoes.com.br/cartao-gol-smiles-promo-12k-anuidade-gratis-jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
-    "startDate": "2026-06-18",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/06/promo-cartao-gol-smiles-anuidade-gratis-milhas-extras2.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260618_4",
-    "title": "Últimas horas! Resgate pontos ou cashback bônus da promoção Bateu Ganhou do Santander",
-    "description": "Últimas horas para resgatar os prêmios da última edição da promoção Bateu Ganhou do Santander. Se você participou e atingiu as metas de gastos, tem até às 23h59 de hoje, dia 18 de junho, para liber... <a href=\"https://www.melhorescartoes.com.br/resgatar-pontos-milhas-bateu-ganhou-santander-2026.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-06-18",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260618_5",
-    "title": "Chile de executiva! Voos da Latam para Santiago a partir de 65 mil milhas o trecho",
-    "description": "Bom preço para voar em classe executiva para o Chile! O Latam Pass está com passagens aéreas para Santiago a partir de 65.763 milhas Latam Pass o trecho + taxas para viajar na cabine Premium Busine... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-executiva-latam-chile-jun26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260622_2",
+    "title": "Áustria! Voos para Viena a partir de R$ 1.291 ou 54 mil milhas Latam Pass o trecho mais taxas",
+    "description": "Que tal visitar o país mais elegante da Europa? O Latam Pass está com bons preços de passagens aéreas para Viena, na Áustria, a partir de 54.835 milhas ou R$ 1.291,91 o trecho + taxas de embarque. ... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-latam-viena-jun26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "latam",
-    "startDate": "2026-06-18",
+    "startDate": "2026-06-22",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260618_6",
-    "title": "Até R$ 200 OFF! Cupom Amazon oferece 10% de desconto em compras a partir de R$ 800",
-    "description": "Cupom é válido até as 17h ou até atingir o limite de ativações O post Até R$ 200 OFF! Cupom Amazon oferece 10% de desconto em compras a partir de R$ 800 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-ate-200-desconto-18jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260622_3",
+    "title": "Mais desconto no Mercado Livre! Aproveite o novo cupom de 10% OFF em compras a partir de R$ 99",
+    "description": "Aproveite, o cupom pode acabar a qualquer momento! O post Mais desconto no Mercado Livre! Aproveite o novo cupom de 10% OFF em compras a partir de R$ 99 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/mais-desconto-no-mercado-livre-aproveite-o-novo-cupom-de-10-off-em-compras-a-partir-de-r-99.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-06-18",
+    "startDate": "2026-06-22",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/themes/mc2024/img/md2-2.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260622_5",
+    "title": "Ganhe até 12 pontos Livelo por real em compras na Natura, Carrefour Mercado, O Boticário e mais parceiros",
+    "description": "A Livelo está com ofertas de compras bonificadas em diversos parceiros. Confira nossa lista para acumular até 12 pontos por real em sites como Live, Carrefour Mercado e até o Mercado Livre, com 2 p... <a href=\"https://www.melhorescartoes.com.br/livelo-parceiros-12-pontos-jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "livelo",
+    "startDate": "2026-06-22",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260618_8",
-    "title": "Ganhe 10% de desconto em compras a partir de R$ 149 com cupom Mercado Livre",
-    "description": "Cupom tem limite de ativações O post Ganhe 10% de desconto em compras a partir de R$ 149 com cupom Mercado Livre apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-10-desconto-18jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260622_7",
+    "title": "Descontaço! Cupom Mercado Livre oferece 30% OFF em compras a partir de R$ 40",
+    "description": "Cupom tem limite de ativações O post Descontaço! Cupom Mercado Livre oferece 30% OFF em compras a partir de R$ 40 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-30-desconto-22jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-06-18",
+    "startDate": "2026-06-22",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260618_9",
-    "title": "Lacoste com desconto! Até 50% OFF e cupom extra de 15% em roupas, calçados e acessórios",
-    "description": "Seja rápido, pois os preços dos produtos podem ser alterados a qualquer momento O post Lacoste com desconto! Até 50% OFF e cupom extra de 15% em roupas, calçados e acessórios apareceu primeiro em M... <a href=\"https://www.melhorescartoes.com.br/lacoste-50-off-cupom-extra-jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260622_8",
+    "title": "Por poucas horas! Novo cupom Amazon oferece 10% OFF em compras a partir de R$ 100",
+    "description": "Aproveite, o cupom pode acabar a qualquer momento! O post Por poucas horas! Novo cupom Amazon oferece 10% OFF em compras a partir de R$ 100 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-22h-22jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-06-18",
+    "startDate": "2026-06-22",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/netshoes-logo.png",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/Captura-de-Tela-2025-11-13-as-18.58.17.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260622_9",
+    "title": "Azul oferece até 22 pontos por real em compras na Casas Bahia, Camicado e Magalu",
+    "description": "O Azul Fidelidade está oferecendo até 22 pontos por real em compras na Casas Bahia, Camicado e Magalu. É uma boa chance para turbinar seu saldo de pontos! A validade das ofertas depende de cada par... <a href=\"https://www.melhorescartoes.com.br/azul-casas-bahia-camicado-magalu-16-pontos-jun26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "azul",
+    "startDate": "2026-06-22",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/06/azul-casas-bahia-camicado-magalu-16-pontos-jun263.png",
     "active": true,
     "isAuto": true
   }
