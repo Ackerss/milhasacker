@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-06-29T22:44:31.055Z",
+  lastUpdated: "2026-06-30T02:00:52.764Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
