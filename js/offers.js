@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-07-01T16:13:26.869Z",
+  lastUpdated: "2026-07-01T19:26:36.020Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -20,63 +20,8 @@ const LIVE_OFFERS_METADATA = {
 const LIVE_OFFERS = [
   {
     "id": "auto_20260701_0",
-    "title": "Nordeste com Smiles! Voos para Salvador saindo de BH por apenas 11 mil milhas o trecho",
-    "description": "A Smiles está com ótimos preços de passagens aéreas para a Bahia! Encontramos voos para Salvador por apenas 11.500 milhas o trecho + taxas, saindo de Belo Horizonte. São opções para viajar entre os... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-salvador-smiles-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
-    "startDate": "2026-07-01",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260701_1",
-    "title": "Latam Pass: ganhe 20% de bônus ao transferir pontos do Itaú e Credicard",
-    "description": "O mês de julho chegou, e com ele novas oportunidades para acumular milhas! O Latam Pass está oferecendo 20% de bônus no envio de pontos do Itaú e Credicard, além de +1.000 milhas extras para quem f... <a href=\"https://www.melhorescartoes.com.br/latam-pass-bonus-itau-credicard-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "latam",
-    "startDate": "2026-07-01",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/latam-itau-20-bonus-jul26.jpg",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260701_2",
-    "title": "Até R$ 360 OFF no AliExpress! Economize agora com 7 novos cupons de desconto",
-    "description": "Cupons são válidos até o dia 07/07 ou até atingirem o limite de ativações. O post Até R$ 360 OFF no AliExpress! Economize agora com 7 novos cupons de desconto apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-aliexpress-01jul27.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-07-01",
-    "endDate": "2026-07-07",
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/aliexpress-logo-150x150.avif",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260701_3",
-    "title": "Chuva de cupons no Mercado Livre! Ganhe até 20% de desconto em compras",
-    "description": "Aproveite, o cupom pode acabar a qualquer momento! O post Chuva de cupons no Mercado Livre! Ganhe até 20% de desconto em compras apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/chuva-de-cupons-no-mercado-livre-ganhe-ate-20-de-desconto-em-compras.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-07-01",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260701_4",
-    "title": "Colômbia! Voos diretos de Brasília para Bogotá por 31 mil milhas Smiles o trecho",
-    "description": "Que tal conhecer uma cidade vibrante e multicultural da Colômbia? A Smiles está com promoção de passagens aéreas para Bogotá por apenas 31.500 milhas o trecho + taxas, saindo do Aeroporto de Brasíl... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-bogota-colombia-smiles-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
-    "startDate": "2026-07-01",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260701_5",
-    "title": "Kindle no Prime Day: aproveite até 30% de desconto + R$ 100 OFF com cupom em todos os modelos",
-    "description": "Aproveite, os preços promocionais podem acabar a qualquer momento! O post Kindle no Prime Day: aproveite até 30% de desconto + R$ 100 OFF com cupom em todos os modelos apareceu primeiro em Melhores... <a href=\"https://www.melhorescartoes.com.br/kindle-primeday-1jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "title": "Mais desconto! Aproveite até R$ 50 OFF em compras a partir de R$ 200",
+    "description": "Aproveite, o cupom pode acabar a qualquer momento! O post Mais desconto! Aproveite até R$ 50 OFF em compras a partir de R$ 200 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupons-amazon-1jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
     "startDate": "2026-07-01",
     "endDate": null,
@@ -85,35 +30,79 @@ const LIVE_OFFERS = [
     "isAuto": true
   },
   {
-    "id": "auto_20260701_6",
-    "title": "Cupom Shell Box: até R$ 7 de desconto para abastecer",
-    "description": "Mais um Shell V-Power Day no ar! É que toda quarta-feira o Shell Box oferece R$ 0,10 de desconto por litro no abastecimento com combustíveis Shell V-Power – limitado a R$ 7. O cupom é válido soment... <a href=\"https://www.melhorescartoes.com.br/shell-box-7-off-cupom-1jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260701_2",
+    "title": "Menor preço! Novo Fire TV Stick por apenas R$ 235 com cupom Amazon no Prime Day",
+    "description": "Cupom deve esgotar logo O post Menor preço! Novo Fire TV Stick por apenas R$ 235 com cupom Amazon no Prime Day apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/menor-preco-novo-fire-tv-stick-por-apenas-r-235-com-cupom-amazon-01jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
     "startDate": "2026-07-01",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/04/cupom-shell-1abr26.jpeg",
+    "image": "https://m.media-amazon.com/images/I/31KfGeE0GJL._SL500_.jpg",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260701_3",
+    "title": "Voos diretos Rio-Miami com bagagem a partir de 63 mil milhas Smiles o trecho",
+    "description": "A Smiles está com voos diretos do Rio de Janeiro para Miami a partir de 63.800 milhas o trecho, mais taxas aeroportuárias. Os voos são operados pela parceira American Airlines e já incluem uma baga... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-rio-miami-aa-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "smiles",
+    "startDate": "2026-07-01",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260701_4",
+    "title": "2 novos cupons! Ganhe até R$ 300 de desconto em compras no Amazon Prime Day",
+    "description": "Cupons têm limite de ativações O post 2 novos cupons! Ganhe até R$ 300 de desconto em compras no Amazon Prime Day apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/novo-cupom-amazon-300-desconto-01jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-07-01",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260701_5",
+    "title": "Voos de Belo Horizonte para Porto Alegre a partir de 11 mil milhas Smiles o trecho",
+    "description": "A Smiles está com bons preços para viajar de Belo Horizonte para Porto Alegre, com passagens aéreas a partir de apenas 11 mil milhas o trecho, mais taxas aeroportuárias. A tarifa está disponível pa... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-cnf-poa-smiles-gol-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "smiles",
+    "startDate": "2026-07-01",
+    "endDate": null,
+    "image": "",
     "active": true,
     "isAuto": true
   },
   {
     "id": "auto_20260701_7",
-    "title": "Começou o Prime Day! Confira as principais ofertas e mais de 60 cupons de desconto",
-    "description": "Evento acontece até o dia 07/07 O post Começou o Prime Day! Confira as principais ofertas e mais de 60 cupons de desconto apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/comecou-prime-day-amazon-2026.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
+    "title": "Voos diretos para Paris saindo de Fortaleza ou Salvador com bagagem a partir de 88 mil milhas Smiles o trecho",
+    "description": "A Smiles está com bons preços para viajar de Fortaleza ou Salvador para Paris com a parceira Air France em voo direto. Encontramos passagens aéreas a partir de 88 mil milhas o trecho, mais taxas ae... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-ssa-for-cdg-smiles-af-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "smiles",
     "startDate": "2026-07-01",
-    "endDate": "2026-07-07",
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/comecou-prime-day-amazon-2026-02.jpeg",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260701_8",
+    "title": "Boa tarifa! Voos do Recife para Navegantes a partir de 12 mil milhas Smiles o trecho",
+    "description": "A Smiles está com bons preços para viajar entre o Recife e Navegantes. Encontramos passagens aéreas entre as cidades a partir de 12.500 milhas o trecho, mais taxas aeroportuárias, para viajar neste... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-rec-nvt-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "smiles",
+    "startDate": "2026-07-01",
+    "endDate": null,
+    "image": "",
     "active": true,
     "isAuto": true
   },
   {
     "id": "auto_20260701_9",
-    "title": "Promoções de milhas, cartões, cashback e cupons válidas hoje!",
-    "description": "Confira as ofertas ativas para você aproveitar O post Promoções de milhas, cartões, cashback e cupons válidas hoje! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/resumo-promocoes-cartoes-credito-milhas-pontos-cashback.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
+    "title": "Passagens aéreas a partir de 7.300 milhas Smiles o trecho",
+    "description": "A Smiles está com uma promoção que oferece passagens aéreas da Gol a partir de 7.300 milhas o trecho, mais taxas aeroportuárias. Resgate agora no site da Smiles. Clientes Clube Smiles e/ou Smiles D... <a href=\"https://www.melhoresdestinos.com.br/milhas/smiles-passagens-gol-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "smiles",
     "startDate": "2026-07-01",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/themes/mc2026/img/marcas/quadradas/smiles.jpg",
+    "image": "",
     "active": true,
     "isAuto": true
   }
