@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-07-17T16:56:02.459Z",
+  lastUpdated: "2026-07-17T18:48:53.876Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -20,65 +20,98 @@ const LIVE_OFFERS_METADATA = {
 const LIVE_OFFERS = [
   {
     "id": "auto_20260717_0",
-    "title": "Promoções de milhas, cartões, cashback e cupons válidas hoje!",
-    "description": "Confira as ofertas ativas para você aproveitar O post Promoções de milhas, cartões, cashback e cupons válidas hoje! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/resumo-promocoes-cartoes-credito-milhas-pontos-cashback.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "title": "Voos diretos de Brasília para Miami por 61 mil milhas Smiles o trecho",
+    "description": "A Smiles está com voos diretos da Gol de Brasília para Miami por 61.500 milhas o trecho, mais taxas aeroportuárias. A tarifa está disponível para viajar em outubro deste ano. Resgate agora no site ... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-bsb-mia-smiles-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "smiles",
+    "startDate": "2026-07-17",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260717_1",
+    "title": "Livelo oferece até 13 pontos por real em compras na Insider, Carrefour Mercado, Farmacias App e mais parceiros",
+    "description": "A Livelo está com ofertas em diversos parceiros para turbinar seu saldo de pontos. É possível acumular até 13 pontos por real em sites como Renner, Mondaine, Under Armour e muito mais. As melhores ... <a href=\"https://www.melhorescartoes.com.br/livelo-13-pontos-parceiros-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "livelo",
+    "startDate": "2026-07-17",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260717_2",
+    "title": "Bom demais! África do Sul: voos diretos para Joanesburgo ou Cidade do Cabo a partir de 44 mil milhas o trecho",
+    "description": "Mais uma super promoção do Latam Pass para você viajar com milhas! Encontramos passagens aéreas para a África do Sul a partir de 44.249 milhas o trecho + taxas, saindo do Aeroporto de Guarulhos, em... <a href=\"https://www.melhoresdestinos.com.br/milhas/latam-voos-diretos-africa-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
+    "startDate": "2026-07-17",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260717_3",
+    "title": "Últimas horas! Ganhe até 115% de bônus no envio de pontos do cartão para o Azul Fidelidade",
+    "description": "Termina hoje (17/07) a promoção do Azul Fidelidade que oferece até 115% de bônus na transferência de pontos do cartão de crédito para o programa. A oferta faz parte da campanha de Aniversário do Me... <a href=\"https://www.melhorescartoes.com.br/ultimas-horas-azul-bancos-niver-md-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "livelo",
+    "startDate": "2026-07-17",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/azul-115-bonus-niver-md-jul26.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260717_4",
+    "title": "Esfera e ConnectMiles: ganhe até 55% de bônus na transferência de pontos",
+    "description": "A Esfera está oferecendo até 55% de bônus na transferência de pontos para o ConnectMiles, programa de fidelidade da Copa Airlines. A oferta é válida até a próxima segunda-feira, 20 de julho. A boni... <a href=\"https://www.melhorescartoes.com.br/esfera-copa-55-bonus-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "esfera",
+    "startDate": "2026-07-17",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/esfera-copa-55-bonus-jul26.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260717_6",
+    "title": "Muito barato! Voos da Latam para a Nova Zelândia a partir de 87 mil milhas o trecho",
+    "description": "EXCELENTE oportunidade para você conhecer a Nova Zelândia com milhas! O Latam Pass está com passagens aéreas para Auckland por 87.613 milhas o trecho + taxas, saindo do Rio de Janeiro e de São Paul... <a href=\"https://www.melhoresdestinos.com.br/milhas/auckland-nova-zelandia-latam-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
+    "startDate": "2026-07-17",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260717_7",
+    "title": "Madri! Voos diretos da Iberia saindo do Nordeste a partir de 16 mil pontos o trecho &#8211; confira as datas!",
+    "description": "O Iberia Club está com ótimos preços para viajar para a Europa! Encontramos voos diretos de Fortaleza ou do Recife para Madri, na Espanha, a partir de apenas 16 mil pontos o trecho, mais taxas aero... <a href=\"https://www.melhoresdestinos.com.br/milhas/iberia-madri-rec-for-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
     "startDate": "2026-07-17",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/themes/mc2026/img/marcas/quadradas/inter.jpg",
+    "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260716_1",
-    "title": "RevPoints: para quais programas de milhas transferir os pontos da Revolut &#8211; e como usar cada um",
-    "description": "A oferta exclusiva da Revolut no Aniversário do Melhores Destinos &#8211; com 8 mil pontos de bônus &#8211; ficou muito interessante para quem gosta de viajar com milhas. Ao abrir sua conta pelo li... <a href=\"https://www.melhorescartoes.com.br/programas-parceiros-revolut-revpoints.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-07-16",
+    "id": "auto_20260717_8",
+    "title": "Voos para Lisboa na classe executiva da Latam a partir de 136 mil milhas o trecho",
+    "description": "O Latam Pass está com bons preços para viajar para Lisboa em classe executiva. Encontramos passagens aéreas saindo de Fortaleza a partir de 136 mil milhas o trecho ou saindo de São Paulo a partir d... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-executiva-latam-lisboa-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
+    "startDate": "2026-07-17",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/aniversario-melhores-destinos-18-anos-capa-revolut-1-820x430.jpg",
+    "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260716_4",
-    "title": "Continua! Cartão Gol Smiles oferece até 7 milhas por dólar gasto para clientes do clube",
-    "description": "A promoção da Smiles que oferece pontuação turbinada do cartão GOL Smiles vai continuar por mais tempo! Até o dia 15 de agosto, clientes com cartões Infinite e Platinum podem acumular até 7 milhas ... <a href=\"https://www.melhorescartoes.com.br/cartao-gol-smiles-pontuacao-turbinada-prorrogado-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260717_9",
+    "title": "Caribe! Voos diretos de São Paulo para Punta Cana por 47 mil milhas Smiles o trecho",
+    "description": "A Smiles está com voos diretos de São Paulo para Punta Cana por 47 mil milhas o trecho, mais taxas aeroportuárias. Os voos são operados pela própria Gol. Resgate agora clicando aqui. Os menores val... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-sao-puj-smiles-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "smiles",
-    "startDate": "2026-07-16",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/cartao-gol-smiles-pontuacao-turbinada-ju26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260716_5",
-    "title": "Vale R$ 10 mil! Compre produtos Huggies Kids e ganhe prêmios em dinheiro, brinquedos e pelúcias",
-    "description": "Porém, seja rápido: algumas pelúcias têm unidades limitadas e os estoques devem acabar rápido. O post Vale R$ 10 mil! Compre produtos Huggies Kids e ganhe prêmios em dinheiro, brinquedos e pelúcias... <a href=\"https://www.melhorescartoes.com.br/promocao-huggies-kids.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-07-16",
-    "endDate": null,
-    "image": "https://m.media-amazon.com/images/I/414r7QKe41L._SL500_.jpg",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260716_8",
-    "title": "Milheiro a partir de R$ 9,50! Assine o Sam’s Club e ganhe até 10.000 pontos Azul",
-    "description": "Em comemoração ao Aniversário do Melhores Destinos, o Azul Fidelidade está oferecendo até 10.000 pontos para quem assinar o Sam's Club até amanhã, 17 de julho. Assinantes do Clube Azul garantem a m... <a href=\"https://www.melhorescartoes.com.br/oferta-azul-sams-niver-md-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "azul",
-    "startDate": "2026-07-16",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/azul-sams-club-md-niver-jul26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260716_9",
-    "title": "Últimas vagas! Voos da American Airlines para Tóquio por 166 mil milhas Smiles o trecho",
-    "description": "Últimas vagas para embarcar para o Japão utilizando milhas Smiles! O programa está com voos de São Paulo para Tóquio por 166 mil milhas o trecho, mais taxas aeroportuárias. Os voos são operados pel... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-japao-smiles-aa-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
-    "startDate": "2026-07-16",
+    "startDate": "2026-07-17",
     "endDate": null,
     "image": "",
     "active": true,
