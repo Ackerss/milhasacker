@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-07-22T08:03:34.759Z",
+  lastUpdated: "2026-07-22T11:40:13.096Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -19,101 +19,101 @@ const LIVE_OFFERS_METADATA = {
 
 const LIVE_OFFERS = [
   {
-    "id": "auto_20260717_0",
-    "title": "Voos diretos de Brasília para Miami por 61 mil milhas Smiles o trecho",
-    "description": "A Smiles está com voos diretos da Gol de Brasília para Miami por 61.500 milhas o trecho, mais taxas aeroportuárias. A tarifa está disponível para viajar em outubro deste ano. Resgate agora no site ... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-bsb-mia-smiles-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
-    "startDate": "2026-07-17",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260717_1",
-    "title": "Livelo oferece até 13 pontos por real em compras na Insider, Carrefour Mercado, Farmacias App e mais parceiros",
-    "description": "A Livelo está com ofertas em diversos parceiros para turbinar seu saldo de pontos. É possível acumular até 13 pontos por real em sites como Renner, Mondaine, Under Armour e muito mais. As melhores ... <a href=\"https://www.melhorescartoes.com.br/livelo-13-pontos-parceiros-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "livelo",
-    "startDate": "2026-07-17",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260717_2",
-    "title": "Bom demais! África do Sul: voos diretos para Joanesburgo ou Cidade do Cabo a partir de 44 mil milhas o trecho",
-    "description": "Mais uma super promoção do Latam Pass para você viajar com milhas! Encontramos passagens aéreas para a África do Sul a partir de 44.249 milhas o trecho + taxas, saindo do Aeroporto de Guarulhos, em... <a href=\"https://www.melhoresdestinos.com.br/milhas/latam-voos-diretos-africa-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "latam",
-    "startDate": "2026-07-17",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260717_3",
-    "title": "Últimas horas! Ganhe até 115% de bônus no envio de pontos do cartão para o Azul Fidelidade",
-    "description": "Termina hoje (17/07) a promoção do Azul Fidelidade que oferece até 115% de bônus na transferência de pontos do cartão de crédito para o programa. A oferta faz parte da campanha de Aniversário do Me... <a href=\"https://www.melhorescartoes.com.br/ultimas-horas-azul-bancos-niver-md-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "livelo",
-    "startDate": "2026-07-17",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/azul-115-bonus-niver-md-jul26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260717_4",
-    "title": "Esfera e ConnectMiles: ganhe até 55% de bônus na transferência de pontos",
-    "description": "A Esfera está oferecendo até 55% de bônus na transferência de pontos para o ConnectMiles, programa de fidelidade da Copa Airlines. A oferta é válida até a próxima segunda-feira, 20 de julho. A boni... <a href=\"https://www.melhorescartoes.com.br/esfera-copa-55-bonus-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "esfera",
-    "startDate": "2026-07-17",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/esfera-copa-55-bonus-jul26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260717_6",
-    "title": "Muito barato! Voos da Latam para a Nova Zelândia a partir de 87 mil milhas o trecho",
-    "description": "EXCELENTE oportunidade para você conhecer a Nova Zelândia com milhas! O Latam Pass está com passagens aéreas para Auckland por 87.613 milhas o trecho + taxas, saindo do Rio de Janeiro e de São Paul... <a href=\"https://www.melhoresdestinos.com.br/milhas/auckland-nova-zelandia-latam-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "latam",
-    "startDate": "2026-07-17",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260717_7",
-    "title": "Madri! Voos diretos da Iberia saindo do Nordeste a partir de 16 mil pontos o trecho &#8211; confira as datas!",
-    "description": "O Iberia Club está com ótimos preços para viajar para a Europa! Encontramos voos diretos de Fortaleza ou do Recife para Madri, na Espanha, a partir de apenas 16 mil pontos o trecho, mais taxas aero... <a href=\"https://www.melhoresdestinos.com.br/milhas/iberia-madri-rec-for-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260722_0",
+    "title": "Vai abastecer? Ganhe até R$ 7 de desconto com cupom Shell Box",
+    "description": "Quarta-feira é dia de abastecer com cupom do Shell Box! O aplicativo liberou o código SVPDAY, que oferece R$ 0,10 de desconto por litro no abastecimento com Shell V-Power – limitado a R$ 7. O cupom... <a href=\"https://www.melhorescartoes.com.br/cupom-shell-box-7-off-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-07-17",
+    "startDate": "2026-07-22",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/shell-box-cupom-jul26.jpg",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260722_1",
+    "title": "Promoções de milhas, cartões, cashback e cupons válidas hoje!",
+    "description": "Confira as ofertas ativas para você aproveitar O post Promoções de milhas, cartões, cashback e cupons válidas hoje! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/resumo-promocoes-cartoes-credito-milhas-pontos-cashback.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-07-22",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/themes/mc2026/img/marcas/quadradas/latampass.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260721_3",
+    "title": "AO VIVO: Como empilhar descontos e economizar muito no seu hotel",
+    "description": "A hospedagem costuma ser um dos itens de maior peso no orçamento de uma viagem. A boa notícia é que existem alternativas para te ajudar a economizar. Isso vai muito além de fazer uma simples busca ... <a href=\"https://www.melhoresdestinos.com.br/economize-nas-hospedagens.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-07-21",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260717_8",
-    "title": "Voos para Lisboa na classe executiva da Latam a partir de 136 mil milhas o trecho",
-    "description": "O Latam Pass está com bons preços para viajar para Lisboa em classe executiva. Encontramos passagens aéreas saindo de Fortaleza a partir de 136 mil milhas o trecho ou saindo de São Paulo a partir d... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-executiva-latam-lisboa-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260721_4",
+    "title": "Especial Caribe! Voos para Punta Cana ou Cancún a partir de R$ 750 ou 28 mil milhas o trecho mais taxas",
+    "description": "Que tal curtir dias de sol no Caribe? Encontramos passagens aéreas para Punta Cana ou Cancún na Mega Promo Latam Pass a partir de 28.981 milhas ou R$ 750,61 o trecho + taxas aeroportuárias, com saí... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-punta-cana-latam-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "latam",
-    "startDate": "2026-07-17",
+    "startDate": "2026-07-21",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260717_9",
-    "title": "Caribe! Voos diretos de São Paulo para Punta Cana por 47 mil milhas Smiles o trecho",
-    "description": "A Smiles está com voos diretos de São Paulo para Punta Cana por 47 mil milhas o trecho, mais taxas aeroportuárias. Os voos são operados pela própria Gol. Resgate agora clicando aqui. Os menores val... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-sao-puj-smiles-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
-    "startDate": "2026-07-17",
+    "id": "auto_20260721_5",
+    "title": "Baixou! Passagens de São Paulo para Jericoacoara em voo direto a partir de R$ 268 ou 10 mil milhas Latam Pass",
+    "description": "A Latam prorrogou a Mega Promo e baixou bem o preço das passagens do voo direto de São Paulo para Jericoacoara! Encontramos agora tarifas a partir de 10.300 milhas Latam Pass o trecho + taxas aerop... <a href=\"https://www.melhoresdestinos.com.br/milhas/baixou-passagens-jericoacoara-milhas-latam-pass-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
+    "startDate": "2026-07-21",
     "endDate": null,
     "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260721_6",
+    "title": "Mais prático! Celulares Galaxy agora fazem transferências Pix via Samsung Wallet",
+    "description": "Saiba como habilitar o novo recurso para fazer pagamentos e transferências de forma simples, rápida e sem precisar abrir o app do banco. O post Mais prático! Celulares Galaxy agora fazem transferên... <a href=\"https://www.melhorescartoes.com.br/celulares-galaxy-samsung-wallet-pix.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-07-21",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/samsung-wallet-pix.jpg",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260721_7",
+    "title": "Só marca boa! Aproveite cupom na Dafiti e leve 2, pague 1 em Arezzo, Colcci, Democrata e mais!",
+    "description": "A disponibilidade de cada produto depende dos estoques, corra para aproveitar antes que acabe! O post Só marca boa! Aproveite cupom na Dafiti e leve 2, pague 1 em Arezzo, Colcci, Democrata e mais! ... <a href=\"https://www.melhorescartoes.com.br/leve-2-pague-1-dafiti-21jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-07-21",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/dafiti-logo.jpg",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260721_8",
+    "title": "Voos para Natal a partir de R$ 284 ou 11 mil milhas o trecho mais taxas na Mega Promo da Latam",
+    "description": "A Mega Promo Latam Pass está com voos de São Paulo para Natal a partir de 11 mil milhas o trecho, mais taxas aeroportuárias, com opção de voo direto! A tarifa promocionais está disponível para viaj... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-natal-latam-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
+    "startDate": "2026-07-21",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260721_9",
+    "title": "70% OFF Prorrogado! Seguro Viagem Allianz com o maior desconto do ano e pagamento parcelado",
+    "description": "A Allianz Travel prorrogou a oferta de 70% de desconto no Seguro Viagem em comemoração ao aniversário do Melhores Destinos. Para aproveitar, é só acessar o site oficial que o cupom MELHORESDESTINOS... <a href=\"https://www.melhorescartoes.com.br/prorrogado-desconto-70-seguro-viagem-allianz-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-07-21",
+    "endDate": null,
+    "image": "https://www.melhoresdestinos.com.br/wp-content/uploads/2026/07/allianz-cupom-aniversario-melhores-destinos-2026.png",
     "active": true,
     "isAuto": true
   }
