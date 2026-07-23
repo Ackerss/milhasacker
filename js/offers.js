@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-07-23T01:25:38.440Z",
+  lastUpdated: "2026-07-23T05:11:48.938Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -19,79 +19,79 @@ const LIVE_OFFERS_METADATA = {
 
 const LIVE_OFFERS = [
   {
+    "id": "auto_20260722_0",
+    "title": "Cuponzão em tecnologia! Ganhe R$ 200 OFF em compras a partir de R$ 1.599 no Mercado Livre",
+    "description": "Aproveite, o cupom pode acabar a qualquer momento! O post Cuponzão em tecnologia! Ganhe R$ 200 OFF em compras a partir de R$ 1.599 no Mercado Livre apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-tecnologia-22jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-07-22",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
     "id": "auto_20260722_1",
-    "title": "Missões Latam Pass: programa lança desafios para clientes cumprirem em troca de milhas &#8211; veja como funciona",
-    "description": "O Latam Pass lançou as Missões, uma nova área no aplicativo que reúne desafios com recompensas em milhas. A novidade é gratuita e permite aos clientes acompanhar objetivos e receber bônus conforme ... <a href=\"https://www.melhorescartoes.com.br/latam-pass-missoes.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
-    "startDate": "2026-07-22",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/latam-pass-missoes-lancamento-1.jpeg",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260722_3",
-    "title": "É descontaço! Cupom Mercado Livre oferece 30% OFF em produtos selecionados &#8211; sem valor mínimo de compra!",
-    "description": "Cupom é válido até o dia 31/07, mas tem limite de ativações e pode esgotar antes da data O post É descontaço! Cupom Mercado Livre oferece 30% OFF em produtos selecionados &#8211; sem valor mínimo d... <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-30-desconto-22jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "title": "Muito desconto! Aproveite 5 novos cupons no Mercado Livre de até 25% OFF",
+    "description": "Aproveite, o cupom pode acabar a qualquer momento! O post Muito desconto! Aproveite 5 novos cupons no Mercado Livre de até 25% OFF apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupons-mercado-livre-9h-22jul26meli.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
     "startDate": "2026-07-22",
-    "endDate": "2026-07-31",
+    "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260722_4",
-    "title": "Acaba hoje: ganhe 5 mil milhas com a conta Revolut – e aproveite taxa zero no dólar/euro, cartão e saques grátis",
-    "description": "Hoje (22/07), é o último dia da oferta da Revolut no Aniversário do Melhores Destinos: abrindo sua conta digital grátis pelo link da oferta ➜ e gastando R$ 150 no cartão de débito nos primeiros 60 ... <a href=\"https://www.melhoresdestinos.com.br/promocao/acaba-hoje-5-mil-milhas-revolut-niver-md\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
+    "id": "auto_20260722_2",
+    "title": "Azul Fidelidade oferece até 115% de bônus na transferência de pontos Esfera",
+    "description": "O Azul Fidelidade está oferecendo até 115% de bônus nas transferências de pontos Esfera para o programa. A oferta é válida até o próximo domingo, 26 de julho. Para aproveitar, é necessário se cadas... <a href=\"https://www.melhorescartoes.com.br/azul-esfera-115-bonus-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "esfera",
     "startDate": "2026-07-22",
     "endDate": null,
-    "image": "",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/azul-esfera-115-bonus-jul26.png",
     "active": true,
     "isAuto": true
   },
   {
     "id": "auto_20260722_5",
-    "title": "Azul tem voos para o Recife saindo de Brasília a partir de R$ 181 ou 15 mil pontos o trecho mais taxas",
-    "description": "O Azul Fidelidade está com passagens aéreas para Recife a partir de 15.600 pontos ou R$ 181,74 o trecho + taxas aeroportuárias, com saídas de Brasília. São opções para viajar entre setembro e novem... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-azul-recife-bsb-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "azul",
+    "title": "Vai abastecer? Ganhe até R$ 7 de desconto com cupom Shell Box",
+    "description": "Quarta-feira é dia de abastecer com cupom do Shell Box! O aplicativo liberou o código SVPDAY, que oferece R$ 0,10 de desconto por litro no abastecimento com Shell V-Power – limitado a R$ 7. O cupom... <a href=\"https://www.melhorescartoes.com.br/cupom-shell-box-7-off-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
     "startDate": "2026-07-22",
     "endDate": null,
-    "image": "",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/shell-box-cupom-jul26.jpg",
     "active": true,
     "isAuto": true
   },
   {
     "id": "auto_20260722_6",
-    "title": "Últimas horas! Envie pontos Azul para o ALL Accor com desconto e até 35% de bônus",
-    "description": "Hoje (22/07) é o último dia para aproveitar a promoção entre Azul Fidelidade e ALL Accor! Em celebração ao Aniversário de 18 anos do Melhores Destinos, os programas estão oferecendo desconto na con... <a href=\"https://www.melhorescartoes.com.br/ultimas-horas-azul-accor-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "azul",
+    "title": "Promoções de milhas, cartões, cashback e cupons válidas hoje!",
+    "description": "Confira as ofertas ativas para você aproveitar O post Promoções de milhas, cartões, cashback e cupons válidas hoje! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/resumo-promocoes-cartoes-credito-milhas-pontos-cashback.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
     "startDate": "2026-07-22",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/md18anos-azul-fidelidade-all-accor.png",
+    "image": "https://www.melhorescartoes.com.br/wp-content/themes/mc2026/img/marcas/quadradas/latampass.png",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260722_8",
-    "title": "Novos cupons! Economize até R$ 100 em compras no Mercado Livre",
-    "description": "Aproveite, o cupom pode acabar a qualquer momento! O post Novos cupons! Economize até R$ 100 em compras no Mercado Livre apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupons-mercado-livre-15h-22jul26meli.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260721_8",
+    "title": "AO VIVO: Como empilhar descontos e economizar muito no seu hotel",
+    "description": "A hospedagem costuma ser um dos itens de maior peso no orçamento de uma viagem. A boa notícia é que existem alternativas para te ajudar a economizar. Isso vai muito além de fazer uma simples busca ... <a href=\"https://www.melhoresdestinos.com.br/economize-nas-hospedagens.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-07-22",
+    "startDate": "2026-07-21",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260722_9",
-    "title": "Jeans com desconto! Garanta até 60% OFF + 30% extra com cupom na Renner",
-    "description": "Corre, os estoques são limitados! O post Jeans com desconto! Garanta até 60% OFF + 30% extra com cupom na Renner apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/jeans-renner-cupom-22jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-07-22",
+    "id": "auto_20260721_9",
+    "title": "Especial Caribe! Voos para Punta Cana ou Cancún a partir de R$ 750 ou 28 mil milhas o trecho mais taxas",
+    "description": "Que tal curtir dias de sol no Caribe? Encontramos passagens aéreas para Punta Cana ou Cancún na Mega Promo Latam Pass a partir de 28.981 milhas ou R$ 750,61 o trecho + taxas aeroportuárias, com saí... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-punta-cana-latam-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
+    "startDate": "2026-07-21",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/renner-logo.png",
+    "image": "",
     "active": true,
     "isAuto": true
   }
