@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-07-26T20:43:14.715Z",
+  lastUpdated: "2026-07-26T22:45:42.650Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -70,28 +70,6 @@ const LIVE_OFFERS = [
     "startDate": "2026-07-22",
     "endDate": null,
     "image": "https://www.melhorescartoes.com.br/wp-content/themes/mc2026/img/marcas/quadradas/latampass.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260721_8",
-    "title": "AO VIVO: Como empilhar descontos e economizar muito no seu hotel",
-    "description": "A hospedagem costuma ser um dos itens de maior peso no orçamento de uma viagem. A boa notícia é que existem alternativas para te ajudar a economizar. Isso vai muito além de fazer uma simples busca ... <a href=\"https://www.melhoresdestinos.com.br/economize-nas-hospedagens.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-07-21",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260721_9",
-    "title": "Especial Caribe! Voos para Punta Cana ou Cancún a partir de R$ 750 ou 28 mil milhas o trecho mais taxas",
-    "description": "Que tal curtir dias de sol no Caribe? Encontramos passagens aéreas para Punta Cana ou Cancún na Mega Promo Latam Pass a partir de 28.981 milhas ou R$ 750,61 o trecho + taxas aeroportuárias, com saí... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-punta-cana-latam-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "latam",
-    "startDate": "2026-07-21",
-    "endDate": null,
-    "image": "",
     "active": true,
     "isAuto": true
   }
