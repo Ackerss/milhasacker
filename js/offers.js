@@ -4,10 +4,10 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-07-26T22:45:42.650Z",
+  lastUpdated: "2026-07-27T01:29:41.879Z",
   status: "success",
   currentMarketPrices: {
-  "latam": 23,
+  "latam": 25.9,
   "smiles": 17.5,
   "azul": 13,
   "livelo": 35,
@@ -19,55 +19,55 @@ const LIVE_OFFERS_METADATA = {
 
 const LIVE_OFFERS = [
   {
-    "id": "auto_20260722_0",
-    "title": "Cuponzão em tecnologia! Ganhe R$ 200 OFF em compras a partir de R$ 1.599 no Mercado Livre",
-    "description": "Aproveite, o cupom pode acabar a qualquer momento! O post Cuponzão em tecnologia! Ganhe R$ 200 OFF em compras a partir de R$ 1.599 no Mercado Livre apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-tecnologia-22jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260725_3",
+    "title": "Revolut adiciona Emirates como nova parceira para transferir pontos do RevPoints",
+    "description": "O post Revolut adiciona Emirates como nova parceira para transferir pontos do RevPoints apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhoresdestinos.com.br/milhas/revolut-adiciona-emirates-revpoints\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-07-22",
+    "startDate": "2026-07-25",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260722_1",
-    "title": "Muito desconto! Aproveite 5 novos cupons no Mercado Livre de até 25% OFF",
-    "description": "Aproveite, o cupom pode acabar a qualquer momento! O post Muito desconto! Aproveite 5 novos cupons no Mercado Livre de até 25% OFF apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupons-mercado-livre-9h-22jul26meli.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260725_4",
+    "title": "Cartão Latam Pass Black com milhas bônus suficientes para ir pro Caribe de graça!",
+    "description": "Termina amanhã a promoção para você pedir o cartão Latam Pass Black e ganhar até 70.000 milhas de presente! A oferta vale para cartões solicitados até as 23h59 do dia 26/07, e para aproveitar é fác... <a href=\"https://www.melhorescartoes.com.br/termina-cartao-latam-black-70k-bonus-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
+    "startDate": "2026-07-25",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/termina-cartao-latam-black-70k-bonus-jul26.jpeg",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260725_5",
+    "title": "Cupom Amazon! Ganhe até R$ 40 OFF em compras a partir de R$ 200",
+    "description": "O cupom possui limite de ativações e pode esgotar a qualquer momento. O post Cupom Amazon! Ganhe até R$ 40 OFF em compras a partir de R$ 200 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-10-off-25jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-07-22",
+    "startDate": "2026-07-25",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260722_2",
-    "title": "Azul Fidelidade oferece até 115% de bônus na transferência de pontos Esfera",
-    "description": "O Azul Fidelidade está oferecendo até 115% de bônus nas transferências de pontos Esfera para o programa. A oferta é válida até o próximo domingo, 26 de julho. Para aproveitar, é necessário se cadas... <a href=\"https://www.melhorescartoes.com.br/azul-esfera-115-bonus-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "esfera",
-    "startDate": "2026-07-22",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/azul-esfera-115-bonus-jul26.png",
+    "id": "auto_20260725_6",
+    "title": "Prorrogado! Compre milhas Latam Pass com até 63% de desconto – milheiro a partir de R$ 25,90",
+    "description": "O Latam Pass prorrogou a oferta de até 63% de desconto na compra de milhas do programa! Agora, você pode aproveitar até o dia 27/07 para comprar lotes de 1.000 milhas a partir de R$ 25,90! Para apr... <a href=\"https://www.melhorescartoes.com.br/prorrogado-compra-milhas-latam-pass-63-off-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
+    "startDate": "2026-07-25",
+    "endDate": "2026-07-27",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/milhas-latam-pass-63-off-jul26.jpg",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260722_5",
-    "title": "Vai abastecer? Ganhe até R$ 7 de desconto com cupom Shell Box",
-    "description": "Quarta-feira é dia de abastecer com cupom do Shell Box! O aplicativo liberou o código SVPDAY, que oferece R$ 0,10 de desconto por litro no abastecimento com Shell V-Power – limitado a R$ 7. O cupom... <a href=\"https://www.melhorescartoes.com.br/cupom-shell-box-7-off-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-07-22",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/shell-box-cupom-jul26.jpg",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260722_6",
+    "id": "auto_20260725_9",
     "title": "Promoções de milhas, cartões, cashback e cupons válidas hoje!",
     "description": "Confira as ofertas ativas para você aproveitar O post Promoções de milhas, cartões, cashback e cupons válidas hoje! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/resumo-promocoes-cartoes-credito-milhas-pontos-cashback.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-07-22",
+    "startDate": "2026-07-25",
     "endDate": null,
     "image": "https://www.melhorescartoes.com.br/wp-content/themes/mc2026/img/marcas/quadradas/latampass.png",
     "active": true,
