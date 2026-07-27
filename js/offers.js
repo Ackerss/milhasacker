@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-07-27T16:05:22.659Z",
+  lastUpdated: "2026-07-27T19:06:43.167Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -17,4 +17,49 @@ const LIVE_OFFERS_METADATA = {
 }
 };
 
-const LIVE_OFFERS = [];
+const LIVE_OFFERS = [
+  {
+    "id": "auto_20260722_1",
+    "title": "Missões Latam Pass: programa lança desafios para clientes cumprirem em troca de milhas &#8211; veja como funciona",
+    "description": "O Latam Pass lançou as Missões, uma nova área no aplicativo que reúne desafios com recompensas em milhas. A novidade é gratuita e permite aos clientes acompanhar objetivos e receber bônus conforme ... <a href=\"https://www.melhorescartoes.com.br/latam-pass-missoes.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "smiles",
+    "startDate": "2026-07-22",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/latam-pass-missoes-lancamento-1.jpeg",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260722_3",
+    "title": "É descontaço! Cupom Mercado Livre oferece 30% OFF em produtos selecionados &#8211; sem valor mínimo de compra!",
+    "description": "Cupom é válido até o dia 31/07, mas tem limite de ativações e pode esgotar antes da data O post É descontaço! Cupom Mercado Livre oferece 30% OFF em produtos selecionados &#8211; sem valor mínimo d... <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-30-desconto-22jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-07-22",
+    "endDate": "2026-07-31",
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260722_4",
+    "title": "Acaba hoje: ganhe 5 mil milhas com a conta Revolut – e aproveite taxa zero no dólar/euro, cartão e saques grátis",
+    "description": "Hoje (22/07), é o último dia da oferta da Revolut no Aniversário do Melhores Destinos: abrindo sua conta digital grátis pelo link da oferta ➜ e gastando R$ 150 no cartão de débito nos primeiros 60 ... <a href=\"https://www.melhoresdestinos.com.br/promocao/acaba-hoje-5-mil-milhas-revolut-niver-md\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-07-22",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260722_5",
+    "title": "Azul tem voos para o Recife saindo de Brasília a partir de R$ 181 ou 15 mil pontos o trecho mais taxas",
+    "description": "O Azul Fidelidade está com passagens aéreas para Recife a partir de 15.600 pontos ou R$ 181,74 o trecho + taxas aeroportuárias, com saídas de Brasília. São opções para viajar entre setembro e novem... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-azul-recife-bsb-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "azul",
+    "startDate": "2026-07-22",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  }
+];
