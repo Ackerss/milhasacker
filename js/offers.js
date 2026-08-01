@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-07-31T22:47:32.750Z",
+  lastUpdated: "2026-08-01T01:26:52.958Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -19,55 +19,88 @@ const LIVE_OFFERS_METADATA = {
 
 const LIVE_OFFERS = [
   {
-    "id": "auto_20260730_2",
-    "title": "Cuponzão na Amazon! Ganhe até R$ 200 de desconto em compras a partir de R$ 800",
-    "description": "Aproveite, o cupom pode acabar a qualquer momento! O post Cuponzão na Amazon! Ganhe até R$ 200 de desconto em compras a partir de R$ 800 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-19h-30jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260731_0",
+    "title": "Novo cupom! Economize R$ 200 em compras a partir de R$ 900 na Amazon",
+    "description": "Aproveite, o cupom pode acabar a qualquer momento! O post Novo cupom! Economize R$ 200 em compras a partir de R$ 900 na Amazon apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-19h-31jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-07-30",
+    "startDate": "2026-07-31",
     "endDate": null,
     "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/Captura-de-Tela-2025-11-13-as-18.58.17.png",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260730_4",
-    "title": "Cartão Elo Diners Club oferece até 25.000 pontos extras na Livelo ou UAU Caixa – veja como participar",
-    "description": "A Elo está com uma nova campanha que oferece até 25.000 pontos extras na Livelo ou Uau Caixa, para os clientes com cartão Elo Diners Club que atingirem uma meta de gastos. Para participar, é necess... <a href=\"https://www.melhorescartoes.com.br/promoca-elo-diners-pontos-extras-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "livelo",
-    "startDate": "2026-07-30",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/promo-elo-diners-25-mil-pontos-extras-jul26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260730_5",
-    "title": "Ótimo preço! Smart TV Samsung 4K 50&#8243; com soundbar por apenas R$ 2.074 com cupom Magalu",
-    "description": "O cupom tem limite de ativações e pode esgotar logo O post Ótimo preço! Smart TV Samsung 4K 50&#8243; com soundbar por apenas R$ 2.074 com cupom Magalu apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/smart-tv-samsung-soundbar-cupom-magalu-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260731_1",
+    "title": "Partiu happy hour! Nubank oferece 10% de desconto na compra de créditos do Outback",
+    "description": "Sexta-feira e happy hour são quase sinônimos, não é mesmo? Melhor ainda se for com desconto! Para comemorar a chegada do final de semana, o Nubank está oferecendo 10% de desconto na compra de gift ... <a href=\"https://www.melhorescartoes.com.br/outback-nubank-10-desconto-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-07-30",
+    "startDate": "2026-07-31",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/smart-tv-samsung-soundbar-cupom-magalu-jul26.jpeg",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/nubank-desconto-10-outback-jul261-820x1638.jpg",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260730_6",
-    "title": "Muito bom! Voos de São Paulo para Foz do Iguaçu a partir de 6 mil milhas o trecho",
-    "description": "Ótima oportunidade para você visitar as Cataratas do Iguaçu! Encontramos passagens aéreas para Foz do Iguaçu a partir de 6.608 milhas Latam Pass o trecho + taxas aeroportuárias, com saídas do Aerop... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-foz-iguacu-latam-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260731_2",
+    "title": "Holanda! Voos da Latam para Amsterdã por 62 mil milhas o trecho",
+    "description": "O Latam Pass está com bons preços de passagens aéreas para Amsterdã, na Holanda, a partir de 62.014 milhas o trecho+ taxas, com saídas de São Paulo e do Rio de Janeiro. Encontramos várias datas dis... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-latam-amsterda-jul26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "latam",
-    "startDate": "2026-07-30",
+    "startDate": "2026-07-31",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260730_8",
-    "title": "Dia dos Pais chegando! Ganhe até 15 pontos por real em compras na Livelo e na Esfera",
-    "description": "O Dia dos Pais está chegando e ainda dá tempo de garantir um presente especial. Confira a lista que preparamos com as principais promoções da Livelo e da Esfera para turbinar seu saldo de pontos e ... <a href=\"https://www.melhorescartoes.com.br/ofertas-compras-bonificadas-esfera-livelo-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260731_4",
+    "title": "Cupom Mercado Livre e Amazon: garanta até 30% de desconto com 3 novos códigos",
+    "description": "Os cupons têm limite de ativações e podem esgotar logo. O post Cupom Mercado Livre e Amazon: garanta até 30% de desconto com 3 novos códigos apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-mercado-livre-31jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-07-31",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/unnamed.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260731_5",
+    "title": "Livelo oferece até 18 pontos por real em compras na Insider, Lacoste, Casas Bahia e mais parceiros",
+    "description": "Oportunidade para turbinar seu saldo de pontos na Livelo e garantir o presente de Dia dos Pais. É possível acumular até 18 pontos por real em sites como Under Armour e muito mais. As melhores condi... <a href=\"https://www.melhorescartoes.com.br/livelo-parceiros-18-pontos-jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "livelo",
-    "startDate": "2026-07-30",
+    "startDate": "2026-07-31",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260731_6",
+    "title": "Maratona de Descontos Netshoes! Compre produtos com até 80% OFF e 10% extra com cupom",
+    "description": "Promoção acontece até o dia 07/08 O post Maratona de Descontos Netshoes! Compre produtos com até 80% OFF e 10% extra com cupom apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/maratona-descontos-cupom-extra-netshoes.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-07-31",
+    "endDate": "2026-08-07",
+    "image": "https://static.netshoes.com.br/produtos/bola-campo-adidas-trionda-copa-do-mundo-2026-training/14/FBA-7874-014/FBA-7874-014_zoom1.jpg?ts=1783964298&ims=1088x",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260731_7",
+    "title": "Má notícia: conta global AstroPay vai cobrar taxa em compras internacionais",
+    "description": "O post Má notícia: conta global AstroPay vai cobrar taxa em compras internacionais apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhoresdestinos.com.br/milhas/ma-noticia-astropay-taxa-compras\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-07-31",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260731_9",
+    "title": "3 novos cupons! Garanta até 25% de desconto em produtos selecionados no Mercado Livre",
+    "description": "Os cupons de desconto têm limite de ativações e devem esgotar logo. O post 3 novos cupons! Garanta até 25% de desconto em produtos selecionados no Mercado Livre apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-12h-31jul26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-07-31",
     "endDate": null,
     "image": "",
     "active": true,
