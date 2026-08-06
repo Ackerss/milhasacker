@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-08-06T08:10:35.953Z",
+  lastUpdated: "2026-08-06T11:54:34.999Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -20,9 +20,9 @@ const LIVE_OFFERS_METADATA = {
 const LIVE_OFFERS = [
   {
     "id": "auto_20260805_0",
-    "title": "Cupom Amazon oferece R$ 150 OFF em compras a partir de R$ 1999",
-    "description": "O cupom tem limite de uso e pode esgotar logo. O post Cupom Amazon oferece R$ 150 OFF em compras a partir de R$ 1999 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-20h-05ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
+    "title": "Uruguai barato! Voos diretos do Rio de Janeiro para Montevidéu por 12 mil milhas Smiles o trecho",
+    "description": "Ótima oportunidade para você visitar o Uruguai! A GOL está com voos diretos para a capital Montevidéu por apenas 12.500 milhas Smiles o trecho + taxas, saindo do Rio de Janeiro. São poucas datas di... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-gol-smiles-uruguai-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "smiles",
     "startDate": "2026-08-05",
     "endDate": null,
     "image": "",
@@ -31,30 +31,41 @@ const LIVE_OFFERS = [
   },
   {
     "id": "auto_20260805_1",
-    "title": "Só até 23h59! Azul e Smiles têm promoção de passagens aéreas a partir de 6.000 milhas o trecho",
-    "description": "Começou mais uma rodada de promoções para tirar sua próxima viagem do papel! Dessa vez, Smiles e Azul Fidelidadeestão com ofertas de voos a partir de 6.000 milhas o trecho para destinos nacionais. ... <a href=\"https://www.melhoresdestinos.com.br/milhas/promo-aereas-milhas-5ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
+    "title": "Cupom Mercado Livre: ganhe 15% de desconto em compras a partir de R$ 129 no site todo &#8211; e tem mais 2 códigos!",
+    "description": "Cupons têm limite de ativações O post Cupom Mercado Livre: ganhe 15% de desconto em compras a partir de R$ 129 no site todo &#8211; e tem mais 2 códigos! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-12h-05ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
     "startDate": "2026-08-05",
     "endDate": null,
-    "image": "",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/cupom-mercado-livre-12h-05ago26-1.jpeg",
     "active": true,
     "isAuto": true
   },
   {
     "id": "auto_20260805_2",
-    "title": "SEJA RÁPIDO! Cupom Mercado Livre oferece 30% OFF em todo o site &#8211; até R$ 30 de desconto!",
-    "description": "Resgate agora para utilizar a partir da meia-noite O post SEJA RÁPIDO! Cupom Mercado Livre oferece 30% OFF em todo o site &#8211; até R$ 30 de desconto! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-19h-05ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "title": "Até R$ 200 de desconto! Novo cupom da Amazon garante 10% OFF em compras a partir de R$ 800",
+    "description": "O cupom tem limite de ativações e pode acabar a qualquer momento! O post Até R$ 200 de desconto! Novo cupom da Amazon garante 10% OFF em compras a partir de R$ 800 apareceu primeiro em Melhores Car... <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-11h-5ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
     "startDate": "2026-08-05",
     "endDate": null,
     "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260805_3",
+    "title": "Muito bom! Azul oferece até 28 pontos por real em compras na Netshoes, Insider e mais parceiros",
+    "description": "Tem incentivo melhor para fazer compras online do que as ofertas de acúmulo turbinado? O Azul Fidelidade está completando 17 anos e tem ofertas especiais para acumular até 28 pontos Azul por real n... <a href=\"https://www.melhorescartoes.com.br/azul-compras-bonificadas-ate-28-pontos-ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "azul",
+    "startDate": "2026-08-05",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/azul-netshoes-17-ago26.png",
     "active": true,
     "isAuto": true
   },
   {
     "id": "auto_20260805_4",
-    "title": "Até R$ 100 de desconto! Novo cupom da Amazon garante 10% OFF em compras a partir de R$ 500",
-    "description": "O cupom tem limite de uso e pode esgotar logo. O post Até R$ 100 de desconto! Novo cupom da Amazon garante 10% OFF em compras a partir de R$ 500 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-ate-100-off-05ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "title": "Novos cupons! Economize até 20% em compras com novos códigos do Mercado Livre",
+    "description": "Aproveite, o cupom pode acabar a qualquer momento! O post Novos cupons! Economize até 20% em compras com novos códigos do Mercado Livre apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupons-mercado-livre-9h-5ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
     "startDate": "2026-08-05",
     "endDate": null,
@@ -63,21 +74,32 @@ const LIVE_OFFERS = [
     "isAuto": true
   },
   {
-    "id": "auto_20260805_6",
-    "title": "Clientes TAP Miles&#038;GO agora podem acumular milhas em reservas no Airbnb",
-    "description": "O programa TAP Miles&#038;GO agora é parceiro da plataforma de hospedagens Airbnb que permite que os clientes acumulem milhas sempre que façam reservas no site da parceria. A paridade é de 2 milhas... <a href=\"https://www.melhorescartoes.com.br/tap-miles-go-airbnb-parceria.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "tap",
+    "id": "auto_20260805_5",
+    "title": "Só hoje! Ganhe R$ 0,10 de desconto por litro ao abastecer com cupom Shell Box",
+    "description": "Quarta-feira chegou e o cupom do Shell Box tá liberado! O código SVPDAY oferece R$ 0,10 de desconto por litro no abastecimento com combustíveis aditivados Shell V-Power – limitado a R$ 7. O cupom é... <a href=\"https://www.melhorescartoes.com.br/cupom-shell-ate-7-off-5ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
     "startDate": "2026-08-05",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/tap-miles-and-go-air-bnb-parceria.png",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/07/shell-box-cupom-jul26.jpg",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260805_6",
+    "title": "Voos da Latam para Miami a partir de 35 mil milhas o trecho com opção de voo direto",
+    "description": "O Latam Pass está com voos para Miami a partir de 35 mil milhas o trecho, mais taxas aeroportuárias, com opção de voo direto. O menor valor é saindo de São Paulo, mas também tem opções saindo de Fo... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-sao-for-mia-latam-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
+    "startDate": "2026-08-05",
+    "endDate": null,
+    "image": "",
     "active": true,
     "isAuto": true
   },
   {
     "id": "auto_20260805_7",
-    "title": "Novo cupom! Ganhe 25% de desconto em compras no Mercado Livre – válidos em produtos selecionados!",
-    "description": "Os cupons têm limite de uso e podem esgotar a qualquer momento. O post Novo cupom! Ganhe 25% de desconto em compras no Mercado Livre – válidos em produtos selecionados! apareceu primeiro em Melhore... <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-selecionados-05ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
+    "title": "Voos da Latam SP-Madri a partir de 57 mil milhas o trecho",
+    "description": "O Latam Pass está com bons preços para resgatar passagens aéreas para Madri. Encontramos voos de São Paulo para a capital espanhola a partir de 57 mil milhas o trecho, mais taxas aeroportuárias, pa... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-sao-mad-latam-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
     "startDate": "2026-08-05",
     "endDate": null,
     "image": "",
@@ -86,9 +108,9 @@ const LIVE_OFFERS = [
   },
   {
     "id": "auto_20260805_8",
-    "title": "Cupom Amazon! Ganhe R$ 100 de desconto em compras a partir de R$ 999",
-    "description": "O cupom tem limite de uso e pode esgotar rápido. O post Cupom Amazon! Ganhe R$ 100 de desconto em compras a partir de R$ 999 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-100-off-05ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
+    "title": "Boa tarifa! Voos do Recife para Belo Horizonte por 16 mil milhas Smiles o trecho",
+    "description": "A Smiles está com passagens aéreas para viajar do Recife para Belo Horizonte por 16.700 milhas o trecho, mais taxas aeroportuárias. A tarifa está disponível para voar em maio de 2027. Para aproveit... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-rec-cnf-smiles-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "smiles",
     "startDate": "2026-08-05",
     "endDate": null,
     "image": "",
@@ -97,12 +119,12 @@ const LIVE_OFFERS = [
   },
   {
     "id": "auto_20260805_9",
-    "title": "Voos de Brasília para o Rio de Janeiro a partir de 15 mil milhas Smiles o trecho",
-    "description": "A Smiles está com passagens aéreas para viajar de Brasíllia para o Rio de Janeiro a partir de 15.100 milhas o trecho, mais taxas aeroportuárias. A tarifa está disponível para voar em janeiro de 202... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-bsb-rio-smiles-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
+    "title": "Promoções de milhas, cartões, cashback e cupons válidas hoje!",
+    "description": "Confira as ofertas ativas para você aproveitar O post Promoções de milhas, cartões, cashback e cupons válidas hoje! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/resumo-promocoes-cartoes-credito-milhas-pontos-cashback.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
     "startDate": "2026-08-05",
     "endDate": null,
-    "image": "",
+    "image": "https://www.melhorescartoes.com.br/wp-content/themes/mc2026/img/marcas/quadradas/elo.png",
     "active": true,
     "isAuto": true
   }
