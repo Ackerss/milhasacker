@@ -4,14 +4,14 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-08-10T22:23:34.775Z",
+  lastUpdated: "2026-08-11T00:44:39.417Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
-  "smiles": 11.83,
-  "azul": 13.4,
-  "livelo": 19.39,
-  "esfera": 28.79,
+  "smiles": 17.5,
+  "azul": 10.53,
+  "livelo": 35,
+  "esfera": 35,
   "aadvantage": 130,
   "tap": 44
 }
@@ -19,101 +19,90 @@ const LIVE_OFFERS_METADATA = {
 
 const LIVE_OFFERS = [
   {
-    "id": "auto_20260810_0",
-    "title": "Chile de executiva! Voos da Latam de São Paulo para Santiago por 66 mil milhas o trecho",
-    "description": "Bom preço para você para viajar com muito mais conforto! Encontramos passagens aéreas para Santiago a partir de 66.109 milhas Latam Pass o trecho + taxas para viajar na cabine Premium Business. São... <a href=\"https://www.melhoresdestinos.com.br/milhas/latam-santiago-chile-executiva-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "latam",
-    "startDate": "2026-08-10",
+    "id": "auto_20260807_1",
+    "title": "Cartões Elo oferecem até R$ 40 de cashback em restaurantes no Dia dos Pais",
+    "description": "A Elo está com uma promoção que oferece até R$ 40 de cashback em gastos em restaurantes e bares realizados até domingo, dia 9 de agosto, data em que se comemora o Dia dos Pais. O percentual de cash... <a href=\"https://www.melhorescartoes.com.br/cartoes-elo-restaurante-dia-dos-pais.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-08-07",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/dia-dos-pais-cartoes-elo.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260807_2",
+    "title": "Cupom da Amazon oferece até R$ 150 OFF em compras a partir de R$ 800",
+    "description": "O cupom possui limite de ativações e pode esgotar a qualquer momento. O post Cupom da Amazon oferece até R$ 150 OFF em compras a partir de R$ 800 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-10-off-07ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-08-07",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260810_1",
-    "title": "Assine ou atualize o Clube Esfera e ganhe até 60.000 pontos bônus – milheiro a partir de R$ 28,79",
-    "description": "O Clube Esfera está oferecendo até 60.000 pontos bônus para quem assinar ou atualizar o plano. A promoção é válida até sexta-feira, 14 de agosto. Os pontos bônus serão creditados em 12 parcelas men... <a href=\"https://www.melhorescartoes.com.br/clube-esfera-atualizacao-60k-bonus-ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "esfera",
-    "startDate": "2026-08-10",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/clube-esfera-atualizacao-60k-bonus-ago26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260810_2",
-    "title": "Assine o plano mais barato do Clube Smiles e ganhe 42.000 milhas em 1 ano – milheiro a partir de R$ 11,83",
-    "description": "O Clube Smiles está com uma nova oferta que oferece 42.000 milhas em 1 ano para quem assinar o Plano 1.000, o mais básico e barato, além de um cupom de 77% de desconto para comprar até 50.000 milha... <a href=\"https://www.melhorescartoes.com.br/clube-smiles-plano-mil-42k-ano-ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
-    "startDate": "2026-08-10",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/clube-smiles-42k-ago261.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260810_3",
-    "title": "Ganhe 12% de cashback na compra de créditos Uber",
-    "description": "O PicPay está oferecendo 12% de cashback na compra de créditos do aplicativo de corrida da Uber. A oferta é válida por tempo limitado. Confira todos os detalhes a seguir! Veja o passo a passo para ... <a href=\"https://www.melhorescartoes.com.br/uber-picpay-12-cashback-ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260807_3",
+    "title": "Muito bom! Mercado Livre libera cupom de 15% OFF com até R$ 150 de desconto",
+    "description": "O cupom possui limite de ativações e pode esgotar a qualquer momento! O post Muito bom! Mercado Livre libera cupom de 15% OFF com até R$ 150 de desconto apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-15-off-07ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-08-10",
+    "startDate": "2026-08-07",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/picpay-uber-12-cashback-ago26.png",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/unnamed.png",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260810_4",
-    "title": "Costa Rica! Passagens aéreas para San José a partir de 30 mil milhas o trecho",
-    "description": "Bom preço para você conhecer a natureza exótica da Costa Rica, entre praias e vulcões! O Latam Pass está com passagens aéreas para a capital San José a partir de 30.403 milhas o trecho + taxas aero... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-latam-costa-rica-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "latam",
-    "startDate": "2026-08-10",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260810_5",
-    "title": "Últimas unidades! Nike tem produtos com até 64% OFF e desconto extra de 30% com cupom no site oficial",
-    "description": "Oferta inclui roupas, calçados e acessórios da marca O post Últimas unidades! Nike tem produtos com até 64% OFF e desconto extra de 30% com cupom no site oficial apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-nike-30-desconto-ultimas-unidades-10ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-08-10",
-    "endDate": null,
-    "image": "https://imgnike-a.akamaihd.net/768x768/0965057TA1.jpg",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260810_7",
-    "title": "Clube Livelo: assine o plano 1.000 e acumule 25.000 pontos – milheiro a partir de R$ 19,39",
-    "description": "Oportunidade para assinar o Clube Livelo! A promoção é válida até quarta-feira, 12 de agosto. Quem assinar o plano Classic 1.000 com pagamento anual vai acumular 13.000 pontos extras e pode ter o m... <a href=\"https://www.melhorescartoes.com.br/clube-livelo-classic-25k-ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "livelo",
-    "startDate": "2026-08-10",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/clube-livelo-classic-25k-ago26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260810_8",
-    "title": "Ficou mais fácil encontrar disponibilidade de voos Iberia e British Airways usando pontos Avios",
-    "description": "Os pontos Avios são super valiosos pois permitem realizar resgates muito interessantes, principalmente em classe executiva e primeira classe. No entanto, a busca por disponibilidade sempre foi o &#... <a href=\"https://www.melhorescartoes.com.br/novidade-calendario-mensal-iberia-british-airways.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-08-10",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/avios-calendario-novidade-2026-1.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260810_9",
-    "title": "Assine o Clube Azul e ganhe até 275.000 pontos bônus – milheiro a partir de R$ 13,40",
-    "description": "O aniversário do Azul Fidelidade está com a oportunidade para quem quer assinar o Clube Azul e receber até 275.000 pontos bônus até o final do ano nos planos mensais. A melhor condição é para a ass... <a href=\"https://www.melhorescartoes.com.br/oferta-assinar-clube-azul-275k-bonus-ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260807_4",
+    "title": "Assine o Clube Azul e consiga o milheiro a partir de R$ 10,53 – vale para todos os clientes!",
+    "description": "A oferta relâmpago do Clube Azul de ontem (6) era exclusiva para clientes com cartão Azul Itaú. Mas hoje ela voltou e agora é válida para todos os clientes do programa que ainda não são assinantes!... <a href=\"https://www.melhorescartoes.com.br/clube-azul-todos-clientes-350k-pontos-ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "azul",
-    "startDate": "2026-08-10",
+    "startDate": "2026-08-07",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/clube-azul-275k-bonus-ago261.png",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/oferta-relampago-clube-azul-todos-ago262.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260807_5",
+    "title": "Lençóis Maranhenses! Voos para São Luís a partir de R$ 102 ou 7 mil pontos o trecho mais taxas",
+    "description": "O Azul Fidelidade está com bons preços de passagens aéreas para São Luís, no Maranhão, a partir de R$ 102,49 ou 7.800 pontos o trecho + taxas aeroportuárias. São opções de voos diretos com saídas d... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-azul-sao-luis-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "azul",
+    "startDate": "2026-08-07",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260807_7",
+    "title": "Itália! Voos da Latam para Roma ou Milão a partir de 65 mil milhas o trecho",
+    "description": "O Latam Pass está com passagens aéreas para Roma ou Milão a partir de 65 mil milhas o trecho, mais taxas aeroportuárias, com opção de voo direto. Os voos saem do Aeroporto de Guarulhos, em São Paul... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-sao-fco-mxp-latam-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
+    "startDate": "2026-08-07",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260807_8",
+    "title": "Muito bom! Compre créditos Uber ou Airbnb com 15% de cashback",
+    "description": "Oportunidade para economizar na corrida e na hospedagem! O PicPay está oferecendo 15% de cashback na compra de créditos da Uber e Zift, que pode ser usado no Airbnb. As ofertas são válidas por temp... <a href=\"https://www.melhorescartoes.com.br/uber-airbnb-cashback-15-ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-08-07",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/airbnb-uber-15-cashback-ago261-820x1242.jpg",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260807_9",
+    "title": "Dia de encher o tanque! Ganhe 5% de cashback em abastecimentos com Shell Box",
+    "description": "Hoje tem cashback turbinado para você encher o tanque com o Shell Box! O Inter está oferecendo 5% de volta do valor gasto em abastecimentos com qualquer combustível pelo aplicativo. Veja como aprov... <a href=\"https://www.melhorescartoes.com.br/cashback-5-shell-box-7ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-08-07",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/shell-5-cashback-7ago261-820x1622.jpg",
     "active": true,
     "isAuto": true
   }
