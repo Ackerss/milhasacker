@@ -4,14 +4,14 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-08-13T10:49:30.467Z",
+  lastUpdated: "2026-08-13T12:39:14.216Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
   "smiles": 17.5,
   "azul": 13,
   "livelo": 35,
-  "esfera": 28.79,
+  "esfera": 35,
   "aadvantage": 130,
   "tap": 44
 }
@@ -19,90 +19,90 @@ const LIVE_OFFERS_METADATA = {
 
 const LIVE_OFFERS = [
   {
-    "id": "auto_20260811_0",
-    "title": "Muito bom! Promoção da Nomad tem dólar ou euro com taxa zero para novos clientes",
-    "description": "A Nomad está com uma promoção que oferece taxa de conversão e encargos zero para novos clientes. E, dessa vez, não é cashback, essas taxas aparecerão zeradas no aplicativo dos participantes na hora... <a href=\"https://www.melhoresdestinos.com.br/promocao/promocao-nomad-taxa-zero-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-08-11",
+    "id": "auto_20260813_0",
+    "title": "Muito bom! Abra a conta Nomad e ganhe até 48 mil milhas Smiles",
+    "description": "A Nomad está com uma promoção imperdível que oferece até 48 mil milhas Smiles na adesão! Para participar, basta abrir uma conta sem taxa de abertura ou de manutenção através do link da oferta, util... <a href=\"https://www.melhoresdestinos.com.br/milhas/nomad-promocao-adesao-smiles-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "smiles",
+    "startDate": "2026-08-13",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260811_1",
-    "title": "Conheça a Holanda! Passagens aéreas para Amsterdã por 62 mil milhas o trecho",
-    "description": "Alerta de bom preço para garantir sua próxima Eurotrip! O Latam Pass está com bons preços de passagens aéreas para Amsterdã, na Holanda, a partir de 62.288 milhas o trecho + taxas. Encontramos vári... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-amsterda-latam-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "latam",
-    "startDate": "2026-08-11",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260811_2",
-    "title": "Vale no site todo! Cupom Mercado Livre oferece 10% OFF em compras a partir de R$ 149 &#8211; até R$ 200 de desconto!",
-    "description": "Cupom tem limite de ativações O post Vale no site todo! Cupom Mercado Livre oferece 10% OFF em compras a partir de R$ 149 &#8211; até R$ 200 de desconto! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-ate-200-desconto-11ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-08-11",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260811_3",
-    "title": "Seja rápido! Ganhe 30% OFF em compras com cupom Shopee &#8211; sem pedido mínimo!",
-    "description": "Cupom vale somente hoje, mas tem estoque limitado O post Seja rápido! Ganhe 30% OFF em compras com cupom Shopee &#8211; sem pedido mínimo! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-shopee-30-desconto-11ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-08-11",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/cupom-shopee-30-desconto-full-11ago26.jpeg",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260811_4",
-    "title": "Ainda dá tempo! Cadastre-se no Azul Fidelidade e ganhe até 7.000 pontos grátis",
-    "description": "Se você não tem cadastro no Azul Fidelidade e/ou nunca fez transferências para o programa, você ainda pode ganhar pontos grátis! A promoção que oferece até 7.000 pontos de boas-vindas é válida até ... <a href=\"https://www.melhorescartoes.com.br/cadastro-azul-7k-ultimos-dias-ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "azul",
-    "startDate": "2026-08-11",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/azul-fidelidade-cadastro-ate-7k-ago26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260811_5",
+    "id": "auto_20260813_1",
     "title": "Promoções de milhas, cartões, cashback e cupons válidas hoje!",
     "description": "Confira as ofertas ativas para você aproveitar O post Promoções de milhas, cartões, cashback e cupons válidas hoje! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/resumo-promocoes-cartoes-credito-milhas-pontos-cashback.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-08-11",
+    "startDate": "2026-08-13",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/themes/mc2026/img/marcas/quadradas/amazon.jpg",
+    "image": "https://www.melhorescartoes.com.br/wp-content/themes/mc2026/img/marcas/quadradas/latampass.png",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260810_8",
-    "title": "Chile de executiva! Voos da Latam de São Paulo para Santiago por 66 mil milhas o trecho",
-    "description": "Bom preço para você para viajar com muito mais conforto! Encontramos passagens aéreas para Santiago a partir de 66.109 milhas Latam Pass o trecho + taxas para viajar na cabine Premium Business. São... <a href=\"https://www.melhoresdestinos.com.br/milhas/latam-santiago-chile-executiva-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "latam",
-    "startDate": "2026-08-10",
+    "id": "auto_20260812_3",
+    "title": "Anoiteceu Azul! Passagens aéreas em promoção a partir de R$ 62 ou 5 mil pontos o trecho mais taxas",
+    "description": "O Anoiteceu Azul está no ar! Dessa vez, encontramos passagens aéreas para destinos nacionais a partir de 5.200 pontos ou R$ 62,56 o trecho, usando a estratégia de pontos + dinheiro no carrinho da L... <a href=\"https://www.melhoresdestinos.com.br/milhas/anoiteceu-azul-promo-12ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "livelo",
+    "startDate": "2026-08-12",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260810_9",
-    "title": "Assine ou atualize o Clube Esfera e ganhe até 60.000 pontos bônus – milheiro a partir de R$ 28,79",
-    "description": "O Clube Esfera está oferecendo até 60.000 pontos bônus para quem assinar ou atualizar o plano. A promoção é válida até sexta-feira, 14 de agosto. Os pontos bônus serão creditados em 12 parcelas men... <a href=\"https://www.melhorescartoes.com.br/clube-esfera-atualizacao-60k-bonus-ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "esfera",
-    "startDate": "2026-08-10",
+    "id": "auto_20260812_4",
+    "title": "Bolívia! Voos diretos para Santa Cruz de la Sierra por 17 mil milhas Smiles o trecho",
+    "description": "Bom preço para você visitar a Bolívia, um país que guarda paisagens surpreendentes, como o famoso Salar de Uyuni! Encontramos passagens aéreas para Santa Cruz de la Sierra – uma das portas de entra... <a href=\"https://www.melhoresdestinos.com.br/milhas/smiles-voos-bolivia-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "smiles",
+    "startDate": "2026-08-12",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/clube-esfera-atualizacao-60k-bonus-ago26.png",
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260812_5",
+    "title": "França com a Latam! Passagens aéreas para Paris a partir de 58 mil milhas o trecho",
+    "description": "Bons (e raros) preços para Paris passando na sua tela! Encontramos passagens aéreas para a cidade luz no Latam Pass a partir de 58.052 milhas o trecho + taxas, com saídas de Curitiba e Recife. São ... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-paris-latam-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
+    "startDate": "2026-08-12",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260812_6",
+    "title": "Economize no Coco Bambu! Compre gift cards e ganhe 15% de cashback",
+    "description": "O Inter Shop está com uma campanha que oferece 15% de cashback na compra de créditos do restaurante Coco Bambu. A promoção vale por tempo limitado e, para aproveitar, basta seguir o passo a passo: ... <a href=\"https://www.melhorescartoes.com.br/promocao-coco-bambu-cashback-inter-12ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-08-12",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/coco-bambu-cashback-inter-ago26.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260812_7",
+    "title": "Voos diretos Rio-Miami com bagagem por 63.800 milhas Smiles o trecho",
+    "description": "A Smiles está com voos diretos do Rio de Janeiro para Miami a partir de 62.800 milhas o trecho, mais taxas aeroportuárias. Os voos são operados pela parceira American Airlines e já incluem uma baga... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-rio-mia-aa-smiles-12ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "smiles",
+    "startDate": "2026-08-12",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260812_9",
+    "title": "Últimas horas! Latam Pass oferece 25% de bônus no envio de pontos Itaú e Credicard",
+    "description": "Últimas horas para aproveitar a promoção do Latam Pass, que está oferecendo 25% de bônus para quem transferir pontos do Itaú e Credicard para o programa. A oferta é válida até às 23h59 de hoje, 12 ... <a href=\"https://www.melhorescartoes.com.br/latam-pass-bonus-25-itau-credicard-12ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
+    "startDate": "2026-08-12",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/latam-pass-itau-credicard-25-bonus-ago262-820x261.png",
     "active": true,
     "isAuto": true
   }
