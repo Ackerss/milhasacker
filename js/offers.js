@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-08-14T12:34:38.548Z",
+  lastUpdated: "2026-08-14T14:43:05.897Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -19,90 +19,101 @@ const LIVE_OFFERS_METADATA = {
 
 const LIVE_OFFERS = [
   {
-    "id": "auto_20260813_0",
-    "title": "Muito bom! Abra a conta Nomad e ganhe até 48 mil milhas Smiles",
-    "description": "A Nomad está com uma promoção imperdível que oferece até 48 mil milhas Smiles na adesão! Para participar, basta abrir uma conta sem taxa de abertura ou de manutenção através do link da oferta, util... <a href=\"https://www.melhoresdestinos.com.br/milhas/nomad-promocao-adesao-smiles-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
-    "startDate": "2026-08-13",
+    "id": "auto_20260814_0",
+    "title": "Azul oferece até 25% de desconto em resgates de passagens nacionais",
+    "description": "A Azul está com uma oferta exclusiva para clientes dos cartões de crédito Azul Itaú, com descontos em passagens emitidas com pontos. O post Azul oferece até 25% de desconto em resgates de passagens... <a href=\"https://www.melhoresdestinos.com.br/milhas/azul-25-desconto-passagens-nacionais-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "azul",
+    "startDate": "2026-08-14",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260813_1",
+    "id": "auto_20260814_1",
+    "title": "Só hoje! Peça o cartão Amazon e ganhe um cupom de 50% OFF para comprar no site",
+    "description": "A Amazon está com uma promoção válida somente hoje, 14 de agosto, para quem solicitar os seus cartões de crédito. Os clientes que preencherem a proposta para um dos cartões recebem um cupom de 50% ... <a href=\"https://www.melhorescartoes.com.br/promocao-cartao-amazon-ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-08-14",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/promocao-cartao-amazon-cupom-desconto.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260814_3",
+    "title": "Livelo oferece até 15 pontos por real em compras na Olympikus, Insider, Carrefour Mercado e mais parceiros",
+    "description": "Oportunidade para turbinar seu saldo de pontos na Livelo. É possível acumular até 15 pontos por real em lojas parceiras como Camicado, Beleza na Web, Raichuelo, Renner e muito mais. As melhores con... <a href=\"https://www.melhorescartoes.com.br/livelo-parceiros-15-pontos-ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "livelo",
+    "startDate": "2026-08-14",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260814_4",
+    "title": "Voos SP-Lisboa na classe executiva da Latam a partir de 166 mil milhas o trecho",
+    "description": "O Latam Pass está com bons preços para viajar para Lisboa em classe executiva. Encontramos passagens aéreas saindo de São Paulo a partir de 166 mil milhas o trecho, com opção de voo direto. Os valo... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-executiva-latam-lisboa-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
+    "startDate": "2026-08-14",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260814_5",
+    "title": "Descontos no site todo! Mercado Livre vai liberar cupons de R$ 30, R$ 40 e R$ 50 &#8211; veja o horário e como resgatar!",
+    "description": "Cupons têm limite de ativações O post Descontos no site todo! Mercado Livre vai liberar cupons de R$ 30, R$ 40 e R$ 50 &#8211; veja o horário e como resgatar! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-ate-50-desconto-site-todo-14ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-08-14",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/cupom-mercado-livre-ate-50-desconto-site-todo-14ago26.jpeg",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260814_6",
+    "title": "Muito bom! Ganhe até 15% de cashback na compra de crédito Uber",
+    "description": "A sexta-feira chegou com desconto na corrida de Uber! O PicPay e o Banco do Brasil estão oferecendo até 15% de cashback na compra de créditos. As ofertas são válidas por tempo limitado. Confira os ... <a href=\"https://www.melhorescartoes.com.br/uber-picpay-bb-15-cashback-ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-08-14",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/uber-picpay-bb-15-cashback-ago261.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260814_7",
     "title": "Promoções de milhas, cartões, cashback e cupons válidas hoje!",
     "description": "Confira as ofertas ativas para você aproveitar O post Promoções de milhas, cartões, cashback e cupons válidas hoje! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/resumo-promocoes-cartoes-credito-milhas-pontos-cashback.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-08-13",
+    "startDate": "2026-08-14",
     "endDate": null,
     "image": "https://www.melhorescartoes.com.br/wp-content/themes/mc2026/img/marcas/quadradas/latampass.png",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260812_3",
-    "title": "Anoiteceu Azul! Passagens aéreas em promoção a partir de R$ 62 ou 5 mil pontos o trecho mais taxas",
-    "description": "O Anoiteceu Azul está no ar! Dessa vez, encontramos passagens aéreas para destinos nacionais a partir de 5.200 pontos ou R$ 62,56 o trecho, usando a estratégia de pontos + dinheiro no carrinho da L... <a href=\"https://www.melhoresdestinos.com.br/milhas/anoiteceu-azul-promo-12ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "livelo",
-    "startDate": "2026-08-12",
+    "id": "auto_20260813_8",
+    "title": "Patagônia Argentina! Voos para Bariloche a partir de R$ 555 ou 47 mil pontos Azul o trecho mais taxas",
+    "description": "O Azul Pelo Mundo está com bons preços de passagens aéreas para Bariloche, na Argentina, a partir de 47.000 pontos Azul ou R$ 555,54 o trecho + taxas aeroportuárias. São voos operados pela Aerolíne... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-bariloche-argentina-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "azul",
+    "startDate": "2026-08-13",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260812_4",
-    "title": "Bolívia! Voos diretos para Santa Cruz de la Sierra por 17 mil milhas Smiles o trecho",
-    "description": "Bom preço para você visitar a Bolívia, um país que guarda paisagens surpreendentes, como o famoso Salar de Uyuni! Encontramos passagens aéreas para Santa Cruz de la Sierra – uma das portas de entra... <a href=\"https://www.melhoresdestinos.com.br/milhas/smiles-voos-bolivia-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
-    "startDate": "2026-08-12",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260812_5",
-    "title": "França com a Latam! Passagens aéreas para Paris a partir de 58 mil milhas o trecho",
-    "description": "Bons (e raros) preços para Paris passando na sua tela! Encontramos passagens aéreas para a cidade luz no Latam Pass a partir de 58.052 milhas o trecho + taxas, com saídas de Curitiba e Recife. São ... <a href=\"https://www.melhoresdestinos.com.br/milhas/passagens-paris-latam-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260813_9",
+    "title": "Só até 23h59! Latam oferece até 30% de desconto em passagens com milhas",
+    "description": "O Latam Pass está oferecendo até 30% de desconto em passagens aéreas com milhas. A oferta é válida somente até as 23h59 de HOJE (13/08). Dessa vez, é possível encontrar passagens a partir de 4.337 ... <a href=\"https://www.melhoresdestinos.com.br/milhas/latam-pass-voos-30-off-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "latam",
-    "startDate": "2026-08-12",
+    "startDate": "2026-08-13",
     "endDate": null,
     "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260812_6",
-    "title": "Economize no Coco Bambu! Compre gift cards e ganhe 15% de cashback",
-    "description": "O Inter Shop está com uma campanha que oferece 15% de cashback na compra de créditos do restaurante Coco Bambu. A promoção vale por tempo limitado e, para aproveitar, basta seguir o passo a passo: ... <a href=\"https://www.melhorescartoes.com.br/promocao-coco-bambu-cashback-inter-12ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-08-12",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/coco-bambu-cashback-inter-ago26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260812_7",
-    "title": "Voos diretos Rio-Miami com bagagem por 63.800 milhas Smiles o trecho",
-    "description": "A Smiles está com voos diretos do Rio de Janeiro para Miami a partir de 62.800 milhas o trecho, mais taxas aeroportuárias. Os voos são operados pela parceira American Airlines e já incluem uma baga... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-rio-mia-aa-smiles-12ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
-    "startDate": "2026-08-12",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260812_9",
-    "title": "Últimas horas! Latam Pass oferece 25% de bônus no envio de pontos Itaú e Credicard",
-    "description": "Últimas horas para aproveitar a promoção do Latam Pass, que está oferecendo 25% de bônus para quem transferir pontos do Itaú e Credicard para o programa. A oferta é válida até às 23h59 de hoje, 12 ... <a href=\"https://www.melhorescartoes.com.br/latam-pass-bonus-25-itau-credicard-12ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "latam",
-    "startDate": "2026-08-12",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/latam-pass-itau-credicard-25-bonus-ago262-820x261.png",
     "active": true,
     "isAuto": true
   }
