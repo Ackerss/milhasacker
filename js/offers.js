@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-08-19T12:18:34.353Z",
+  lastUpdated: "2026-08-19T14:20:38.619Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -70,28 +70,6 @@ const LIVE_OFFERS = [
     "startDate": "2026-08-14",
     "endDate": null,
     "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/inter-outback-15-cashback-ago26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260814_8",
-    "title": "Dia do picolé! Compre um picolé na Bacio di Latte e leve outro grátis!",
-    "description": "No dia 14 de agosto, hoje, celebra-se o dia do picolé! Aproveitando a ocasião, a Bacio di Latte está com uma promoção 2 picolés pelo preço de 1, o equivalente a 50% de desconto! A campanha é válida... <a href=\"https://www.melhorescartoes.com.br/dia-picole-bacio-di-latte-2026.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-08-14",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/dia-do-picole-bacio-di-latte-promocao-2026.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260814_9",
-    "title": "Azul oferece até 25% de desconto em resgates de passagens nacionais",
-    "description": "A Azul está com uma oferta exclusiva para clientes dos cartões de crédito Azul Itaú, com descontos em passagens emitidas com pontos. O post Azul oferece até 25% de desconto em resgates de passagens... <a href=\"https://www.melhoresdestinos.com.br/milhas/azul-25-desconto-passagens-nacionais-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "azul",
-    "startDate": "2026-08-14",
-    "endDate": null,
-    "image": "",
     "active": true,
     "isAuto": true
   }
