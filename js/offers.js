@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-08-20T16:18:56.155Z",
+  lastUpdated: "2026-08-20T18:19:39.862Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -92,17 +92,6 @@ const LIVE_OFFERS = [
     "startDate": "2026-08-16",
     "endDate": null,
     "image": "https://www.melhorescartoes.com.br/wp-content/themes/mc2026/img/marcas/quadradas/latampass.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260815_8",
-    "title": "Cupom Mercado Livre: garanta até R$ 30 OFF em itens para bebês e pets",
-    "description": "O cupom possui limite de ativações e pode esgotar a qualquer momento! O post Cupom Mercado Livre: garanta até R$ 30 OFF em itens para bebês e pets apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-15-off-15ago26-2.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-08-15",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/Captura-de-Tela-2026-08-15-as-15.00.50.png",
     "active": true,
     "isAuto": true
   }
