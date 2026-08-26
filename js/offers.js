@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-08-26T14:32:10.083Z",
+  lastUpdated: "2026-08-26T16:39:49.751Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -70,17 +70,6 @@ const LIVE_OFFERS = [
     "startDate": "2026-08-21",
     "endDate": null,
     "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260821_6",
-    "title": "Resgate às 12h! Novos cupons no Mercado Livre garantem até R$ 200 de desconto em itens selecionados",
-    "description": "Os cupons têm limite de uso e podem esgotar a qualquer momento. O post Resgate às 12h! Novos cupons no Mercado Livre garantem até R$ 200 de desconto em itens selecionados apareceu primeiro em Melho... <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-selecionados-21ago26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-08-21",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/Captura-de-Tela-2026-08-21-as-11.34.46.png",
     "active": true,
     "isAuto": true
   }
