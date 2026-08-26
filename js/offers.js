@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-08-26T12:23:11.553Z",
+  lastUpdated: "2026-08-26T14:32:10.083Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -81,39 +81,6 @@ const LIVE_OFFERS = [
     "startDate": "2026-08-21",
     "endDate": null,
     "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/08/Captura-de-Tela-2026-08-21-as-11.34.46.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260821_7",
-    "title": "Voos diretos para Joanesburgo em classe executiva por 197 mil milhas Smiles o trecho",
-    "description": "A Smiles está com ótimos preços para resgatar passagens aéreas de São Paulo para Joanesburgo, na África do Sul, na classe executiva da South African Airways. E o melhor: em voo direto! Encontramos ... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-sao-jnb-ssa-smiles-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
-    "startDate": "2026-08-21",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260821_8",
-    "title": "Bélgica! Voos diretos da Latam para Bruxelas por 61 mil milhas o trecho",
-    "description": "O Latam Pass está com bons preços para resgatar passagens aéreas para a Bélgica. Encontramos voos diretos de São Paulo para Bruxelas por 61 mil milhas o trecho, mais taxas aeroportuárias. A tarifa ... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-sao-bru-latam-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "latam",
-    "startDate": "2026-08-21",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260821_9",
-    "title": "Paraguai! Voos diretos para Assunção por 21 mil milhas Smiles o trecho",
-    "description": "Que tal curtir um baile em Assunción? A Smiles está com bons valores de passagens aéreas para a capital do Paraguai, a partir de 21.500 milhas o trecho + taxas. São opções de voos saindo do Aeropor... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-diretoa-gol-paraguai-ago26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
-    "startDate": "2026-08-21",
-    "endDate": null,
-    "image": "",
     "active": true,
     "isAuto": true
   }
