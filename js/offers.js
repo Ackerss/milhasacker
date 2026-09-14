@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-09-14T19:58:21.249Z",
+  lastUpdated: "2026-09-14T22:55:32.840Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -19,66 +19,77 @@ const LIVE_OFFERS_METADATA = {
 
 const LIVE_OFFERS = [
   {
-    "id": "auto_20260910_1",
-    "title": "Novos cupons! Ganhe até 20% de desconto em pacotes no Azul Viagens",
-    "description": "O Azul Viagens já está no clima da Semana do Cliente! E o site liberou novos cupons que oferecem até 20% de desconto em pacotes (aéreo + hotel), válidos para reservas em reais ou resgates com ponto... <a href=\"https://www.melhorescartoes.com.br/cupom-azul-viagens-20-off-set26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "azul",
-    "startDate": "2026-09-10",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/09/cupons-azul-viagens-set26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260910_3",
-    "title": "Esfera encerra parceria para transferência de pontos para o programa da Etihad Airways",
-    "description": "Hoje recebemos relatos de leitores que perceberam o desaparecimento do programa da Etihad Airways dentre as opções para transferência de pontos Esfera. Entramos em contato com o programa do Santand... <a href=\"https://www.melhorescartoes.com.br/fim-parceria-esfera-etihad-airways.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "esfera",
-    "startDate": "2026-09-10",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/07/parceria-azul-fidelidade-etihad-guest-capa.jpg",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260910_5",
-    "title": "Mais desconto! Garanta 20% OFF no Mercado Livre com novos cupons",
-    "description": "Aproveita, o cupom pode acabar a qualquer momento! O post Mais desconto! Garanta 20% OFF no Mercado Livre com novos cupons apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-15h-10set26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260914_0",
+    "title": "Qatar Airways retira exigência de acúmulo prévio de pontos para emitir passagens para terceiros com Avios",
+    "description": "A Qatar Airways atualizou as regras do Privilege Club e retirou a exigência de acúmulo prévio de Avios para cadastrar beneficiários nas listas My List e Family &#038; Friends. O post Qatar Airways ... <a href=\"https://www.melhoresdestinos.com.br/milhas/qatar-airways-retira-exigencia-para-emissao-set26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-09-10",
+    "startDate": "2026-09-14",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260910_6",
-    "title": "Nubank chega aos EUA com conta que rende até 4,5% e cartão com cashback",
-    "description": "O Nubank anunciou o início das operações nos Estados Unidos com uma conta que oferece com até 4,5% de rendimento ao ano, e cartão de crédito Mastercard sem anuidade. O cartão terá 1,5% de cashback ... <a href=\"https://www.melhorescartoes.com.br/nubank-eua-lancamento-set26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260914_2",
+    "title": "Semana do Cliente! Seguro Viagem Allianz com até 65% de desconto e pagamento parcelado",
+    "description": "A Semana do Cliente começou, e a Allianz Travel lançou uma ótima oportunidade em parceria com o Melhores Destinos para você garantir o seu Seguro Viagem. São até 65% de desconto e pagamento parcela... <a href=\"https://www.melhorescartoes.com.br/promocao-65-off-seguro-viagem-allianz-set26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-09-10",
+    "startDate": "2026-09-14",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/09/nubank-eua-lancamento-set26.png",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/09/promocao-semana-consumidor-allianz-travel-2026-820x333-1.webp",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260910_8",
-    "title": "Voos da Turkish Airlines para Buenos Aires a partir de R$ 419 ou 35 mil pontos Azul o trecho mais taxas",
-    "description": "O Azul Fidelidade, por meio do Azul pelo Mundo, está com disponibilidade para emissão de passagens aéreas de São Paulo para Buenos Aires em voos da parceira Turkish Airlines, considerada uma das me... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-sao-bue-azul-tk-set26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260914_4",
+    "title": "Poucas datas! Voos diretos da Azul para Lisboa com bagagem a partir de 76 mil pontos o trecho",
+    "description": "O Azul Fidelidade está com passagens aéreas para Lisboa a partir de 76.540 pontos a ida e 97.900 pontos a volta + taxas aeroportuárias, com pouca datas para viajar no mês de dezembro. São voos DIRE... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-azul-lisboa-set26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "azul",
-    "startDate": "2026-09-10",
+    "startDate": "2026-09-14",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20260910_9",
-    "title": "Vale no site todo! Ganhe R$ 100 OFF em compras a partir de R$ 599 com cupom Mercado Livre",
-    "description": "Cupom deve esgotar em poucos minutos O post Vale no site todo! Ganhe R$ 100 OFF em compras a partir de R$ 599 com cupom Mercado Livre apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-100-desconto-10set26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20260914_5",
+    "title": "Azul tem cupons de até 25% OFF no resgate de passagens aéreas nacionais com pontos",
+    "description": "A Semana do Cliente começou e a Azul liberou novos cupons que oferecem até 25% de desconto no resgate de passagens aéreas com pontos no Azul Fidelidade. A oferta é válida até dia 20 de setembro. O ... <a href=\"https://www.melhoresdestinos.com.br/milhas/azul-cupons-desconto-passagens-25-off-set26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "azul",
+    "startDate": "2026-09-14",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260914_6",
+    "title": "Shopping Smiles oferece até 27 milhas por real gasto na Polishop e Magalu",
+    "description": "O Shopping Smiles está oferecendo até 27 milhas por real gasto em compras nas lojas Polishop e Magalu. As duas ofertas são válidas até quarta-feira, 16 de setembro. Para aproveitar, clique aqui. Os... <a href=\"https://www.melhorescartoes.com.br/smiles-polishop-magalu-27-milhas-set26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "smiles",
+    "startDate": "2026-09-14",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/09/smiles-polishop-magalu-27-milhas-set261.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260914_8",
+    "title": "CORRE! Compre 3 e pague só 2: camiseta Tech Insider por apenas R$ 30,90 com cupom no Mercado Livre",
+    "description": "O produto tem limite de estoque e pode se esgotar a qualquer momento. O post CORRE! Compre 3 e pague só 2: camiseta Tech Insider por apenas R$ 30,90 com cupom no Mercado Livre apareceu primeiro em ... <a href=\"https://www.melhorescartoes.com.br/corre-compre-3-e-pague-so-2-camiseta-tech-insider-por-apenas-r-3090-com-cupom-no-mercado-livre.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-09-10",
+    "startDate": "2026-09-14",
+    "endDate": null,
+    "image": "https://http2.mlstatic.com/D_NQ_NP_2X_950095-MLB90123547041_082025-F-compre-2-camisetas-techs-t-shirts-masculina-insider-e-leve-3.webp",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20260914_9",
+    "title": "Promoção da Smiles tem voos nacionais e internacionais com até 20% de desconto",
+    "description": "A Smiles está com uma promoção que oferece passagens aéreas nacionais e internacionais com até 20% de desconto para vários destinos. A campanha é exclusiva para clientes Clube Smiles, Smiles Diaman... <a href=\"https://www.melhoresdestinos.com.br/milhas/promocao-resgate-smiles-set26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "smiles",
+    "startDate": "2026-09-14",
     "endDate": null,
     "image": "",
     "active": true,
