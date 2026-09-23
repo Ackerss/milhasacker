@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-09-23T08:52:25.555Z",
+  lastUpdated: "2026-09-23T14:28:48.216Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -48,61 +48,6 @@ const LIVE_OFFERS = [
     "startDate": "2026-09-18",
     "endDate": null,
     "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/09/cartao-latam-pass-80-bonus-set26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260918_4",
-    "title": "Muito barato! Voos da Azul para Navegantes a partir de R$ 60 ou 5 mil pontos o trecho mais taxas",
-    "description": "Alerta de super preço para você visitar as praias badaladas de Balneário Camboriú e ainda se divertir muito no Beto Carrero! Encontramos passagens aéreas para Navegantes a partir de 5.040 pontos Az... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-azul-navegantes-set26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "azul",
-    "startDate": "2026-09-18",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260918_5",
-    "title": "Bom demais! Lacoste com até 69% OFF + 15% de desconto com cupom",
-    "description": "Seja rápido, pois os preços dos produtos podem ser alterados a qualquer momento! O post Bom demais! Lacoste com até 69% OFF + 15% de desconto com cupom apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-lacoste-dafiti-18set26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-09-18",
-    "endDate": null,
-    "image": "https://static.dafiti.com.br/p/lacoste-camisa-masculina-slim-fit-em-algodao-2696-11200411-1-zoom.jpg?ims=fit-in/430x623",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260918_6",
-    "title": "Desconto na corrida! Ganhe 10% OFF na compra de créditos Uber",
-    "description": "Chegou a Super Sexta do Banco do Brasil! E tem oferta com 10% de desconto na compra de gift cards da Uber no aplicativo, além de 2% de cashback para pagamentos no cartão de crédito ou débito. A ofe... <a href=\"https://www.melhorescartoes.com.br/uber-desconto-10-off-set26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-09-18",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/09/uber-bb-10-off-set263-820x1683.jpg",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260918_7",
-    "title": "iPhone 18 chegou! Veja onde comprar o seu com cupom de até R$ 1.000 e em até 21x no cartão",
-    "description": "Produto está disponível a partir de hoje. O post iPhone 18 chegou! Veja onde comprar o seu com cupom de até R$ 1.000 e em até 21x no cartão apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/iphone-18-pre-venda-cupom-set26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-09-18",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/09/iphone-18-pre-venda-cupom-set26-1.jpeg",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260918_9",
-    "title": "Iberia oferece até 20% desconto no resgate de passagens aéreas com milhas – voos a partir de 13.600 avios!",
-    "description": "O Iberia Club está oferecendo até 20% de desconto no resgate de passagens aéreas com Avios. A promoção é válida até o próximo dia 23 de setembro, para viajar até 18 de março em voos selecionados op... <a href=\"https://www.melhoresdestinos.com.br/milhas/iberia-club-desconto-20-set26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-09-18",
-    "endDate": null,
-    "image": "",
     "active": true,
     "isAuto": true
   }
