@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-10-04T13:30:56.943Z",
+  lastUpdated: "2026-10-04T17:53:15.995Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -67,39 +67,6 @@ const LIVE_OFFERS = [
     "title": "Poucas datas! Voos de Brasília para Belo Horizonte por R$ 170 ou 10 mil milhas Smiles o trecho mais taxas",
     "description": "A Smiles está com passagens aéreas para viajar de Brasília para Belo Horizonte a partir de 10.900 milhas o trecho, mais taxas aeroportuárias. Os voos estão disponíveis para viajar no final de novem... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-bsb-cnf-smiles-set26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "smiles",
-    "startDate": "2026-09-29",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260929_7",
-    "title": "Ganhe até 24.000 pontos na assinatura do plano básico do Clube Livelo – milheiro a partir de R$ 20,20",
-    "description": "Nova oportunidade para assinar o Clube Livelo! O programa está oferecendo até 24.000 pontos ao longo de um ano para quem assinar o Clube Classic 1.000. A oferta é válida até amanhã, 30 de setembro.... <a href=\"https://www.melhorescartoes.com.br/clube-livelo-classic-24k-bonus-set26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "livelo",
-    "startDate": "2026-09-29",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/09/clube-livelo-24k-bonus-set26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260929_8",
-    "title": "Cupom Pague Menos: ganhe R$ 25 de desconto em compras a partir de R$ 230",
-    "description": "Cupom é válido até o dia 30/09, mas pode esgotar antes O post Cupom Pague Menos: ganhe R$ 25 de desconto em compras a partir de R$ 230 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-pague-menos-25-desconto-29set26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-09-29",
-    "endDate": "2026-09-30",
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/09/cupom-pague-menos-25-desconto-29set26.jpeg",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20260929_9",
-    "title": "Cupom Mercado Livre! Aproveite 2 novos códigos e garanta até 15% OFF em produtos selecionados",
-    "description": "O cupom tem limite de uso e pode esgotar a qualquer momento. O post Cupom Mercado Livre! Aproveite 2 novos códigos e garanta até 15% OFF em produtos selecionados apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-12h-29set26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
     "startDate": "2026-09-29",
     "endDate": null,
     "image": "",
