@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-10-07T14:49:04.419Z",
+  lastUpdated: "2026-10-07T20:51:27.992Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -19,79 +19,57 @@ const LIVE_OFFERS_METADATA = {
 
 const LIVE_OFFERS = [
   {
-    "id": "auto_20261006_1",
-    "title": "25% OFF no Mercado Livre! Resgate o novo cupom de desconto e economize até R$ 50",
-    "description": "O cupom tem limite de uso e pode esgotar rápido. O post 25% OFF no Mercado Livre! Resgate o novo cupom de desconto e economize até R$ 50 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercadolivre-19h-6out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20261007_0",
+    "title": "Cupom em dobro! Amazon e Magalu liberam descontos de até R$ 220 OFF",
+    "description": "Amazon e Magalu estão com novos cupons de desconto para economizar ainda mais nas compras! Reunimos os códigos disponíveis nas duas lojas, com ofertas que garantem até R$ 220 OFF, válidas em todo o... <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-magalu17h-07out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-10-06",
+    "startDate": "2026-10-07",
     "endDate": null,
-    "image": "",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/Captura-de-Tela-2025-11-13-as-18.58.17.png",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20261006_3",
-    "title": "Peça o cartão Amazon e aproveite a Mega Oferta Prime com 5% de cashback",
-    "description": "Está rolando o Mega Oferta Prime Amazon, uma forma de aproveitar é fazer suas compras com cartão Amazon Prime, que oferece 5% de cashback nas compras no site! Peça o seu agora clicando aqui. Com el... <a href=\"https://www.melhorescartoes.com.br/cartao-amazon-mega-oferta-prime-out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20261007_2",
+    "title": "Ofertas relâmpago no Mercado Livre: confira 7 produtos com descontos por tempo limitado",
+    "description": "Os produtos têm estoque limitado e podem acabar a qualquer momento. O post Ofertas relâmpago no Mercado Livre: confira 7 produtos com descontos por tempo limitado apareceu primeiro em Melhores Cart... <a href=\"https://www.melhorescartoes.com.br/ofertas-relampago-mercado-livre-07out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-10-06",
+    "startDate": "2026-10-07",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2024/05/cartao-de-credito-amazon-prime-265x165.png",
+    "image": "https://http2.mlstatic.com/D_NQ_NP_2X_907519-MLB81686256044_012025-F-20-cadeiras-plastica-bistro-reforco-suporta-ate-182kg-tops.webp",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20261006_4",
-    "title": "Até 50% OFF! 66 cupons de desconto válidos hoje na Mega Oferta Amazon Prime",
-    "description": "Aproveite, os cupons e os estoques podem esgotar antes do previsto! O post Até 50% OFF! 66 cupons de desconto válidos hoje na Mega Oferta Amazon Prime apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupons-mega-oferta-prime-6out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-10-06",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/themes/mc2026/img/md2-2.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20261006_5",
-    "title": "Voos da Latam para Miami a partir de 40 mil milhas o trecho",
-    "description": "O Latam Pass está com voos de São Paulo para Miami a partir de 40 mil milhas o trecho, mais taxas aeroportuárias, com opção de voo direto. A tarifa está disponível para viajar entre outubro e novem... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-sao-mia-latam-out26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20261007_4",
+    "title": "Voos diretos Fortaleza-Lisboa a partir de 51 mil milhas o trecho",
+    "description": "A Latam está com passagens aéreas de Fortaleza para Lisboa a partir de 51 mil milhas o trecho, mais taxas aeroportuárias, em voo direto. A tarifa está disponível para voar em novembro deste ano. Pa... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-for-lis-latam-out26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "latam",
-    "startDate": "2026-10-06",
+    "startDate": "2026-10-07",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20261006_6",
-    "title": "Ganhe até 14 pontos Azul por real em compras no Magalu",
-    "description": "O Azul Fidelidade está oferecendo até 14 pontos por real em compras no site do Magalu! A oferta é válida até sábado, 10 de outubro, para compras realizadas no site da parceria. Confira as regras de... <a href=\"https://www.melhorescartoes.com.br/azul-magalu-14-pontos-out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "azul",
-    "startDate": "2026-10-06",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/10/azul-magalu-14-pontos-out26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20261006_8",
-    "title": "Smiles está enviando bônus de 80% na transferência de pontos por e-mail",
-    "description": "Bora conferir a caixa de entrada! A Smiles está enviando e-mail com convite para transferência de pontos com 80% de bônus para clientes selecionados! A oferta não vale para todo mundo, portanto, é ... <a href=\"https://www.melhorescartoes.com.br/promocao-bonus-smiles-e-mail-80-out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
-    "startDate": "2026-10-06",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/10/promocao-bonus-smiles-e-mail-80-out26.jpeg",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20261006_9",
-    "title": "3 novos cupons! Ganhe até R$ 40 de desconto em compras no Mercado Livre",
-    "description": "Os cupons são válidos até as 15h ou enquanto durarem os estoques O post 3 novos cupons! Ganhe até R$ 40 de desconto em compras no Mercado Livre apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/3-novos-cupons-mercado-livre-06out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20261007_7",
+    "title": "Nike com até 58% OFF! Economize em tênis, roupas e acessórios + 15% extra com cupom",
+    "description": "O desconto e cupom têm limite de uso e podem esgotar a qualquer momento. O post Nike com até 58% OFF! Economize em tênis, roupas e acessórios + 15% extra com cupom apareceu primeiro em Melhores Car... <a href=\"https://www.melhorescartoes.com.br/nike-cupom-07out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-10-06",
+    "startDate": "2026-10-07",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/10/3-novos-cupons-mercado-livre-06out26.jpeg",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/Captura-de-Tela-2025-11-13-as-20.16.21-150x150.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20261007_8",
+    "title": "TAP BTG Pactual Black: peça o seu com a primeira anuidade grátis &#8211; cartão oferece salas VIP e 45 mil milhas de bônus",
+    "description": "O TAP Miles&#038;GO está completando 8 anos e, para comemorar, está oferecendo o cartão de crédito Mastercard Black, emitido em parceria com o BTG Pactual, com 12 meses de anuidade grátis! Além da ... <a href=\"https://www.melhorescartoes.com.br/cartao-btg-tap-milesandgo-out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "tap",
+    "startDate": "2026-10-07",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/04/cartao-btg-tap-milesandgo-mastercard-black-capa.jpg",
     "active": true,
     "isAuto": true
   }
