@@ -4,13 +4,13 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-10-08T17:01:09.020Z",
+  lastUpdated: "2026-10-08T22:32:56.355Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
   "smiles": 17.5,
   "azul": 13,
-  "livelo": 35,
+  "livelo": 29.88,
   "esfera": 35,
   "aadvantage": 130,
   "tap": 44
@@ -19,57 +19,90 @@ const LIVE_OFFERS_METADATA = {
 
 const LIVE_OFFERS = [
   {
-    "id": "auto_20261007_0",
-    "title": "Cupom em dobro! Amazon e Magalu liberam descontos de até R$ 220 OFF",
-    "description": "Amazon e Magalu estão com novos cupons de desconto para economizar ainda mais nas compras! Reunimos os códigos disponíveis nas duas lojas, com ofertas que garantem até R$ 220 OFF, válidas em todo o... <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-magalu17h-07out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-10-07",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/Captura-de-Tela-2025-11-13-as-18.58.17.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20261007_2",
-    "title": "Ofertas relâmpago no Mercado Livre: confira 7 produtos com descontos por tempo limitado",
-    "description": "Os produtos têm estoque limitado e podem acabar a qualquer momento. O post Ofertas relâmpago no Mercado Livre: confira 7 produtos com descontos por tempo limitado apareceu primeiro em Melhores Cart... <a href=\"https://www.melhorescartoes.com.br/ofertas-relampago-mercado-livre-07out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-10-07",
-    "endDate": null,
-    "image": "https://http2.mlstatic.com/D_NQ_NP_2X_907519-MLB81686256044_012025-F-20-cadeiras-plastica-bistro-reforco-suporta-ate-182kg-tops.webp",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20261007_4",
-    "title": "Voos diretos Fortaleza-Lisboa a partir de 51 mil milhas o trecho",
-    "description": "A Latam está com passagens aéreas de Fortaleza para Lisboa a partir de 51 mil milhas o trecho, mais taxas aeroportuárias, em voo direto. A tarifa está disponível para voar em novembro deste ano. Pa... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-for-lis-latam-out26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20261008_0",
+    "title": "Mais restrito! Latam limita acúmulo de pontos qualificáveis com hotéis, carros e outros serviços",
+    "description": "Quem usa as reservas de hotéis pelo Latam Pass para conquistar ou manter uma categoria no programa, terá que refazer as contas. A Latam estabeleceu um limite de 50 mil pontos qualificáveis por ano-... <a href=\"https://www.melhoresdestinos.com.br/milhas/latam-limita-acumulo-pontos-qualificaveis-hoteis\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "latam",
-    "startDate": "2026-10-07",
+    "startDate": "2026-10-08",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20261007_7",
-    "title": "Nike com até 58% OFF! Economize em tênis, roupas e acessórios + 15% extra com cupom",
-    "description": "O desconto e cupom têm limite de uso e podem esgotar a qualquer momento. O post Nike com até 58% OFF! Economize em tênis, roupas e acessórios + 15% extra com cupom apareceu primeiro em Melhores Car... <a href=\"https://www.melhorescartoes.com.br/nike-cupom-07out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20261008_1",
+    "title": "Cupom Amazon garante 10% OFF em compras a partir de R$ 150 nesta quinta-feira!",
+    "description": "O cupom possui limite de ativações e pode esgotar a qualquer momento! O post Cupom Amazon garante 10% OFF em compras a partir de R$ 150 nesta quinta-feira! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-30-off-08out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-10-07",
+    "startDate": "2026-10-08",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/Captura-de-Tela-2025-11-13-as-20.16.21-150x150.png",
+    "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20261007_8",
-    "title": "TAP BTG Pactual Black: peça o seu com a primeira anuidade grátis &#8211; cartão oferece salas VIP e 45 mil milhas de bônus",
-    "description": "O TAP Miles&#038;GO está completando 8 anos e, para comemorar, está oferecendo o cartão de crédito Mastercard Black, emitido em parceria com o BTG Pactual, com 12 meses de anuidade grátis! Além da ... <a href=\"https://www.melhorescartoes.com.br/cartao-btg-tap-milesandgo-out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "tap",
-    "startDate": "2026-10-07",
+    "id": "auto_20261008_2",
+    "title": "Livelo oferece 56% de desconto na compra de pontos e mais 3% OFF no Pix – milheiro a partir de R$ 29,88!",
+    "description": "Precisando aumentar seu saldo de pontos na Livelo? O programa está com uma oportunidade para quem quer comprar pontos com desconto! Assinantes do Clube Livelo têm 56% OFF na compra de pontos, além ... <a href=\"https://www.melhorescartoes.com.br/livelo-compra-pontos-56-off-out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "livelo",
+    "startDate": "2026-10-08",
     "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/04/cartao-btg-tap-milesandgo-mastercard-black-capa.jpg",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/10/livelo-compra-pontos-56-off-out26.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20261008_4",
+    "title": "Cupom Mercado Livre! Aproveite 2 novos códigos e economize até 15% OFF em produtos selecionados",
+    "description": "Os cupons têm limite de uso e podem esgotar a qualquer momento. O post Cupom Mercado Livre! Aproveite 2 novos códigos e economize até 15% OFF em produtos selecionados apareceu primeiro em Melhores ... <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-15h-08out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-10-08",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20261008_5",
+    "title": "Amazon libera cupom de 10% OFF em compras a partir de R$ 100; aproveite!",
+    "description": "O cupom possui limite de ativações e pode esgotar a qualquer momento! O post Amazon libera cupom de 10% OFF em compras a partir de R$ 100; aproveite! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-10-off-08out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-10-08",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20261008_6",
+    "title": "Leve 2, pague 1! Garanta Adidas, Reserva, Farm e outras grandes marcas em promoção na Dafiti",
+    "description": "A disponibilidade de cada produto depende dos estoques, corra para aproveitar antes que acabe! O post Leve 2, pague 1! Garanta Adidas, Reserva, Farm e outras grandes marcas em promoção na Dafiti ap... <a href=\"https://www.melhorescartoes.com.br/dafiti-2-em-1-8out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-10-08",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/dafiti-logo.jpg",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20261008_8",
+    "title": "Últimos dias! Ganhe 150 pontos Livelo por real na assinatura do Sam&#8217;s Club – milheiro a partir de R$ 6,67",
+    "description": "Últimos dias para aproveitar a oportunidade de assinar o plano Sócio Club do Sam’s Club e garantir 150 pontos Livelo por real pago com 30% de desconto, passando de R$ 95 para R$ 67 por um ano. A of... <a href=\"https://www.melhorescartoes.com.br/ultimos-dias-sams-club-livelo-150-pontos-out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "livelo",
+    "startDate": "2026-10-08",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/10/livelo-sams-club-out26.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20261008_9",
+    "title": "Oportunidade! Alexa Echo Dot de 5ª geração por apenas R$ 299 com cupom Amazon",
+    "description": "O produto tem limite de estoque e pode esgotar rápido. O post Oportunidade! Alexa Echo Dot de 5ª geração por apenas R$ 299 com cupom Amazon apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/ofertaecho-dot-de-5a-geracao-amazon-08out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-10-08",
+    "endDate": null,
+    "image": "https://m.media-amazon.com/images/I/51OiVQzj4HL._SL500_.jpg",
     "active": true,
     "isAuto": true
   }
