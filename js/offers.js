@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-10-13T17:11:24.705Z",
+  lastUpdated: "2026-10-13T22:00:55.834Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -44,61 +44,6 @@ const LIVE_OFFERS = [
     "id": "auto_20261008_3",
     "title": "Cupom Amazon oferece até R$ 100 de desconto em compras a partir de R$ 400",
     "description": "O cupom possui limite de ativações e pode esgotar a qualquer momento! O post Cupom Amazon oferece até R$ 100 de desconto em compras a partir de R$ 400 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-ate-100-off-08out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-10-08",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20261008_4",
-    "title": "Mais restrito! Latam limita acúmulo de pontos qualificáveis com hotéis, carros e outros serviços",
-    "description": "Quem usa as reservas de hotéis pelo Latam Pass para conquistar ou manter uma categoria no programa, terá que refazer as contas. A Latam estabeleceu um limite de 50 mil pontos qualificáveis por ano-... <a href=\"https://www.melhoresdestinos.com.br/milhas/latam-limita-acumulo-pontos-qualificaveis-hoteis\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "latam",
-    "startDate": "2026-10-08",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20261008_5",
-    "title": "Cupom Amazon garante 10% OFF em compras a partir de R$ 150 nesta quinta-feira!",
-    "description": "O cupom possui limite de ativações e pode esgotar a qualquer momento! O post Cupom Amazon garante 10% OFF em compras a partir de R$ 150 nesta quinta-feira! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-30-off-08out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-10-08",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20261008_6",
-    "title": "Livelo oferece 56% de desconto na compra de pontos e mais 3% OFF no Pix – milheiro a partir de R$ 29,88!",
-    "description": "Precisando aumentar seu saldo de pontos na Livelo? O programa está com uma oportunidade para quem quer comprar pontos com desconto! Assinantes do Clube Livelo têm 56% OFF na compra de pontos, além ... <a href=\"https://www.melhorescartoes.com.br/livelo-compra-pontos-56-off-out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "livelo",
-    "startDate": "2026-10-08",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/10/livelo-compra-pontos-56-off-out26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20261008_8",
-    "title": "Cupom Mercado Livre! Aproveite 2 novos códigos e economize até 15% OFF em produtos selecionados",
-    "description": "Os cupons têm limite de uso e podem esgotar a qualquer momento. O post Cupom Mercado Livre! Aproveite 2 novos códigos e economize até 15% OFF em produtos selecionados apareceu primeiro em Melhores ... <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-15h-08out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-10-08",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20261008_9",
-    "title": "Amazon libera cupom de 10% OFF em compras a partir de R$ 100; aproveite!",
-    "description": "O cupom possui limite de ativações e pode esgotar a qualquer momento! O post Amazon libera cupom de 10% OFF em compras a partir de R$ 100; aproveite! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-amazon-10-off-08out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
     "startDate": "2026-10-08",
     "endDate": null,
