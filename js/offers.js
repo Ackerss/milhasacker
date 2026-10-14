@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-10-14T09:04:58.198Z",
+  lastUpdated: "2026-10-14T14:44:16.461Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -17,16 +17,4 @@ const LIVE_OFFERS_METADATA = {
 }
 };
 
-const LIVE_OFFERS = [
-  {
-    "id": "auto_20261009_0",
-    "title": "Últimas horas! Abra sua conta Nomad e ganhe R$ 0,24 de desconto por dólar ou euro",
-    "description": "Últimas horas para aproveitar a super promoção da Nomad, que está oferecendo um desconto R$ 0,24 por dólar ou euro na primeira conversão. Ou seja, você garante a baixa no valor da moeda e ainda tem... <a href=\"https://www.melhoresdestinos.com.br/promocao/dolar-caiu-nomad-desconto-9out26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-10-09",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  }
-];
+const LIVE_OFFERS = [];
