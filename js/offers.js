@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-10-21T14:43:24.990Z",
+  lastUpdated: "2026-10-21T19:43:05.350Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -19,88 +19,66 @@ const LIVE_OFFERS_METADATA = {
 
 const LIVE_OFFERS = [
   {
-    "id": "auto_20261020_1",
-    "title": "Azul tem voos para o Recife saindo de Brasília a partir de R$ 141 ou 10 mil pontos o trecho mais taxas",
-    "description": "O Azul Fidelidade está com passagens aéreas para Recife a partir de 10.680 pontos ou R$ 141,83 o trecho + taxas aeroportuárias, com saídas de Brasília, para viajar entre fevereiro e junho de 2027. ... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-azul-recife-out26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20261021_0",
+    "title": "Novos cupons! Ganhe até 30% de desconto em pacotes no Azul Viagens",
+    "description": "Boa oportunidade para economizar na viagem! A Azul está com dois cupons de desconto que oferecem até 30% de desconto em pacotes com aéreo + hotel, no site da Azul Viagens. A validade do cupom depen... <a href=\"https://www.melhorescartoes.com.br/cupons-azul-viagens-30-off-out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "azul",
-    "startDate": "2026-10-20",
+    "startDate": "2026-10-21",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20261020_2",
-    "title": "50% de desconto! Resgate cupons Mercado Livre e economize até R$ 70",
-    "description": "Cupons têm limite de ativações e devem esgotar rápido. O post 50% de desconto! Resgate cupons Mercado Livre e economize at�� R$ 70 apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-19h-20out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20261021_1",
+    "title": "Tá valendo! Economize R$ 100 em tênis e roupas Under Armour com cupom de desconto",
+    "description": "Os produtos têm estoque limitado e podem esgotar a qualquer momento. O post Tá valendo! Economize R$ 100 em tênis e roupas Under Armour com cupom de desconto apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/under-armour-100off-16out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-10-20",
+    "startDate": "2026-10-21",
     "endDate": null,
-    "image": "",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/under-armour-logo.jpg",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20261020_3",
-    "title": "Acaba rápido! Ganhe 40% OFF no Mercado Livre com novo cupom",
-    "description": "Cupons têm limite de ativações e devem esgotar rápido. O post Acaba rápido! Ganhe 40% OFF no Mercado Livre com novo cupom apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-40off-20out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-10-20",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20261020_4",
-    "title": "Voos Recife-Curitiba a partir de R$ 236 ou 17 mil pontos Azul o trecho mais taxas",
-    "description": "O Azul Fidelidade está com voos do Recife para Curitiba a partir de 17.800 pontos o trecho, mais taxas aeroportuárias, com opção de voo direto. Os voos são operados pela própria Azul e estão dispon... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-rec-cwb-azul-out26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "azul",
-    "startDate": "2026-10-20",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20261020_5",
-    "title": "Voos da Air Canada para o Japão a partir de R$ 2.463 ou 185 mil pontos Azul o trecho mais taxas",
-    "description": "Alerta de bom preço para o Japão! O Azul Pelo Mundo está com passagens aéreas para Tóquio e Osaka a partir de 185.500 pontos Azul ou R$ 2.463,44 o trecho + taxas aeroportuárias, com saídas do Aerop... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-air-canada-pontos-azul-japao-out26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "azul",
-    "startDate": "2026-10-20",
-    "endDate": null,
-    "image": "",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20261020_7",
-    "title": "Oferta de lançamento! Assine ou faça upgrade no novo Clube Livelo e acumule até 104.000 pontos em 1 ano",
-    "description": "O Clube Livelo mudou. E o programa está com duas ofertas de lançamento &#8211; válidas até amanhã (21/10) &#8211; para os novos planos Essencial e Especial. Na assinatura do Clube Essencial, são 24... <a href=\"https://www.melhorescartoes.com.br/clube-livelo-ofertas-lancamento-out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "livelo",
-    "startDate": "2026-10-20",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/10/clube-livelo-24k-plano-essencial-out26.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
-    "id": "auto_20261020_8",
-    "title": "Voos diretos da Latam entre São Paulo e Fortaleza por 13 mil milhas o trecho",
-    "description": "O Latam Pass está com bons preços para viajar entre São Paulo e Fortaleza (e vice-versa) em voo direto. Encontramos passagens aéreas nesta rota por 13 mil milhas o trecho, mais taxas aeroportuárias... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-for-sao-latam-out26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20261021_3",
+    "title": "Chile com a Latam! Voos para Santiago a partir de 20 mil milhas o trecho",
+    "description": "Você sabia que, neste ano, a temporada de neve no Chile vai durar mais tempo? O Valle Nevado já anunciou que receberá visitantes até 8 de novembro, na temporada mais longa de sua história. Uma ótim... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-latam-chle-santiago-out26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "latam",
-    "startDate": "2026-10-20",
+    "startDate": "2026-10-21",
     "endDate": null,
     "image": "",
     "active": true,
     "isAuto": true
   },
   {
-    "id": "auto_20261020_9",
-    "title": "Novo cupom! Ganhe 20% OFF em moda e bem-estar no Mercado Livre",
-    "description": "Cupons têm limite de ativações e devem esgotar rápido. O post Novo cupom! Ganhe 20% OFF em moda e bem-estar no Mercado Livre apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-15h-20out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20261021_5",
+    "title": "Última chamada! 6 promoções de milhas e cashback que terminam hoje",
+    "description": "O meio da semana chegou e ainda dá tempo de aproveitar as promoções que estão encerrando hoje! Tem oferta para turbinar seu saldo de pontos na Azul e na Latam, terminar a lista de presentes de Nata... <a href=\"https://www.melhorescartoes.com.br/promocoes-terminam-hoje-21out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "livelo",
+    "startDate": "2026-10-21",
+    "endDate": null,
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2026/10/azul-livelo-100-bonus-out26.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20261021_7",
+    "title": "Ganhe até R$ 100 de desconto em compras no Mercado Livre &#8211; são 2 novos cupons!",
+    "description": "Cupons são válidos até as 15h ou enquanto durarem os estoques O post Ganhe até R$ 100 de desconto em compras no Mercado Livre &#8211; são 2 novos cupons! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-12h-21out26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-10-20",
+    "startDate": "2026-10-21",
+    "endDate": null,
+    "image": "",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20261021_8",
+    "title": "Peru! Latam Pass tem voos diretos para Lima por 22 mil milhas o trecho",
+    "description": "Que tal explorar alguns dos destinos mais incríveis da América do Sul? O Latam Pass está com passagens aéreas para Lima, no Peru, por 22.633 milhas o trecho + taxas, com saídas do Aeroporto de Guar... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-lima-peru-latam-out26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "latam",
+    "startDate": "2026-10-21",
     "endDate": null,
     "image": "",
     "active": true,
