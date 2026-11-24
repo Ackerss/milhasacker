@@ -4,7 +4,7 @@
    ============================================ */
 
 const LIVE_OFFERS_METADATA = {
-  lastUpdated: "2026-11-23T16:39:12.360Z",
+  lastUpdated: "2026-11-24T03:31:19.062Z",
   status: "success",
   currentMarketPrices: {
   "latam": 23,
@@ -19,31 +19,42 @@ const LIVE_OFFERS_METADATA = {
 
 const LIVE_OFFERS = [
   {
-    "id": "auto_20261123_0",
-    "title": "AO VIVO! Black Friday 2026: onde estão as melhores promoções de viagens?",
-    "description": "A Black Friday 2026 começou e as promoções não param de aparecer! Para te ajudar a ficar por dentro de tudo e encontrar as melhores ofertas, faremos uma live especial hoje, às 19h, no canal do YouT... <a href=\"https://www.melhoresdestinos.com.br/promocoes-balck-friday-2026-live.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "id": "auto_20261124_0",
+    "title": "De maionese a tablet! 20 produtos que valem a pena comprar com cupom de 20% OFF na Black Friday Amazon",
+    "description": "Os preços dos produtos podem ser alterados a qualquer momento O post De maionese a tablet! 20 produtos que valem a pena comprar com cupom de 20% OFF na Black Friday Amazon apareceu primeiro em Melh... <a href=\"https://www.melhorescartoes.com.br/ofertas-cupom-amazon-20-off-23nov26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
-    "startDate": "2026-11-23",
+    "startDate": "2026-11-24",
     "endDate": null,
-    "image": "",
+    "image": "https://m.media-amazon.com/images/I/41eBNMykmYL._SL500_.jpg",
     "active": true,
     "isAuto": true
   },
   {
     "id": "auto_20261123_1",
-    "title": "Smiles oferece até 375% de bônus na compra de milhas",
-    "description": "A Smiles está oferecendo até 375% de bônus na compra de milhas para assinantes do Clube Smiles e/ou clientes Magno/Diamante. A oferta faz parte da Orange Friday e é válida até as 21h do dia 26 de n... <a href=\"https://www.melhorescartoes.com.br/smiles-375-bonus-compra-milhas-bf-nov26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "smiles",
+    "title": "Presentes de Natal na Black Friday 2026: o que compensa comprar e como pagar menos",
+    "description": "Entenda quais produtos comprar para quem e como economizar ao máximo! O post Presentes de Natal na Black Friday 2026: o que compensa comprar e como pagar menos apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/presentes-de-natal-na-black-friday-2026.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
     "startDate": "2026-11-23",
     "endDate": null,
-    "image": "/_emdash/api/media/file/01M84HFA5SAD70WJ321ASR6F0V.01M84HFAWTHHD3KEMEG3HRN6KJ.png",
+    "image": "https://m.media-amazon.com/images/I/31zyac7HvsL._SL500_.jpg",
     "active": true,
     "isAuto": true
   },
   {
     "id": "auto_20261123_2",
-    "title": "Cupom Mercado Livre de R$ 300 OFF para produtos de tecnologia e eletro, confira as regras",
-    "description": "O cupom possui limite de ativações e pode esgotar a qualquer momento. O post Cupom Mercado Livre de R$ 300 OFF para produtos de tecnologia e eletro, confira as regras apareceu primeiro em Melhores ... <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-300-off-23nov26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "title": "Nubank oferece cupom de R$ 15 em abastecimentos com Shell Box",
+    "description": "O Nubank está oferecendo R$ 15 de desconto em abastecimentos a partir de R$ 150 pelo app Shell Box. Para garantir o desconto, é preciso resgatar o cupom no app do Nubank e pagar com NuPay. Você tem... <a href=\"https://www.melhorescartoes.com.br/nubank-shell-box-cupom-15-off-nov26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-11-23",
+    "endDate": null,
+    "image": "/_emdash/api/media/file/01M8532Y4T9STFY1QWM2H15DH3.01M8532Z372X72DCG91X74QY3V.jpg",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20261123_3",
+    "title": "iPhone, Galaxy S e mais! Cupom Mercado Livre oferece R$ 200 OFF na compra de smartphones",
+    "description": "Cupom tem limite de ativações O post iPhone, Galaxy S e mais! Cupom Mercado Livre oferece R$ 200 OFF na compra de smartphones apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-smartphones-23nov26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
     "startDate": "2026-11-23",
     "endDate": null,
@@ -52,9 +63,31 @@ const LIVE_OFFERS = [
     "isAuto": true
   },
   {
+    "id": "auto_20261123_4",
+    "title": "Black Friday Amazon tem barbeadores Philips a partir de R$ 120 - confira 7 ótimas ofertas!",
+    "description": "Os preços dos produtos podem ser alterados a qualquer momento O post Black Friday Amazon tem barbeadores Philips a partir de R$ 120 - confira 7 ótimas ofertas! apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/oferta-barbeadores-philips-black-friday-amazon-nov26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-11-23",
+    "endDate": null,
+    "image": "https://m.media-amazon.com/images/I/41BYkrMu2CL._SL500_.jpg",
+    "active": true,
+    "isAuto": true
+  },
+  {
     "id": "auto_20261123_5",
-    "title": "Jalapão! Voos de São Paulo para Palmas por R$ 208 ou 8 mil milhas o trecho mais taxas",
-    "description": "O Latam Pass está com voos diretos de São Paulo para Palmas a partir de 8.852 milhas o trecho, mais taxas aeroportuárias. A tarifa está disponível para viajar entre fevereiro e março de 2027. Aprov... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-sao-pmw-latam-bf-nov26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "title": "Maior desconto da história! Seguro viagem Allianz com 75% OFF na Black Friday",
+    "description": "Oferta histórica de Black Friday para contratar o seguro viagem Allianz Travel! Em parceria com o Melhores Destinos, a Allianz liberou incríveis 75% de desconto nos seguros para todos os destinos i... <a href=\"https://www.melhorescartoes.com.br/desconto-seguro-viagem-allianz-black-friday-nov26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "programId": "",
+    "startDate": "2026-11-23",
+    "endDate": null,
+    "image": "https://www.melhoresdestinos.com.br/wp-content/uploads/2026/11/promocao-black-friday-seguro-viagem-allianz-travel-cupom-melhores-destinos-2026-2.png",
+    "active": true,
+    "isAuto": true
+  },
+  {
+    "id": "auto_20261123_6",
+    "title": "Lençóis Maranhenses! Voos para São Luís a partir de R$ 273 ou 11 mil milhas o trecho mais taxas",
+    "description": "Bom preço para você conhecer ou revisitar os Lençóis Maranhenses! Encontramos passagens aéreas para a capital São Luís a partir de 11.626 milhas Latam Pass ou R$ 273,56 o trecho + taxas, com saídas... <a href=\"https://www.melhoresdestinos.com.br/milhas/voos-latam-sao-luis-nov26\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "latam",
     "startDate": "2026-11-23",
     "endDate": null,
@@ -63,46 +96,35 @@ const LIVE_OFFERS = [
     "isAuto": true
   },
   {
-    "id": "auto_20261123_6",
-    "title": "Hering por R$ 29! Seja rápido e aproveite o cupom que acaba hoje",
-    "description": "O código promocional é válido só hoje! Aproveita! O post Hering por R$ 29! Seja rápido e aproveite o cupom que acaba hoje apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-hering-tudo-por-29-23nov26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
-    "programId": "",
-    "startDate": "2026-11-23",
-    "endDate": null,
-    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/hering-logo-150x150.png",
-    "active": true,
-    "isAuto": true
-  },
-  {
     "id": "auto_20261123_7",
-    "title": "Maior desconto do ano! ALL Signature oferece até 40% OFF na assinatura – vale para quem já foi assinante!",
-    "description": "O ALL Signature, clube de pontos da rede de hotéis ALL Accor, está com uma nova promoção de Black Friday que oferece até 40% de desconto para novos e ex-assinantes! Esse é o maior desconto do ano e... <a href=\"https://www.melhorescartoes.com.br/oferta-all-signature-black-friday-40-off-nov26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "title": "Black Friday Revolut! Ganhe até 5.000 milhas ao abrir conta grátis com dólar e euro sem taxas",
+    "description": "A Black Friday da Revolut chegou com uma promoção para quem quer juntar milhas e economizar na próxima viagem! Novos clientes podem ganhar até 5.000 RevPoints ao abrir sua conta grátis, fazer um pa... <a href=\"https://www.melhoresdestinos.com.br/promocao/black-friday-revolut-2026\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
     "startDate": "2026-11-23",
     "endDate": null,
-    "image": "/_emdash/api/media/file/01M846CB5HFYKK4VXQGCRJCTDG.01M846CC6XW99PGWC16GR1SSRZ.png",
+    "image": "",
     "active": true,
     "isAuto": true
   },
   {
     "id": "auto_20261123_8",
-    "title": "Shell Box: 2 ofertas para aproveitar até 5% de cashback em abastecimentos",
-    "description": "Semana da Black Friday começando com duas oportunidades para encher o tanque! Inter e PicPay estão oferecendo até 5% de cashback, válidas por tempo limitado. Confira os detalhes e aproveite! Inter ... <a href=\"https://www.melhorescartoes.com.br/inter-picpay-shell-box-5-4-cashback-nov26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "title": "Até R$ 200 OFF! Cupom Mercado Livre oferece 10% de desconto em compras",
+    "description": "Cupom é válido até o final do dia ou enquanto durar o estoque O post Até R$ 200 OFF! Cupom Mercado Livre oferece 10% de desconto em compras apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-ate-200-off-23nov26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
     "startDate": "2026-11-23",
     "endDate": null,
-    "image": "/_emdash/api/media/file/01M84608A8PQWAMBHX9KFHTNXW.01M846096J3GXKD0F6VQQVE5VQ.png",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/unnamed.png",
     "active": true,
     "isAuto": true
   },
   {
     "id": "auto_20261123_9",
-    "title": "AO VIVO: Vale a pena comprar iPhone nessa Black Friday? Saiba quais modelos escolher!",
-    "description": "Vem com a gente descobrir se vale a pena ou não ficar de olho em um iPhone novo para comprar ainda nessa semana. O post AO VIVO: Vale a pena comprar iPhone nessa Black Friday? Saiba quais modelos e... <a href=\"https://www.melhorescartoes.com.br/ao-vivo-vale-a-pena-comprar-iphone-nessa-black-friday-saiba-quais-modelos-escolh.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
+    "title": "3 novos cupons! Mercado Livre tem descontos de R$ 30,R$ 50 e até R$ 120 no site todo",
+    "description": "Cupons são válidos até as 19h ou enquanto durarem os estoques. O post 3 novos cupons! Mercado Livre tem descontos de R$ 30,R$ 50 e até R$ 120 no site todo apareceu primeiro em Melhores Cartões. <a href=\"https://www.melhorescartoes.com.br/cupom-mercado-livre-ate-120-desconto-23nov26.html\" target=\"_blank\" style=\"text-decoration:underline; font-weight:600; color:var(--primary);\">Ler no Melhores Cartões ➔</a>",
     "programId": "",
     "startDate": "2026-11-23",
     "endDate": null,
-    "image": "",
+    "image": "https://www.melhorescartoes.com.br/wp-content/uploads/2025/11/unnamed.png",
     "active": true,
     "isAuto": true
   }
